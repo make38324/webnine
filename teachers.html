@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+     <link href="css/vc.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <style type="text/css">
+        .a {
+            float: left;
+            width: 50%;
+            height: 1px;
+            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#fff), to(#e3e3e3));
+        }
+        .b {
+            float: left;
+            width: 50%;
+            height: 1px;
+            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+        }
+        .share {
+            height: 50px;
+        }
+        .share li {
+            list-style: none;
+            margin-right:27px;
+        }
+        .share_1 {
+            width: 50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wx.png") no-repeat;
+        }
+        .share_2 {
+            width: 50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wb.png") no-repeat;
+        }
+        .share_3 {
+            width:50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/qq.png") no-repeat;
+        }
+        .share_4 {
+            width: 50px;
+            float: left;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/zone.png") no-repeat;
+        }
+        .tixi:hover  img{
+            cursor:pointer;
+            -webkit-filter: blur(10px) grayscale(1);
+            -moz-filter: blur(10px) grayscale(1);
+            -o-filter: blur(10px) grayscale(1);
+            -ms-filter: blur(10px) grayscale(1);
+            filter: blur(10px) grayscale(1);
+            opacity: .7;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+        }
+        .teacher-study:hover{
+            color:#c20000  !important;
+        }
+        .rollBox{
+            height:500px;
+            margin-left:50px ;
+            width:980px;
+            float:left;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .rollBox .scrollcon{
+            width:1120px;
+            height:200px;
+            position:absolute;
+            top:50px;
+
+        }
+        .rollBox .LeftBotton{
+            padding-top:10%;
+            width:42px;
+            overflow:hidden;
+            float:left;
+            display:inline;
+            margin-right:30px;
+        }
+        .rollBox .RightBotton{
+            padding-top:10%;
+            padding-left: 0px;
+            width:42px;
+            overflow:hidden;
+            float:left;
+            display:inline;
+            margin-left:30px;
+            cursor:pointer;
+        }
+        .rollBox .LeftBotton img,.rollBox .RightBotton img{
+            width:20px;
+            height:42px;
+            cursor:pointer;
+        }
+        .rollBox .Cont{
+            width:908px;
+            overflow:hidden;
+            float:left;
+            /*height:250px;*/
+            margin:0px 17px;
+        }
+        .rollBox .ScrCont{
+            width:10000000px;
+        }
+        .rollBox .Cont .pic{
+            width:192px;
+            height:500px;
+            /*overflow:hidden;*/
+            float:left;
+            margin:0px 35px 0px 0px;
+            display:inline;
+        }
+        .rollBox .Cont .pic img{
+            width:200px;
+            height:200px;
+            display:block;
+            border-radius: 100px;
+        }
+        .rollBox #List1, .rollBox #List2{
+            float:left;
+        }
+
+        .konw-more:hover {
+            color:#c20000 !important;
+        }
+        .more-result:hover {
+            color:#c20000 !important;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- <div class="preloader-mask">
+    <div class="preloader"></div>
+</div> -->
+
+<!-- 头部区域 -->
+<!-- 头部区域 -->
+ <header class="header header-black">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="col-sm-2 col-xs-12 navigation-header">
+                    <div class="table-container">
+                        <div class="cell-container">
+                            <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xs-12 navigation-container">
+                    <div class="table-container">
+                        <div class="cell-container">
+                            <div id="navigation" class="navbar-collapse collapse">
+                               <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_blank" href="index.html">首页</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a target="_blank" href="introduction.html">九拍简介</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="tesekecheng.html">特色课程</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="map.html">教学环境</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a target="_blank" href="teachers.html">师资介绍</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
+                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+<!--导航end-->
+<!-- 师资介绍-->
+<div class="container" style="margin-top:50px">
+    <img src="images/标题logo.png" alt="" style="display: block;">
+    <span style="margin-left: 50px">师资介绍</span>
+</div>
+<div class=" container" style="margin-top:50px;margin-bottom:50px;">
+    <div class="col-md-4">
+        <div class="wpb_wrapper">
+            <a class="tixi" style="display:block;position: relative;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/teach1.png" style="display: block;width: 350px;height: 220px; ">
+                <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:40px;cursor:pointer;"> PROFESSIONAL SKILLS</span>
+                <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 140px;cursor:pointer;">专业技能</span>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+            <a class="tixi" style="display:block;position: relative;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/teach2.png" style="display: block;width: 350px;height: 220px; ">
+                <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:55px;cursor:pointer;"> CORE TECHNOLOGY</span>
+                <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 140px;cursor:pointer;">核心技术</span>
+            </a>
+    </div>
+    <div class="col-md-4">
+            <a class="tixi" style="display:block;position: relative;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/teach3.png" style="display: block;width: 350px;height: 220px; ">
+                <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:60px;cursor:pointer;"> STAFF TRAINING</span>
+                <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 140px;cursor:pointer;">师资培训</span>
+            </a>
+    </div>
+</div>
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<div class="container">
+    <div class="row text-center" style="margin-top:50px;"><span style="font-family: PingFangSC-Regular,黑体; font-size: 35px; letter-spacing: 13px;">师资培训与认证系统</span></div>
+    <div class="row text-center" ><span style="color: #acacac;">STAFF  TRAINING  AND  CERTIFICATION  SYSTEM</span></div>
+</div>
+
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<div class="container">
+    <img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/ZYYYXY.png" width="289" height="133"/>
+</div>
+
+<div class="container" style="margin-top: 50px;">
+    <div class="col-md-6"><img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/ZS.png" alt="" /></div>
+    <div class="col-md-6"><img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/ZS2.png" alt=""/></div>
+</div>
+
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="row text-left" style="margin-top:50px;margin-bottom: 50px"><span style="font-size: 14.5px; font-family: 微软雅黑;">九拍师资培训体系快速培训上岗教师。九拍每年举办4-5期全国师资培训，针对教师进行全面解决“教什么”、“怎么教”、“如何正确理解爵士鼓演奏技术？”、“九拍独创的集体课教学法、课堂有效训练法、拇指教育理念如何理解和应用？”等教学实际问题。所有接受总部培训的教师，均颁发《师资认证证书》。</span></div>
+</div>
+<!--师资培训万年历-->
+<div class="container">
+    <img src="images/标题logo.png" alt="" style="display: block;">
+    <span style="margin-left: 50px">师资培训年历</span>
+</div>
+<div class="container" >
+  <div style="margin-top: 50px">
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p style="margin:0;padding:0;">No.37   3/7-3/9</p>
+      </div>
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p style="margin:0;padding:0;">No.36   12/13-12/16</p>
+          <p style="margin:0;padding:0;">No.35   9/20-9/23</p>
+          <p>No.34   5/24-5/27</p>
+          <p>No.33   3/15-3/18</p>
+      </div>
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p>No.32   11/17-11/19</p>
+          <p>No.31    9/15-9/17</p>
+          <p>No.30   4/14-4/16</p>
+          <p>No.29   3/24-3/26</p>
+
+      </div>
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p>No.28   11/25-11/27</p>
+          <p>No.27   9/23-9/25</p>
+          <p>No.26   6/25-6/27</p>
+          <p>No.25   4/22-4/24</p>
+          <p>No.24   2/25-2/27</p>
+      </div>
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p>No.23   11/17-11/19</p>
+          <p>No.22   9/15-9/17</p>
+          <p>No.21    4/14-4/16</p>
+          <p>No.20   3/24-3/26</p>
+      </div>
+      <div class="col-sm-2">
+          <img class="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/001.png" width="160"height="106" style="margin-bottom: 10px">
+          <p>No.19   11/17-11/19</p>
+          <p>No.18   9/15-9/17</p>
+          <p>No.17   4/14-4/16</p>
+          <p>No.16   3/24-3/26</p>
+      </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row text-left" style="margin-top:50px;margin-bottom: 50px"><span style="font-size: 14.5px; font-family: 微软雅黑;">九拍师资培训体系快速培训上岗教师。九拍每年举办4-5期全国师资培训，针对教师进行全面解决“教什么”、“怎么教”、“如何正确理解爵士鼓演奏技术？”、“九拍独创的集体课教学法、课堂有效训练法、拇指教育理念如何理解和应用？”等教学实际问题。所有接受总部培训的教师，均颁发《师资认证证书》。</span></div>
+</div>
+
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<!--师资介绍-->
+<!-- <div class="container">
+    <div class="col-sm-4">
+        <img src="images/标题logo.png" alt="" style="display: block;">
+        <span style="margin-left: 50px">师资介绍</span>
+    </div>
+    <div class="col-sm-4" style="margin-top: 30px">
+        <input type="text" class="form-control" placeholder="Text input">
+    </div>
+    <div class="col-sm-4" style="margin-top: 30px">
+
+    </div>
+</div>
+ <div class="vc_row vc_inner vc_row-fluid container">
+                            <div class="vc_col-sm-12 wpb_column column_container  vc_custom_1487757331446 ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                        <div class="wpb_wrapper">
+                                            <div class="rollBox">
+                                                <div class="scrollcon">
+                                                    <div class="LeftBotton"><img src="images/prev.png" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div>
+                                                    <div class="Cont" id="ISL_Cont">
+                                                        <div class="ScrCont">
+                                                            <div id="List1">
+
+                                                                <div class="pic "><a title="" href="#"><img width="180" height="180" alt="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">赵 孜</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="#"><img width="183" height="68" alt="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">姜 峰</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="#"><img width="183" height="68" alt="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">杨 波</p>
+                                                                        <p style="text-align: center;color:#777;font-family:微软雅黑;">教授课程:贝司 少儿摇滚乐队</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="#"><img width="183" height="68" alt="" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#c20000;">徐辛未</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程：电吉他 民谣吉他</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="List2"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightBotton"><img src="images/next.png" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+
+
+<div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488359133539">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_wrapper">
+                                            <ul class="share">
+                                                <li class="share_1">
+                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=weixin&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+                                                </li>
+                                                <li class="share_2">
+                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=tsina&amp;url=http://www.9beats/&amp;title=分享"></a>
+                                                </li>
+                                                <li class="share_3">
+                                                    <a class="www" style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=cqq&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+                                                </li>
+                                                <li class="share_4">
+                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=qzone&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+
+<!-- 底部合作伙伴 -->
+<div class="container">
+    <div><img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/QQ图片20161116170314.png" width="226" height="183" alt="" title=""></div>
+    <div class="row text-center">九拍合作伙伴</div>
+</div>
+ <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-6 wpb_column column_container  vc_custom_1487758834311 ">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row vc_inner vc_row-fluid container">
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">YAMAHA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759350257">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">GEWA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759465996">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DRUM CRAFT</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759527415">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DW</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759534986">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PDP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759545241">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BASIX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759558913">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759570953">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PAISTE</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759581802">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SELA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759595687">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TECHRA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759605912">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ODERY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759617704">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">长城乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759626196">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">IBANEZ</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TAMA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759422920">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MEINL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759479799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SUPERLUX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759637255">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PEARL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759646979">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ISTANBUL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759658394">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">漢旗</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759667964">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">REMO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759679129">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">EVANS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759691713">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">D’ADDARIO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759702336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SABIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759713600">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">FENDER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759723240">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PROMARK</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759731329">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MAIR</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">三衛樂器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759442336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">蔚科科技</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759512615">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOSPHORUS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759741624">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">VATER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759755799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ZILDJIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759765202">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LANEY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759775185">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOWO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759782226">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">OUR DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759799577">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SENNHEISER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759812353">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TONING DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759822345">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">雅特乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487759844547">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/行业机构-1.png" width="794" height="352" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <section class="footer">
+        <div class="footer-base">
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <p class="text-alt">
+                            <small>
+                                Copyright © 2016       　九拍音乐教育科技集团  　  | 　  Nine Beats Education &amp; Technology Group                         </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="position:fixed;right:20px;bottom:40px;">
+    <a class="zxzx" style="display:block;" ></a>
+    <a class="yyst" href="#" id="btn"  data-toggle="modal" data-target="#myModal"></a>
+    <a class="hddb" style="display:block;" href="#go-top"></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           
+             <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span></div>
+            <div class="modal-body">
+<div style=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png" style="float: left; margin-right: 20px; height:300px;" alt="">
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://101.201.140.178/form.html" style="height:400px;"></iframe></div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
+                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vc.js"></script>
+<script src="js/vc-accordion.js"></script>
+<script src="js/vc-tabs.min.js"></script>
+</body>
+
+</html>

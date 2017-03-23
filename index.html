@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9beats – 让音乐成为开启孩子梦想的钥匙</title>
+    <link href="css/vc.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F7F7F7;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .chatbox {
+            width: 500px;
+            height: 500px;
+            /*   margin: 0 auto; */
+            float: right;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            border: 1px solid #CCC;
+            background-color: #FFF;
+            border-radius: 5px;
+        }
+
+        .messages {
+            height: 350px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #CCC;
+            overflow: scroll;
+        }
+
+        .messages h5 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .messages p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /*.self {
+            text-align: left;
+        }
+
+        .other {
+            text-align: right;
+        }
+*/
+        .form {
+            height: 150px;
+        }
+
+        .form .input {
+            height: 110px;
+            /*padding: 10px;*/
+            box-sizing: border-box;
+        }
+
+        .form .btn {
+            height: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid #CCC;
+        }
+
+        .form textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: none;
+            resize: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .send {
+            color: pink;
+        }
+
+        .recive {
+            float: right;
+            color: blue;
+        }
+
+        .form input {
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin-top: -20px;
+            /*margin-right: 20px;*/
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<!-- <div class="preloader-mask">
+    <div class="preloader"></div>
+</div> -->
+<div class="main-container">
+    <!--<section id="hero" class="hero-section bg-cover light-text window-height" style="background-image: url(images/banner1.png);">-->
+    <!--<div class="heading-block align-center centered-block">-->
+    <!--<div class="container">-->
+    <!--<div id="logo-top" style="margin-top:-20px;">-->
+    <!--<img width="108px" height="128px" src="images/logo(1).png" alt="logo" srcset="" sizes="(max-width: 120px) 100vw, 100px" style="padding-bottom: 25px;">-->
+    <!--</div>-->
+    <!--<span class="hero-heading-top"></span>-->
+    <!--<h1 class="hero-heading-main">NINE BEATS EDUCATION &amp; TECHNOLOGY GROUP</h1>-->
+    <!--<span class="hero-heading-bottom">-->
+    <!--LEADING PROVIDER OF MUSIC &amp;ESSENTIAL-QUALITIES-ORIENTED EDUCATION OF CHINA </span>-->
+    <!--<div class="btns-container">-->
+    <!--&lt;!&ndash; <a href="#" class="btn btn-lg">在线报名</a> &ndash;&gt;-->
+    <!--<a class="btn btn-lg"  data-toggle="modal" data-target="#myModal">在线报名</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
+    <section id="slide_home" style="height: 100%;">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="padding-left: 90px;">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="height: 100%;" id='lunbocontent'>
+                <div class="item active" data-image-large="images/banner1.png" data-image-small="">
+                    <img src="images/banner1.png" width="100%">
+                    <a class="btn btn-lg" data-toggle="modal" data-target="#myModal"
+                       style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a>
+
+                </div>
+                <div class="item" data-image-large="images/banner1.png" data-image-small="">
+                    <img src="images/banner1.png" width="100%">
+                    <a class="btn btn-lg" data-toggle="modal" data-target="#myModal"
+                       style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a>
+                </div>
+                <div class="item" data-image-large="images/banner1.png" data-image-small="">
+                    <img src="images/banner1.png" width="100%">
+                    <a class="btn btn-lg" data-toggle="modal" data-target="#myModal"
+                       style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a>
+                </div>
+                <div class="item" data-image-large="images/banner1.png" data-image-small="">
+                    <img src="images/banner1.png" width="100%">
+                    <a class="btn btn-lg" data-toggle="modal" data-target="#myModal"
+                       style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <header class="header header-black">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="col-sm-2 col-xs-12 navigation-header">
+                    <div class="table-container">
+                        <div class="cell-container">
+                            <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                                    aria-expanded="false" aria-controls="navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xs-12 navigation-container">
+                    <div class="table-container">
+                        <div class="cell-container">
+                            <div id="navigation" class="navbar-collapse collapse">
+                                <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_self" href="index.html">首页</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a target="_blank" href="introduction.html">九拍简介</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="tesekecheng.html">特色课程</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="map.html">教学环境</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a target="_blank" href="teachers.html">师资介绍</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
+                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="content">
+            <article class="post-2429 page type-page status-publish hentry" id="go-top">
+                <div class="entry-content">
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container " style="text-align: center;">
+                            <img src="images/main_tu.png" alt="" style="margin-top: 100px;"/>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487755768173">
+                                    <div class="wpb_wrapper">
+                                        <div class="a"></div>
+                                        <div class="b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
+                                    <div class="wpb_wrapper title-font">
+                                        <p><span>九拍简介</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_single_image wpb_content_element vc_align_left">
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/中国地图.png" alt="" title="">
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p style="text-align: center;"><span
+                                                style="font-family: 微软雅黑; font-size: 24pt;">60000名孩子与你为伴</span></p>
+                                        <p><span style="font-family: 微软雅黑;">九拍音乐教育由李红育老师于2003年创办，是中国知名音乐教育连锁机构。截至2016年10月，九拍已经覆盖全国30个省、直辖市和自治区的322座城市，建立了550余所校区，有62000余名四岁以上孩子在学，4200余名教师在九拍任教…</span>
+                                        </p>
+                                        <p style="text-align: right;"><span style="font-family: 微软雅黑;"><a
+                                                style="font-family: 微软雅黑; color: #777777;" href="introduction.html">了解详情 &gt;</a></span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                    <div class="wpb_wrapper" style="overflow: hidden;" id="listnews">
+                                        <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                                href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍南开南翠屏校区迎来新学期纳新</a>
+                                        </div>
+                                        <div class="b2"></div>
+                                        <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                                href="ninenews.html">2016-11-20 &nbsp;· &nbsp;九拍河东嘉里汇校区"结业仪式"</a></div>
+                                        <div class="b2"></div>
+                                        <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                                href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍河东中山门校区"魅力 &nbsp;·
+                                            &nbsp;宝贝&nbsp;活动"</a></div>
+                                        <div class="b2"></div>
+                                        <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                                href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍河西梅江校区"迎来你的美"动感音乐会</a>
+                                        </div>
+                                        <div class="b2"></div>
+                                        <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                                href="ninenews.html">2016-11-18 &nbsp;· &nbsp;天津市鼓韵联盟主席莅临九拍河西华夏校区</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487755905628">
+                                    <div class="wpb_wrapper">
+
+                                        <div class="a"></div>
+                                        <div class="b"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755937312">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284769513">
+                                    <div class="wpb_wrapper title-font">
+                                        <p><span>教学体系</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488286378051">
+                                    <div class="wpb_wrapper">
+                                        <div style="margin-right:30px;float:left;"><a href="jiaoxuetixi.html"
+                                                                                      class="tixi"
+                                                                                      style="display:block;position: relative;"><img
+                                                src="images/IMG_2369-1.png"
+                                                style="display: block;width: 350px;height: 220px; ">
+                                            <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:40px;"> EDUCATION CONCEPT</span>
+                                            <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 140px;">教学理念</span>
+                                        </a>
+                                            <p style="width: 330px; margin-left: 10px; font-family: 'PingFang SC Regular','微软雅黑';font-size:14px;color:#333;">
+                                                通过李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及九拍拇指教育理念，使孩子在学习乐器演奏的过程中养成良好的学习习惯、培养积极主动独立思考的学习态度以及掌握科学有效的学习方法…</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488286382956">
+                                    <div class="wpb_wrapper">
+                                        <div style="margin-right:30px;float:left;"><a href="xitongjiaocheng.html"
+                                                                                      class="tixi"
+                                                                                      style="display:block;position: relative;"><img
+                                                src="images/IMG_2369.png"
+                                                style="display: block;width: 350px;height: 220px; ">
+                                            <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:60px;"> TEACHING SYSTEM </span>
+                                            <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 130px;">系统教程</span>
+                                        </a>
+                                            <p style="width: 330px; margin-left: 10px; font-family: 'PingFang SC Regular','微软雅黑';font-size:14px;color:#333;">
+                                                九拍拥有自主版权的教材有《九拍爵士鼓系统教材》、《九拍电贝司系统教材》、《九拍行进打击乐系统教材》、《九拍马林巴系统教材》、《九拍电吉他系统教材》等共计68册…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488286390987">
+                                    <div class="wpb_wrapper">
+                                        <div style="float:left;"><a href="zhanyankaoji.html" class="tixi"
+                                                                    style="display:block;position: relative;"><img
+                                                src="images/IMG_23692.png"
+                                                style="display: block;width: 350px;height: 220px; ">
+                                            <span style=" display: block;font-size:25px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top:75px;left:40px;">GRADE EXAMINATION</span>
+                                            <span style=" display: block;font-size:18px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 120px;left: 130px;">展演考级</span>
+                                        </a>
+                                            <p style="width: 330px; margin-left: 10px; font-family: 'PingFang SC Regular','微软雅黑';font-size:14px;color:#333;">
+                                                九拍音乐教育作为文化部全国社会艺术水平考级——上海市打击乐协会指定考点，每年举办两期爵士鼓等级考试，通过考级的学员将由上海市打击乐协会颁发爵士鼓等级证书…</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
+                                    <div class="wpb_wrapper title-font">
+                                        <p><span>特色课程</span></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488176168592">
+                                    <div class="wpb_wrapper">
+                                        <ul>
+                                            <a href="tesekecheng.html#www" style="display:block;" id="1">
+                                                <li class="ke ke1">
+                                                    <span style="padding-left:5px;padding-top: 65px;"> 爵士鼓</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke2">
+                                                    <span style="padding-left: 1px;padding-top: 65px;"> 电贝司</span>
+                                                </li>
+                                            </a>
+                                            <a href="javascript:tonext('djt');">
+                                                <li class="ke ke3">
+                                                    <span style="padding-left: 1px;padding-top: 65px;"> 电吉他</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke4">
+                                                    <span style="padding-top: 65px;"> 民谣吉他</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke5">
+                                                    <span style="padding-left: 7px;padding-top: 65px;">小军鼓</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke6">
+                                                    <span style="padding-left: 5px;padding-top: 65px;"> 马林巴</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke7">
+                                                    <span style="padding-top: 65px;">视唱练耳</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke8">
+                                                    <span style="padding-top: 65px;">尤克里里</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke9" style="">
+                                                    <span style="margin-left:15px;padding-top: 65px; "> 声乐</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke10" style="">
+                                                    <span style="margin-left:15px;padding-top: 65px; "> 钢琴</span>
+                                                </li>
+                                            </a>
+                                            <a href="tesekecheng.html">
+                                                <li class="ke ke11" style="">
+                                                    <span style="margin-left:10px;padding-top: 65px; "> 非洲鼓</span>
+                                                </li>
+                                            </a>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488176221297">
+                                    <div class="wpb_wrapper">
+                                        <p style="text-align: center;"><a href="tesekecheng.html" class="more-course"
+                                                                          style="font-family: 微软雅黑; color: #acacac;">了解更多课程
+                                            &gt;</a></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487756766868">
+                                    <div class="wpb_wrapper">
+                                        <div class="a"></div>
+                                        <div class="b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
+                                    <div class="wpb_wrapper title-font">
+                                        <p><span>教学环境</span></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container" style="" data-token="QO4SX">
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html ">
+                                    <div class="wpb_wrapper">
+                                        <div style=" width: 100%;">
+                                            <a class="huanjing" href="#" style=" display:block;position: relative;">
+
+                                                <img src="images/lADOgf4Cgc0OQM0VYA_5472_3648-.png" style="display: block;width: 100%;
+            height: 210px; ">
+                                                <span class="sipan"
+                                                      style=" display: block;width: 170px;font-size:17px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-85px;margin-top:-30px;">Drum set Classroom</span>
+                                                <span style=" display: block;width: 90px;font-size:17px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-45px;">爵士鼓教室</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html ">
+                                    <div class="wpb_wrapper">
+                                        <div style=" width: 100%;">
+                                            <a class="huanjing" href="#" style="display:block;position: relative;">
+
+                                                <img src="images/lADOgf4Cgc0OQM0VYA_5472_3648-1.png"
+                                                     style="display: block;width:100%;height: 210px; ">
+                                                <span style=" display: block;width: 223px;font-size:19pxfont-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-100px;margin-top:-30px;">Band Rehearsal Classroom </span>
+                                                <span style=" display: block;width: 108px;font-size:17px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-54px;">乐队排练教室</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html ">
+                                    <div class="wpb_wrapper">
+                                        <div style=" width:100%;">
+                                            <a class="huanjing" href="#" style="display:block;position: relative;">
+
+                                                <img src="images/lADOgf4Cgc0OQM0VYA_5472_3648-2.png"
+                                                     style="display: block;width:100%;height: 210px; ">
+                                                <span style=" display: block;width: 206px;font-size:17px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-103px;margin-top:-30px;">Electric Drum Classroom</span>
+                                                <span style=" display: block;width: 72px;;font-size:17px;font-family: 'PingFang SC Regular','微软雅黑';color:#fff;position:absolute;top: 50%;left: 50%;margin-left:-36px;">电鼓教室</span>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html ">
+                                    <div class="wpb_wrapper">
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍南开南翠屏校区<span
+                                                style="padding-left: 40px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍河东嘉里汇校区<span
+                                                style=" padding-left: 40px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍河东中山门校区<span
+                                                style=" padding-left: 40px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍河西梅江校区<span
+                                                style="padding-left: 56px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍河西华夏校区<span
+                                                style="padding-left: 56px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍中北镇永旺校区<span
+                                                style="padding-left:40px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+                                        <div style=""><strong>·</strong>&nbsp;&nbsp;&nbsp;<a
+                                                style="font-family: 微软雅黑; color: #333;" href="#">九拍开发区泰达校区<span
+                                                style="padding-left: 40px;">&gt;</span></a>
+                                            <div class="b3"></div>
+                                        </div>
+
+                                        <p style=""><a class="country" style="font-family: 微软雅黑; color: #777;" href="#">
+                                            &nbsp; &nbsp;&nbsp;进入全国搜索范围&nbsp; <span
+                                                style=" padding-left: 45px;">&gt;</span></a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487756766868">
+                                    <div class="wpb_wrapper">
+                                        <div class="a"></div>
+                                        <div class="b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sz">
+                        <div class="vc_row vc_inner vc_row-fluid container">
+                            <div class="vc_col-sm-3 wpb_column column_container  ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487757176274">
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                    class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                    height="38" alt="" title=""></div>
+                                        </figure>
+                                    </div>
+
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1488284749761">
+                                        <div class="wpb_wrapper title-font">
+                                            <p><span>师资介绍</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_col-sm-9 wpb_column column_container  vc_custom_1487834093886 ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                        <div class="wpb_wrapper">
+                                            <div style="float:right;">
+                                                <a class="teacher-study" href="teachers.html"
+                                                   style="display:inline-block;color:#777;margin-left:50px;margin-top:10px;font-family:微软雅黑;">了解九拍师资培训与认证系统
+                                                    &gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vc_row vc_inner vc_row-fluid container">
+                            <div class="vc_col-sm-12 wpb_column column_container  vc_custom_1487757331446 ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                        <div class="wpb_wrapper">
+                                            <div class="rollBox">
+                                                <div class="scrollcon">
+                                                    <div class="LeftBotton"><img src="images/prev.png"
+                                                                                 onmousedown="ISL_GoUp()"
+                                                                                 onmouseup="ISL_StopUp()"
+                                                                                 onmouseout="ISL_StopUp()"></div>
+                                                    <div class="Cont" id="ISL_Cont">
+                                                        <div class="ScrCont">
+                                                            <div id="List1">
+
+                                                                <div class="pic "><a title="" href="zhaozi.html"><img
+                                                                        width="180" height="180" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            赵 孜</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="jiangfeng.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            姜 峰</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="yangbo.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            杨 波</p>
+                                                                        <p style="text-align: center;color:#777;font-family:微软雅黑;">
+                                                                            教授课程:贝司 少儿摇滚乐队</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="xuxinwei.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#c20000;">
+                                                                            徐辛未</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程：电吉他 民谣吉他</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="List2"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightBotton"><img src="images/next.png"
+                                                                                  onmousedown="ISL_GoDown()"
+                                                                                  onmouseup="ISL_StopDown()"
+                                                                                  onmouseout="ISL_StopDown()"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid row parallax-bg-row"
+                         style="background-image: url(images/CCC.png); background-repeat:; -webkit-background-size: cover; background-size: cover; background-position: center; background-attachment: fixed;">
+                        <div class="container">
+                            <div class="vc_col-sm-12 wpb_column column_container  ">
+                                <div class="wpb_wrapper">
+
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p style="text-align: center;"><span
+                                                    style="font-family: PingFangSC-Regular,微软雅黑; font-size: 43px; color: #ffffff;">2016九拍优秀学员张傲“跨年音乐会”</span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row vc_inner vc_row-fluid container">
+                                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                                            <div class="wpb_wrapper">
+
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p style="text-align: center;"><span
+                                                                style="font-family: PingFangSC-Regular, 微软雅黑; font-size: 18pt; color: #ffffff;">2 &nbsp; 9 &nbsp; . &nbsp; A &nbsp; P &nbsp; R &nbsp; – &nbsp; 1 &nbsp; . &nbsp; M &nbsp;A &nbsp; Y</span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                                            <div class="wpb_wrapper">
+
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p style="text-align: center;"><span
+                                                                style="font-size: 18pt; font-family: PingFangSC-Regular, 微软雅黑; color: #ffffff;">天 &nbsp;津 &nbsp;市 &nbsp;音 &nbsp;乐 &nbsp;附 &nbsp;中 &nbsp;九 &nbsp;拍</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="vsc_row_otkxrmssld" class="vc_row vc_inner vc_row-fluid container" style=""
+                                         data-token="EHB3F">
+                                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                                            <div class="wpb_wrapper">
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487757629222">
+                                                    <div class="wpb_wrapper">
+                                                        <p style="display: block; height: 50px; width: 300px;  line-height: 50px; font-size: 23px;  letter-spacing: 20px; color: #ffffff; border-radius: 10px; ">
+                                                            <span style="display: block;color: #ffffff; opacity: 1; border: 2px solid #ffffff; height: 50px; border-radius: 10px; font-family: 幼圆;padding-left:72px;"
+                                                                  data-toggle="modal" data-target="#myModal">在线预约</span>
+                                                        </p>
+                                                        <p>&nbsp;</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="vc_col-sm-4 wpb_column column_container  ">
+                                            <div class="wpb_wrapper">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
+                                    <div class="wpb_wrapper title-font">
+                                        <p><span>教学成果</span></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487758215215">
+                                    <div class="wpb_wrapper">
+
+
+                                        <video id="mvideo" height="400px" width="100%"
+                                               src="http://101.201.140.178/20170110.mp4" controls="controls">
+                                        </video>
+
+                                        <p style="text-align: right;"><a class="konw-more"
+                                                                         style="font-family: 微软雅黑; color: #777;"
+                                                                         href="#">了解更多优秀学员 &gt;&nbsp;</a></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-6 wpb_column column_container">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487758245089">
+                                    <div class="wpb_wrapper">
+                                        <div style="width: 100%;height:350px;overflow: auto;">
+                                            <div class=" wpb_column column_container  vc_custom_1480396572088 ">
+                                                <div class="wpb_wrapper">
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="fourblock" style="margin-top:-25px;">
+                                                                <lc autoplay="autoplay"
+                                                                    href="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/video/20161103%E4%BA%8C%E5%AE%9D%E4%B8%93%E8%AE%BF.mp4"
+                                                                    class="first"
+                                                                    style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;">
+                                                                    <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png"
+                                                                         alt=""
+                                                                         style="display: block;float: left;height:80px;margin-top:-0px;width:">
+                                                                    <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
+                                                                        2017/01/10</p><br><span
+                                                                        style="float:left;margin-left:-80px;margin-top:10px;color:#333;">擦亮双眼Don't Blink别眨眼163秒九拍快闪
+                                                                </span></lc>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <div style="float:left; width: 500px; height: 1px; background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff)) ;margin-top:3px;"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <lc autoplay="autoplay"
+                                                                href="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/video/%E9%99%88%E7%A6%B9%E4%B8%9E.mp4"
+                                                                class="first"
+                                                                style="cursor:pointer;width: 500px;height: 83px;background-color: #F2F2F2;float: left;margin-bottom: 10px;margin-top:4px;margin-bottom:2px;">
+                                                                <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_1980-1.png"
+                                                                     alt=""
+                                                                     style="display: block;height:83px;margin-top:-0px;float:left;">
+                                                                <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
+                                                                    2016/12/25</p><br><span
+                                                                    style="float:left;margin-left:-80px;margin-top:10px;color:#333;"> 乌鲁木齐九拍学员受邀参加新疆春晚录制
+                                                            </span></lc>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <div style="float:left; width: 500px; height: 1px; background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff)) ;margin-top:3px;"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <lc autoplay="autoplay"
+                                                                href="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/video/%E6%85%95%E5%BE%97%E7%90%A6.mp4"
+                                                                class="first"
+                                                                style="cursor:pointer;width:500px;height: 83px;background-color: #F2F2F2;float: left;margin-bottom: 10px;margin-top:4px;margin-bottom:2px;">
+                                                                <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_1973-1.png"
+                                                                     alt=""
+                                                                     style="display: block;margin-top:-0px;height:83px;float:left;">
+                                                                <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
+                                                                    2016/11/14</p><br><span
+                                                                    style="float:left;margin-left:-80px;margin-top:10px;color:#333;"> 九拍李思瑾演奏的爵士鼓-Island magic</span>
+                                                            </lc>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <div style="float:left; width: 500px; height: 1px; background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff)) ;margin-top:3px;"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
+                                                            <lc autoplay="autoplay"
+                                                                href="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/video/Happy%20Fire%20-%20What%20Lies%20Beneath.mp4"
+                                                                class="first"
+                                                                style="cursor:pointer;width: 500px;height:83px;background-color: #F2F2F2;float: left;margin-top: 5px;">
+                                                                <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_1971-1.png"
+                                                                     alt=""
+                                                                     style="display: block;height:83px;margin-top:-0px;float:left">
+                                                                <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
+                                                                    2016/09/26</p><br><span
+                                                                    style="float:left;margin-left:-80px;margin-top:10px;color:#333;"> 九拍集体课 Sho -nuff solo视唱练习_高清</span>
+                                                            </lc>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <p style="text-align: right;margin-top:20px;"><a class="more-result"
+                                                                                         style="font-family: 微软雅黑; color: #777;"
+                                                                                         href="page_2.html">了解更多教学成果
+                                            &nbsp;&gt;</a></p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487756766868">
+                                    <div class="wpb_wrapper">
+                                        <div class="a"></div>
+                                        <div class="b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_center">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/QQ图片20161116170314.png"
+                                                width="226" height="183" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-12 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_text_column wpb_content_element  vc_custom_1487758813173">
+                                    <div class="wpb_wrapper">
+                                        <p style="text-align: center;"><span style="font-family: 微软雅黑;">九拍合作伙伴</span>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-6 wpb_column column_container  vc_custom_1487758834311 ">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row vc_inner vc_row-fluid container">
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">YAMAHA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759350257">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">GEWA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759465996">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DRUM CRAFT</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759527415">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DW</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759534986">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PDP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759545241">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BASIX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759558913">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759570953">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PAISTE</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759581802">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SELA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759595687">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TECHRA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759605912">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ODERY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759617704">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">长城乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759626196">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">IBANEZ</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TAMA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759422920">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MEINL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759479799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SUPERLUX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759637255">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PEARL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759646979">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ISTANBUL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759658394">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">漢旗</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759667964">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">REMO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759679129">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">EVANS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759691713">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">D’ADDARIO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759702336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SABIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759713600">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">FENDER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759723240">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PROMARK</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759731329">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MAIR</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">三衛樂器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759442336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">蔚科科技</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759512615">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOSPHORUS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759741624">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">VATER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759755799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ZILDJIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759765202">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LANEY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759775185">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOWO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759782226">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">OUR DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759799577">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SENNHEISER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759812353">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TONING DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759822345">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">雅特乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487759844547">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/行业机构-1.png" width="794"
+                                                height="352" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--ddd-->
+                </div>
+            </article>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footer-base">
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <p class="text-alt">
+                            <small>
+                                Copyright © 2016 　九拍音乐教育科技集团 　 | 　 Nine Beats Education &amp; Technology Group
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div style="position:fixed;right:20px;bottom:40px;">
+    <a class="zxzx" style="display:block;"></a>
+    <a class="yyst" href="#" id="btn" data-toggle="modal" data-target="#myModal"></a>
+    <a class="hddb" style="display:block;" href="#go-top"></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span>
+            </div>
+            <div class="modal-body">
+                <div style=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png"
+                                   style="float: left; margin-right: 20px; height:300px;" alt="">
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"
+                            src="http://101.201.140.178/form.html" style="height:400px;"></iframe>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
+                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="chatbox" style="display: none;">
+    <img id="x-click" src="images/X.png"/ style="position:absolute;right:20px;cursor:pointer;">
+    <div class="messages">
+
+    </div>
+
+    <div class="form">
+
+        <div class="input">
+            <textarea id="msg"></textarea>
+        </div>
+        <div>
+            <input id="send" type="button" value="发送" onclick="mysend()">
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vc.js"></script>
+<script type="text/javascript">
+    $(".zxzx").click(function () {
+        $(".chatbox").show();
+    })
+    $("#x-click").click(function () {
+        $(".chatbox").hide();
+    })
+</script>
+<script>
+    function tonext(yq) {
+        localStorage.setItem("yq", yq);
+        location.href = "tesekecheng.html"
+    }
+
+</script>
+<script type="text/javascript">
+
+    var Speed = 0.01;
+    var Space = 5;
+    var PageWidth = 910;
+    var fill = 0;
+    var MoveLock = false;
+    var MoveTimeObj;
+    var Comp = 0;
+    var AutoPlayObj = null;
+    GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+    GetObj('ISL_Cont').scrollLeft = fill;
+    GetObj("ISL_Cont").onmouseover = function () {
+        clearInterval(AutoPlayObj);
+    }
+    GetObj("ISL_Cont").onmouseout = function () {
+        AutoPlay();
+    }
+
+    AutoPlay();
+
+    function GetObj(objName) {
+        if (document.getElementById) {
+            return eval('document.getElementById("' + objName + '")')
+        } else {
+            return eval('document.all.' + objName)
+        }
+    }
+
+    function AutoPlay() {
+        clearInterval(AutoPlayObj);
+        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 10000);
+    }
+
+    function ISL_GoUp() {
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
+    }
+
+    function ISL_StopUp() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrUp() {
+        if (GetObj('ISL_Cont').scrollLeft <= 0) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
+        }
+        GetObj('ISL_Cont').scrollLeft -= Space;
+    }
+
+    function ISL_GoDown() {
+        clearInterval(MoveTimeObj);
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        ISL_ScrDown();
+        MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
+    }
+    function ISL_StopDown() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrDown() {
+        if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
+        }
+        GetObj('ISL_Cont').scrollLeft += Space;
+    }
+
+    function CompScr() {
+        var num;
+        if (Comp == 0) {
+            MoveLock = false;
+            return;
+        }
+        if (Comp < 0) {
+            if (Comp < -Space) {
+                Comp += Space;
+                num = Space;
+            } else {
+                num = -Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft -= num;
+            setTimeout('CompScr()', Speed);
+        } else {
+            if (Comp > Space) {
+                Comp -= Space;
+                num = Space;
+            } else {
+                num = Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft += num;
+            setTimeout('CompScr()', Speed);
+        }
+    }
+</script>
+<script type="text/javascript">
+
+    var Speed = 0.01;
+    var Space = 5;
+    var PageWidth = 910;
+    var fill = 0;
+    var MoveLock = false;
+    var MoveTimeObj;
+    var Comp = 0;
+    var AutoPlayObj = null;
+    GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+    GetObj('ISL_Cont').scrollLeft = fill;
+    GetObj("ISL_Cont").onmouseover = function () {
+        clearInterval(AutoPlayObj);
+    }
+    GetObj("ISL_Cont").onmouseout = function () {
+        AutoPlay();
+    }
+
+    AutoPlay();
+
+    function GetObj(objName) {
+        if (document.getElementById) {
+            return eval('document.getElementById("' + objName + '")')
+        } else {
+            return eval('document.all.' + objName)
+        }
+    }
+
+    function AutoPlay() {
+        clearInterval(AutoPlayObj);
+        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 10000);
+    }
+
+    function ISL_GoUp() {
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
+    }
+
+    function ISL_StopUp() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrUp() {
+        if (GetObj('ISL_Cont').scrollLeft <= 0) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
+        }
+        GetObj('ISL_Cont').scrollLeft -= Space;
+    }
+
+    function ISL_GoDown() {
+        clearInterval(MoveTimeObj);
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        ISL_ScrDown();
+        MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
+    }
+    function ISL_StopDown() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrDown() {
+        if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
+        }
+        GetObj('ISL_Cont').scrollLeft += Space;
+    }
+
+    function CompScr() {
+        var num;
+        if (Comp == 0) {
+            MoveLock = false;
+            return;
+        }
+        if (Comp < 0) {
+            if (Comp < -Space) {
+                Comp += Space;
+                num = Space;
+            } else {
+                num = -Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft -= num;
+            setTimeout('CompScr()', Speed);
+        } else {
+            if (Comp > Space) {
+                Comp -= Space;
+                num = Space;
+            } else {
+                num = Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft += num;
+            setTimeout('CompScr()', Speed);
+        }
+    }
+</script>
+
+<script>
+    function _post(url, data, callback, failcall) {
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: data,
+            success: function (data) {
+                callback(data);
+            },
+            error: function (xhr) {
+                failcall(xhr);
+            }
+        });
+    }
+    function _get(url, data, callback, failcall) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: data,
+            success: function (data) {
+                callback(data);
+            },
+            error: function (xhr) {
+                failcall(xhr);
+            }
+        });
+    }
+    function _getSchoollist() {
+        _get("http://101.201.140.178:8080/api/school/getSchoolList", "", function (data) {
+            console.log(data);
+            res = data.res;
+            $('#sel_school').empty();
+            for (var i = 0; i < res.length; i++) {
+                $('#sel_school').append("<option value=" + res[i].school_id + ">" + res[i].schoolname + "</option>")
+            }
+        }, function (error) {
+
+        })
+    }
+    function _getMusiclist() {
+        _post("http://101.201.140.178:8080/api/daycourse/getallmusictype", "", function (data) {
+            console.log(data);
+            res = data.res;
+            $('#sel_music').empty();
+            for (var i = 0; i < res.length; i++) {
+                $('#sel_music').append("<option value=" + res[i].musicinstrment_id + ">" + res[i].name + "</option>")
+            }
+        }, function (error) {
+
+        })
+    }
+    function listnews() {
+        _get("http://101.201.140.178:8080/api/news/list", "", function (data) {
+            $('#listnews').empty();
+            console.log("newsdata", data);
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                $('#listnews').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')
+            }
+//            <div><aclass="riqi"style="font-family: 微软雅黑; color: #333;"href="ninenews.html">2016-11-18&nbsp;·&nbsp;九拍南开南翠屏校区迎来新学期纳新</a></div>
+        })
+    }
+    function add() {
+        var name = $('#name').val();
+        var phone = $('#phone').val();
+        var schoolid = $('#sel_school').val();
+        var musicid = $('#sel_music').val();
+        var flag = true;
+        if (name.length <= 0) {
+            alert('姓名不能为空')
+            flag = false;
+        }
+        if (phone.length != 11) {
+            flag = false;
+            alert("手机号格式不正确");
+        }
+        if (flag) {
+            _post("http://101.201.140.178:8080/api/yuyue/add", {
+                'name': name,
+                'phone': phone,
+                'schoolid': schoolid,
+                'musicid': musicid
+            }, function (data) {
+                if (data.msg == 'success') {
+                    alert('预约成功');
+                    window.history.back(-1);
+                } else {
+                    alert('预约失败')
+                }
+                console.log(data);
+            }, function (error) {
+                console.log(error);
+            });
+        }
+        return false;
+    }
+    $(function () {
+        _getSchoollist();
+        _getMusiclist();
+        listnews();
+    })
+</script>
+<script type='text/javascript' src='js/webim.config.js'></script>
+<script type='text/javascript' src='js/strophe-1.2.8.min.js'></script>
+<script src='js/websdk-1.4.5.js'></script>
+<script src="js/adapter.js"></script>
+<script src="js/webrtc-1.4.10.js"></script>
+<script src='js/jquery.min.js'></script>
+<script>
+    //    var textarea=document.querySelector('textarea');
+    //    var messagees=document.querySelector('.messages');
+</script>
+<script>
+    mysend = function () {
+        var msg = $('#msg').val();
+        sendPrivateText(msg, "user1490088656193");
+        $(".messages").append("<div class='send'>" + msg + "</div><br />");
+        $('#msg').val("");
+    };
+    /**
+     * Created by clock on 16-11-25.
+     */
+    var conn = {};
+    conn = new WebIM.connection({
+        isMultiLoginSessions: WebIM.config.isMultiLoginSessions,
+        https: typeof WebIM.config.https === 'boolean' ? WebIM.config.https : location.protocol === 'https:',
+        url: WebIM.config.xmppURL,
+        isAutoLogin: true,
+        heartBeatWait: WebIM.config.heartBeatWait,
+        autoReconnectNumMax: WebIM.config.autoReconnectNumMax,
+        autoReconnectInterval: WebIM.config.autoReconnectInterval
+    });
+
+    // listern，添加回调函数
+    conn.listen({
+        onOpened: function (message) {          //连接成功回调，连接成功后才可以发送消息
+            //如果isAutoLogin设置为false，那么必须手动设置上线，否则无法收消息
+            // 手动上线指的是调用conn.setPresence(); 在本例中，conn初始化时已将isAutoLogin设置为true
+            // 所以无需调用conn.setPresence();
+            console.log("opened");
+            console.log("msg", message);
+        },
+        onTextMessage: function (message) {
+            // 在此接收和处理消息，根据message.type区分消息来源，私聊或群组或聊天室
+            console.log(message.type);
+            console.log(message);
+            console.log('Text');
+            $(".messages").append("<div class='recive'>" + message.data + "</div><br />");
+        },  //收到文本消息
+        onEmojiMessage: function (message) {
+            // 当为WebIM添加了Emoji属性后，若发送的消息含WebIM.Emoji里特定的字符串，connection就会自动将
+            // 这些字符串和其它文字按顺序组合成一个数组，每一个数组元素的结构为{type: 'emoji(或者txt)', data:''}
+            // 当type='emoji'时，data表示表情图像的路径，当type='txt'时，data表示文本消息
+            console.log('Emoji');
+            var data = message.data;
+            for (var i = 0, l = data.length; i < l; i++) {
+                console.log(data[i]);
+            }
+        },   //收到表情消息
+        onPictureMessage: function (message) {
+            console.log('Picture');
+
+            var options = {url: message.url};
+            options.onFileDownloadComplete = function () {
+                // 图片下载成功
+                console.log('Image download complete!');
+            };
+            options.onFileDownloadError = function () {
+                // 图片下载失败
+                console.log('Image download failed!');
+            };
+            WebIM.utils.download.call(conn, options);       // 意义待查
+
+        }, //收到图片消息
+        onCmdMessage: function (message) {
+            console.log('CMD');
+        },     //收到命令消息
+        onAudioMessage: function (message) {
+            console.log("Audio");
+        },   //收到音频消息
+        onLocationMessage: function (message) {
+            console.log("Location");
+        },//收到位置消息
+        onFileMessage: function (message) {
+            console.log("File");
+        },    //收到文件消息
+        onVideoMessage: function (message) {
+            var node = document.getElementById('privateVideo');
+            var option = {
+                url: message.url,
+                headers: {
+                    'Accept': 'audio/mp4'
+                },
+                onFileDownloadComplete: function (response) {
+                    var objectURL = WebIM.utils.parseDownloadResponse.call(conn, response);
+                    node.src = objectURL;
+                },
+                onFileDownloadError: function () {
+                    console.log('File down load error.')
+                }
+            };
+            WebIM.utils.download.call(conn, option);
+        },   //收到视频消息
+        onPresence: function (message) {
+            switch (message.type) {
+                case 'subscribe':                           // 对方请求添加好友
+                    // 同意对方添加好友
+                    document.getElementById('agreeFriends').onclick = function (message) {
+                        conn.subscribed({
+                            to: 'asdfghj',
+                            message: "[resp:true]"
+                        });
+                        // 需要反向添加对方好友
+                        conn.subscribe({
+                            to: message.from,
+                            message: "[resp:true]"
+                        });
+                    };
+                    // 拒绝对方添加好友
+                    document.getElementById('rejectFriends').onclick = function (message) {
+                        conn.unsubscribed({
+                            to: message.from,
+                            message: "rejectAddFriend"                  // 拒绝添加好友回复信息
+                        });
+                    };
+
+                    break;
+                case 'subscribed':                          // 对方同意添加好友，已方同意添加好友
+                    break;
+                case 'unsubscribe':                         // 对方删除好友
+                    break;
+                case 'unsubscribed':                        // 被拒绝添加好友，或被对方删除好友成功
+                    break;
+                case 'joinChatRoomSuccess':                 // 成功加入聊天室
+                    console.log('join chat room success');
+                    break;
+                case 'joinChatRoomFaild':                   // 加入聊天室失败
+                    console.log('join chat room faild');
+                    break;
+                case 'joinPublicGroupSuccess':              // 意义待查
+                    console.log('join public group success', message.from);
+                    break;
+            }
+        },       //收到联系人订阅请求（加好友）、处理群组、聊天室被踢解散等消息
+        onRoster: function (message) {
+            console.log('Roster');
+        },         //处理好友申请
+        onInviteMessage: function (message) {
+            console.log('Invite');
+        },  //处理群组邀请
+        onOnline: function () {
+            console.log('onLine');
+        },                  //本机网络连接成功
+        onOffline: function () {
+            console.log('offline');
+        },                 //本机网络掉线
+        onError: function (message) {
+            console.log('Error');
+        },           //失败回调
+        onBlacklistUpdate: function (list) {
+            // 查询黑名单，将好友拉黑，将好友从黑名单移除都会回调这个函数，list则是黑名单现有的所有好友信息
+            console.log(list);
+        }     // 黑名单变动
+    });
+    // 初始化WebRTC Call
+    var rtcCall = new WebIM.WebRTC.Call({
+        connection: conn,
+
+        mediaStreamConstaints: {
+            audio: true,
+            video: true
+        },
+
+        listener: {
+            onAcceptCall: function (from, options) {
+                console.log('onAcceptCall::', 'from: ', from, 'options: ', options);
+            },
+            onGotRemoteStream: function (stream) {
+                console.log('onGotRemoteStream::', 'stream: ', stream);
+                var video = document.getElementById('video');
+                video.src = window.URL.createObjectURL(stream);
+            },
+            onGotLocalStream: function (stream) {
+                console.log('onGotLocalStream::', 'stream:', stream);
+                var video = document.getElementById('localVideo');
+                video.src = window.URL.createObjectURL(stream);
+            },
+            onRinging: function (caller) {
+                console.log('onRinging::', 'caller:', caller);
+            },
+            onTermCall: function (reason) {
+                console.log('onTermCall::');
+                console.log('reason:', reason);
+            },
+            onIceConnectionStateChange: function (iceState) {
+                console.log('onIceConnectionStateChange::', 'iceState:', iceState);
+            },
+            onError: function (e) {
+                console.log(e);
+            }
+        }
+    });
+</script>
+<script>
+    /**
+     * Created by clock on 16-11-30.
+     */
+// open，登录
+    var login = function () {
+        var options = {
+            apiUrl: WebIM.config.apiURL,
+            user: 'local18910940347',
+            pwd: '123456',
+            appKey: WebIM.config.appkey,
+            success: function (token) {
+                var token = token.access_token;
+                WebIM.utils.setCookie('webim_' + encryptUsername, token, 1);
+                console.log('success')
+            },
+            error: function () {
+                console.log('fail')
+            }
+        };
+        conn.open(options);
+    };
+    var register = function () {
+        var option = {
+            username: 'test',
+            password: '123456',
+            nickname: 'clock',
+            appKey: WebIM.config.appkey,
+            success: function () {
+                console.log('regist success!');
+            },
+            error: function () {
+                console.log('regist error');
+            },
+            apiUrl: WebIM.config.apiURL
+        };
+        conn.signup(option);
+    };
+
+    // 私聊发送文本消息，发送表情同发送文本消息，只是会在对方客户端将表情文本进行解析成图片
+    var sendPrivateText = function (tomsg, toid) {
+        var id = conn.getUniqueId();
+        var msg = new WebIM.message('txt', id);
+        msg.set({
+            msg: tomsg,                       // 消息内容
+            to: toid,                          // 接收消息对象
+            roomType: false,
+            success: function (id, serverMsgId) {
+                console.log("send private text Success");
+            }
+        });
+        msg.body.chatType = 'singleChat';
+        conn.send(msg.body);
+    };
+
+    // 私聊发送命令消息
+    var sendPrivateCmd = function () {
+        var id = conn.getUniqueId();
+        var msg = new WebIM.message('cmd', id);
+        msg.set({
+            msg: 'ls',
+            to: 'asdfghj',
+            roomType: false,
+            success: function (id, serverMsgId) {
+                console.log('CMD Success');
+            }
+        });
+        msg.body.chatType = 'singleChat';
+        conn.send(msg.body);
+    };
+
+    // 私聊发送图片消息
+    var sendPrivateImg = function () {
+        var id = conn.getUniqueId();
+        var msg = new WebIM.message('img', id);
+        var input = document.getElementById('image');               // 选择图片的input
+        var file = WebIM.utils.getFileUrl(input);                   // 将图片转化为二进制文件
+        var allowType = {
+            'jpg': true,
+            'gif': true,
+            'png': true,
+            'bmp': true
+        };
+        if (file.filetype.toLowerCase() in allowType) {
+            console.log('send');
+            var option = {
+                apiUrl: WebIM.config.apiURL,
+                file: file,
+                to: 'asdfghj',
+                roomType: false,
+                chatType: 'singleChat',
+                onFileUploadError: function () {
+                    console.log('onFileUploadError');
+                },
+                onFileUploadComplete: function () {
+                    console.log('onFileUploadComplete');
+                },
+                success: function () {
+                    console.log('Success');
+                },
+                // flashUpload: WebIM.flashUpload               // 意义待查
+            };
+            msg.set(option);
+            conn.send(msg.body);
+        }
+    };
+
+    // 获取好友列表
+    var getRoasters = function () {
+        var option = {
+            success: function (roster) {
+                // roster是所有好友，格式为：
+                /*
+                 [
+                 {
+                 jid:"easemob#chatdemoui_test1@easemob.com",
+                 name:"test1",
+                 subscription: "both"
+                 // subscription的值的集合是{both, to, from, none},
+                 // both表示互相在对方的好友列表中，
+                 // to 和 from意义待定
+                 // 如果添加对方为好友被拒绝则为none
+                 }
+                 ]
+                 */
+                for (var o in roster) {
+                    console.log("jid: ", roster[o].jid);
+                    console.log("name: ", roster[o].name);
+                    console.log("subscription: ", roster[o].subscription);
+                }
+            }
+        };
+        conn.getRoster(option);
+    };
+
+    // 添加好友
+    var addFriends = function () {
+        conn.subscribe({
+            to: "asdfghj",
+            message: "Hello World!"                   // Demo里面接收方没有展现出来这个message，在status字段里面
+        });
+    };
+
+    // 删除好友
+    var removeFriends = function () {
+        conn.removeRoster({
+            to: 'asdfghj',
+            success: function () {
+                conn.unsubscribed({
+                    to: 'asdfghj'
+                });
+            },
+            error: function () {
+            }
+        });
+    };
+
+    // 拉黑好友，对方好友列表依然可以看到已方，但无法向已方发送消息
+    // list的结构为{username_1: {}, username_2: {}...}，拉黑好友需要将拉黑后的黑名单里的好友信息全部传入，
+    // 如黑名单此时已有A，B两位好友，现想将C也拉进黑名单，正确的操作是同时将ABC的信息都传入接口中。
+    /*
+     var list = {
+     username_1:{
+     jid: 'appKey_'+username_1+'@easemob.com',
+     name: username_1,
+     subscription: 'both',
+     order: 2
+     },
+     username_2:{
+     jid: 'appKey_'+username_2+'@easemob.com',
+     name: username_2,
+     subscription: 'both',
+     order: 3,
+     type: 'jid'
+     },
+     username_3:{
+     jid: 'appKey_'+username_3+'@easemob.com',
+     name: username_3,
+     subscription: 'both',
+     order: 4,
+     type: 'jid'
+     }
+     }
+     jid, username, subscription均在获取好友列表时已获取到，用户可根据好友列表动态获取这些参数，
+     order不重复即可
+     */
+    var addToBlackList = function () {
+        var list = {
+            // user_1
+            asdfghj: {
+                jid: "easemob-demo#chatdemoui_asdfghj@easemob.com",
+                name: "asdfghj",
+                subscription: 'both',
+                order: 2,
+                type: 'jid'
+            },
+            // user_2
+            wjy6: {
+                jid: "easemob-demo#chatdemoui_wjy6@easemob.com",
+                name: "wjy6",
+                subscription: 'both',
+                order: 3,
+                type: 'jid'
+            }
+        };
+        conn.addToBlackList({
+            list: list,
+            type: 'jid',
+            success: function () {
+                console.log('Add friend to black list success');
+            },
+            error: function () {
+                console.log('Add friend to black list error');
+            }
+        });
+    }
+
+    // 获取好友黑名单，调用这个函数会回调conn.listen里的onBlacklistUpdate函数，具体细节请参照test.js
+    var getBlackList = function () {
+        conn.getBlacklist();
+    };
+
+    // 将好友从黑名单拉出来
+    var removeBlackList = function () {
+        var list = {};
+        conn.removeFromBlackList({
+            list: list,
+            type: 'jid',
+            success: function () {
+                console.log('Remove from black list success.');
+            },
+            error: function () {
+                console.log('Remove from black list error.')
+            }
+        });
+    };
+
+    // 聊天室发送文本消息
+    var sendRoomText = function (msg, totooken) {
+        // 退出聊天室
+        var id = conn.getUniqueId();
+        var msg = new WebIM.message('txt', id);
+        var option = {
+            msg: msg,                       // 消息内容
+            to: totooken,               // 接收消息对象(本例为twy-room1聊天室)
+            roomType: true,
+            chatType: 'chatRoom',
+            success: function () {
+                console.log('send room text success');
+            },
+            fail: function () {
+                console.log('failed');
+            }
+        };
+        msg.set(option);
+        msg.setGroup('groupchat');
+        conn.send(msg.body);
+    };
+    // 加入聊天室
+    var joinRoom = function () {
+        // 加入聊天室
+        conn.joinChatRoom({
+            roomId: "114715680632209992"
+        });
+    };
+    // 退出聊天室
+    var quitRoom = function () {
+        // 退出聊天室
+        conn.quitChatRoom({
+            roomId: "114715680632209992"
+        });
+    };
+    // 列出所有聊天室，支持分页查询
+    var listRooms = function () {
+        var option = {
+            apiUrl: 'https://a1.easemob.com',
+            pagenum: 1,                                 // 页数
+            pagesize: 20,                               // 每页个数
+            success: function (list) {
+                console.log(list);
+            },
+            error: function () {
+                console.log('List chat room error');
+            }
+        };
+        conn.getChatRooms(option);
+    }
+
+    // 群组发送文本消息
+    var sendGroupText = function () {
+        var id = conn.getUniqueId();
+        var msg = new WebIM.message('txt', id);
+        var option = {
+            msg: 'scarecrfow',                       // 消息内容
+            to: '1480567165764',                     // 接收消息对象(本例为Test聊天室)
+            roomType: false,
+            chatType: 'chatRoom',
+            success: function () {
+                console.log('send room text success');
+            },
+            fail: function () {
+                console.log('failed');
+            }
+        };
+        msg.set(option);
+        msg.setGroup('groupchat');
+        conn.send(msg.body);
+    };
+    // 建立一个群组
+    var createGroup = function () {
+        var option = {
+            subject: 'groupName',                       // 群名称
+            description: 'create a group test',         // 群简介
+            members: ['wjy6', 'asdfghj'],               // 以数组的形式存储需要加群的好友ID
+            optionsPublic: true,                        // 允许任何人加入
+            optionsModerate: false,                     // 加入需审批
+            optionsMembersOnly: false,                  // 不允许任何人主动加入
+            optionsAllowInvites: false                  // 允许群人员邀请
+        };
+        conn.createGroup(option);
+    }
+    // 获取群组信息（应用场景：判断用户是否为该群管理员）
+    var queryGroupInfo = function () {
+        conn.queryRoomInfo({
+            roomId: '1480747027186',
+            // settings 表示入群的权限，具体值待定
+            // members[0]里面包含群主信息，其结构为{affiliation: "owner", jid: appKey + "_" + username + "@easemob.com"}
+            // jid中的username就是群主ID
+            // fields的结构为：
+            /*
+             {
+             affiliations: "2",                  // 意义待查
+             description: "12311231313",         // 群简介
+             maxusers: "200",                    // 群最大成员容量
+             name: "123",                        // 群名称
+             occupants: "2",                     // 意义待查
+             owner: "easemob-demo#chatdemoui_mengyuanyuan"               // 群主jid
+             }
+             */
+            success: function (settings, members, fields) {
+                console.log('settings: ', settings);
+                console.log('members: ', members);
+                console.log('fields: ', fields);
+            },
+            error: function () {
+                console.log('Error!');
+            }
+        });
+    };
+    // 成员主动离开群
+    var leaveGroup = function () {
+        var option = {
+            to: 'asdfghj',
+            roomId: '1480747027186',
+            success: function () {
+                console.log('You leave room succeed!');
+            },
+            error: function () {
+                console.log('Leave room faild');
+            }
+        };
+        conn.leaveGroupBySelf(option);
+    };
+    // 将成员踢出群(同将群成员拉入群黑名单)
+    var addToGroupBlackList = function () {
+        var option = {
+            affiliation: "owner",                       // 写死
+            roomId: "1480756943693",                    // 群组ID
+            success: function () {
+                console.log('add to black list succeed');
+            },
+            to: 'asdfghj'                               // 需要删除的成员ID
+        };
+        conn.addToGroupBlackList(option);
+    };
+    // 列出所有群组
+    var listGroups = function () {
+        var option = {
+            success: function (rooms) {
+                console.log(rooms);
+            },
+            error: function () {
+                console.log('List chat rooms error');
+            }
+        };
+        conn.listRooms(option);
+    };
+    // 修改群信息
+    var changeGroupInfo = function () {
+        var option = {
+            roomId: '1480756943693',
+            subject: 'ChangeTest',
+            description: 'Change group information test',
+            success: function () {
+                console.log("Change Group Names Success!");
+            }
+        };
+        conn.changeGroupSubject(option);
+    };
+    // 获取群组黑名单
+    var getGroupBlackList = function () {
+        var option = {
+            roomId: '1480758709661',
+            success: function (list) {
+                console.log('Get group black list: ', list);
+            },
+            error: function () {
+                console.log('Get group black list error.');
+            }
+        };
+        conn.getGroupBlacklist(option);
+    };
+    // 解散一个群组
+    var destroyGroup = function () {
+        var option = {
+            reason: 'Test Destroy Group',
+            roomId: '1480840256052',
+            success: function () {
+                console.log('Destroy group success!');
+            }
+        };
+        conn.destroyGroup(option);
+    };
+    // 加好友入群
+    var addGroupMembers = function () {
+        var option = {
+            list: ['asdfghj', 'wjy6'],
+            roomId: '1480841456167'
+        };
+        conn.addGroupMembers(option);
+    };
+    // 将好友从黑名单移除
+    var removeFromGroupBlackList = function () {
+        var option = {
+            roomId: '1480841456167',
+            to: 'wjy6',
+            success: function () {
+                console.log('Remove from black list success!');
+            }
+        };
+        conn.removeGroupMemberFromBlacklist(option);
+    };
+
+    // 查询群组成员，此方法亦可查询聊天室成员
+    // 查询出来的member的结构为{affiliation: 'member', jid: "easemob-demo#chatdemoui_wjy6@easemob.com"}
+    // 注意，这里的jid格式，成员的用户名是chatdemoui_之后，@easemob.com之前的字符串，如本例的wjy6是用户名
+    var queryRoomMember = function () {
+        var member = '';
+        conn.queryRoomMember({
+            roomId: '114715680632209992',
+            success: function (members) {
+                for (var o in members) {
+                    member = members[o];
+                    console.log(member);
+                }
+            }
+        });
+    };
+
+    /*
+     * WebRTC
+     */
+    // 视频呼叫对方
+    var call = function () {
+        rtcCall.caller = 'mengyuanyuan';
+        rtcCall.makeVideoCall('asdfghj');
+    };
+    // 关掉/拒绝视频
+    var endCall = function () {
+        rtcCall.endCall();
+    }
+    // 接受对方呼叫
+    var acceptCall = function () {
+        rtcCall.acceptCall();
+    }
+</script>
+<script>
+    /**
+     * Created by clock on 16-11-30.
+     */
+    window.onload = function () {
+//            document.getElementById('register').onclick = register;
+//            document.getElementById('privateText').onclick = sendPrivateText;
+//            document.getElementById('privateCmd').onclick = sendPrivateCmd;
+//            document.getElementById('privateImg').onclick = sendPrivateImg;
+//            document.getElementById('getBlackList').onclick = getBlackList;
+//            document.getElementById('addToBlackList').onclick = addToBlackList;
+//            document.getElementById('removeFromBlackList').onclick = removeBlackList;
+//
+//            document.getElementById('roomText').onclick = sendRoomText;
+//            document.getElementById('roomJoin').onclick = joinRoom;
+//            document.getElementById('roomQuit').onclick = quitRoom;
+//            document.getElementById('listChatRooms').onclick = listRooms;
+//
+//            document.getElementById('groupText').onclick = sendGroupText;
+//            document.getElementById('groupMember').onclick = queryRoomMember;
+//            document.getElementById('groupCreate').onclick = createGroup;
+//            document.getElementById('queryGroupInfo').onclick = queryGroupInfo;
+//            document.getElementById('leaveGroup').onclick = leaveGroup;
+//            document.getElementById('addToGroupBlackList').onclick = addToGroupBlackList;
+//            document.getElementById('listGroups').onclick = listGroups;
+//            document.getElementById('changeGroupInfo').onclick = changeGroupInfo;
+//            document.getElementById('getGroupBlackList').onclick = getGroupBlackList;
+//            document.getElementById('destroyGroup').onclick = destroyGroup;
+//            document.getElementById('addGroupMembers').onclick = addGroupMembers;
+//            document.getElementById('removeGroupMemberFromBlackList').onclick = removeFromGroupBlackList;
+//
+//            document.getElementById('getRoasters').onclick = getRoasters;
+//            document.getElementById('addFriends').onclick = addFriends;
+//            document.getElementById('removeRoster').onclick = removeFriends;
+//
+//            document.getElementById('rtCall').onclick = call;
+//            document.getElementById('rtEndCall').onclick = endCall;
+//            document.getElementById('rtAcceptCall').onclick = acceptCall;
+//            register();
+        login();
+    };
+</script>
+<script>
+    // 贴图发送（放到消息模块里）
+    document.addEventListener('paste', function (e) {
+        if (e.clipboardData && e.clipboardData.types) {
+            if (e.clipboardData.items.length > 0) {
+                if (/^image\/\w+$/.test(e.clipboardData.items[0].type)) {
+                    var blob = e.clipboardData.items[0].getAsFile();
+                    var url = window.URL.createObjectURL(blob);
+                    var id = conn.getUniqueId();//生成本地消息id
+
+                    var msg = new WebIM.message('img', id);
+                    msg.set({
+                        apiUrl: WebIM.config.apiURL,
+                        file: {data: blob, url: url},
+                        to: 'asdfghj',
+                        roomType: false,
+                        chatType: 'singleChat',
+                        onFileUploadError: function (error) {
+                            console.log("Error");
+                        },
+                        onFileUploadComplete: function (data) {
+                            console.log("Complete");
+                        },
+                        success: function (id) {
+                            console.log("Success");
+                        }
+                    });
+                    conn.send(msg.body);
+                }
+            }
+        }
+    });
+</script>
+<script type="text/javascript">
+    function lunbolist() {
+        _getparam("http://101.201.140.178:8080/api/news/listlunbo", "", function (data) {
+            $('#lunbocontent').empty();
+            var j = 0;
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                var state = rowdata.state
+                if (state == 1) {
+                    var imgurl = rowdata.imgurl;
+                    if (j == 0) {
+                         var item='<div class="item active" data-image-large="'+imgurl+'" data-image-small=""><img src="'+imgurl+'" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+//                        var item = '<div class="item active" data-image-large="images/banner1.png" data-image-small=""><img src="images/banner1.png" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+                        $('#lunbocontent').append(item);
+                    } else {
+                        var item='<div class="item" data-image-large="'+imgurl+'" data-image-small=""><img src="'+imgurl+'" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+//                        var item = '<div class="item" data-image-large="images/banner1.png" data-image-small=""><img src="images/banner1.png" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+                        $('#lunbocontent').append(item);
+                    }
+                    ++j;
+                }
+            }
+        });
+    }
+
+    function _getparam(url, data, callback, failcall) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: data,
+            sync: true,
+            success: function (data) {
+                callback(data);
+            },
+            error: function (xhr) {
+                failcall(xhr);
+            }
+        });
+    }
+
+    $(function () {
+        $('lc').click(function () {
+            var href = $(this).attr('href');
+            $('#mvideo').attr('src', href);
+            $('#mvideo')[0].play();
+        });
+        lunbolist();
+    })
+</script>
+</html>

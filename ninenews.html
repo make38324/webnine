@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link href="css/vc.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <style type="text/css">
+        .a {
+            float: left;
+            width: 50%;
+            height: 1px;
+            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#fff), to(#e3e3e3));
+        }
+
+        .b {
+            float: left;
+            width: 50%;
+            height: 1px;
+            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+        }
+
+        .share {
+            height: 50px;
+        }
+
+        .share li {
+            list-style: none;
+            margin-right: 27px;
+        }
+
+        .share_1 {
+            width: 50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wx.png") no-repeat;
+        }
+
+        .share_2 {
+            width: 50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wb.png") no-repeat;
+        }
+
+        .share_3 {
+            width: 50px;
+            float: left;
+            margin-right: 15px;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/qq.png") no-repeat;
+        }
+
+        .share_4 {
+            width: 50px;
+            float: left;
+            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/zone.png") no-repeat;
+        }
+
+        .tixi:hover img {
+            cursor: pointer;
+            -webkit-filter: blur(10px) grayscale(1);
+            -moz-filter: blur(10px) grayscale(1);
+            -o-filter: blur(10px) grayscale(1);
+            -ms-filter: blur(10px) grayscale(1);
+            filter: blur(10px) grayscale(1);
+            opacity: .7;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+        }
+    </style>
+</head>
+<body>
+<!-- <div class="preloader-mask">
+    <div class="preloader"></div>
+</div> -->
+
+<!-- 头部区域 -->
+<header class="header header-black">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="col-sm-2 col-xs-12 navigation-header">
+                    <div class="table-container">
+                        <div class="cell-container">
+                           <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xs-12 navigation-container">
+                    <div class="table-container">
+                        <div class="cell-container">
+                            <div id="navigation" class="navbar-collapse collapse">
+                                <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_blank" href="index.html">首页</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a target="_blank" href="introduction.html">九拍简介</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="tesekecheng.html">特色课程</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="map.html">教学环境</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a target="_blank" href="teachers.html">师资介绍</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
+                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
+                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+<!--导航end-->
+<!-- 教学体系 -->
+<div class="container" style="margin-top:50px;">
+    <img src="images/标题logo.png" alt="" style="display: block;">
+    <span style="margin-left: 50px;">九拍新闻</span>
+</div>
+<div class="container" style="margin-top: 50px;">
+    <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/王子乐队2-.png" width="100%" alt="">
+</div>
+<div class="container" style="margin-top: 50px">
+    <div class="col-md-6">
+        <p><span style="font-family: PingFangSC-Regular, 微软雅黑; font-size: 30px;">文章标题 : 九拍王子乐队演出</span></p>
+        <p><span
+                style="font-family: PingFangSC-Regular, 微软雅黑; height: 25px; width: 80px; border: 2px solid #ccc; text-align: center; border-radius: 10px;">&nbsp; &nbsp;原创 &nbsp;&nbsp;</span>&nbsp;<span
+                style="font-family: PingFangSC-Regular, 微软雅黑;">&nbsp; 2016-05-08 九拍官方微信平台</span></p>
+    </div>
+    <div class="col-md-6">
+        <ul class="share">
+            <li class="share_1">
+                <a style=" display: block;height: 50px;" target="_blank"
+                   href="http://www.jiathis.com/send/?webid=weixin&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+            </li>
+            <li class="share_2">
+                <a style=" display: block;height: 50px;" target="_blank"
+                   href="http://www.jiathis.com/send/?webid=tsina&amp;url=http://www.9beats/&amp;title=分享"></a>
+            </li>
+            <li class="share_3">
+                <a class="www" style=" display: block;height: 50px;" target="_blank"
+                   href="http://www.jiathis.com/send/?webid=cqq&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+            </li>
+            <li class="share_4">
+                <a style=" display: block;height: 50px;" target="_blank"
+                   href="http://www.jiathis.com/send/?webid=qzone&amp;url=http://www.9beats.com/&amp;title=分享"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <p style="margin-top: 50px;margin-bottom: 50px"><span style="font-family: 微软雅黑;">九拍是中国现代音乐教育行业的旗帜和典范，九拍取得的成就带动了中国爵士鼓及现代音乐的全面发展。李红育老师独创的九拍教学体系、九拍集体课教学法、九拍拇指教育理念等被国内外音乐教育机构广泛认可和推崇，每年都会有众多机构和教师前来九拍总部学习、参观，很多国际知名教育企业如Yamaha、KHS等也纷纷与九拍合作，引进和使用九拍教学体系。九拍颠覆了传统的手把手模糊教学及练功式教育模式，用科学训练的方式将基础乐理、音乐基础结构等知识的学习与听力训练、肌能训练、演奏技巧等训练内容巧妙、合理的结合起来，做到让孩子听的懂、学的会、演的好。</span>
+    </p>
+</div>
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<div class="container">
+    <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/王子乐队.png" width="100%" alt="">
+</div>
+<div class="container">
+    <p style="margin-top: 50px" class="text-center">图片简介：王子乐队是九拍音乐的乐队</p>
+</div>
+<div class="container">
+    <p style="margin-top: 50px">
+        九拍是中国现代音乐教育行业的旗帜和典范，九拍取得的成就带动了中国爵士鼓及现代音乐的全面发展。李红育老师独创的九拍教学体系、九拍集体课教学法、九拍拇指教育理念等被国内外音乐教育机构广泛认可和推崇，每年都会有众多机构和教师前来九拍总部学习、参观，很多国际知名教育企业如Yamaha、KHS等也纷纷与九拍合作，引进和使用九拍教学体系。九拍颠覆了传统的手把手模糊教学及练功式教育模式，用科学训练的方式将基础乐理、音乐基础结构等知识的学习与听力训练、肌能训练、演奏技巧等训练内容巧妙、合理的结合起来，做到让孩子听的懂、学的会、演的好。</p>
+</div>
+
+<div class="container" style="margin-top: 50px;margin-bottom: 50px">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+
+
+<!-- 底部合作伙伴 -->
+<div class="container">
+    <div><img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/QQ图片20161116170314.png" width="226" height="183" alt="" title=""></div>
+    <div class="row text-center">九拍合作伙伴</div>
+</div>
+
+ <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-6 wpb_column column_container  vc_custom_1487758834311 ">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row vc_inner vc_row-fluid container">
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">YAMAHA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759350257">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">GEWA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759465996">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DRUM CRAFT</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759527415">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">DW</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759534986">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PDP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759545241">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BASIX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759558913">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LP</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759570953">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PAISTE</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759581802">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SELA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759595687">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TECHRA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759605912">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ODERY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759617704">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">长城乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759626196">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">IBANEZ</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TAMA</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759422920">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MEINL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759479799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SUPERLUX</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759637255">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PEARL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759646979">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ISTANBUL</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759658394">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">漢旗</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759667964">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">REMO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759679129">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">EVANS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759691713">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">D’ADDARIO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759702336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SABIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759713600">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">FENDER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759723240">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">PROMARK</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759731329">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">MAIR</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="vc_col-sm-4 wpb_column column_container  ">
+                                        <div class="wpb_wrapper">
+
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">三衛樂器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759442336">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">蔚科科技</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759512615">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOSPHORUS</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759741624">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">VATER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759755799">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">ZILDJIAN</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759765202">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">LANEY</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759775185">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">BOWO</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759782226">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">OUR DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759799577">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">SENNHEISER</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759812353">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">TONING DRUM</span></p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1487759822345">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: #acacac;">雅特乐器</span></p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-6 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487759844547">
+
+                                    <figure class="wpb_wrapper vc_figure">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/行业机构-1.png" width="794" height="352" alt="" title=""></div>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <section class="footer">
+        <div class="footer-base">
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <p class="text-alt">
+                            <small>
+                                Copyright © 2016       　九拍音乐教育科技集团  　  | 　  Nine Beats Education &amp; Technology Group                         </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="position:fixed;right:20px;bottom:40px;">
+    <a class="zxzx" style="display:block;" ></a>
+    <a class="yyst" href="#" id="btn"  data-toggle="modal" data-target="#myModal"></a>
+    <a class="hddb" style="display:block;" href="#go-top"></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           
+             <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span></div>
+            <div class="modal-body">
+<div style=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png" style="float: left; margin-right: 20px; height:300px;" alt="">
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://101.201.140.178/form.html" style="height:400px;"></iframe></div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
+                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vc.js"></script>
+<script src="js/vc-accordion.js"></script>
+<script src="js/vc-tabs.min.js"></script>
+</body>
+
+</html>
