@@ -13,22 +13,19 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <style>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=PvPdLMCmwgiFI1RETwxYfhsG"></script>
+    <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=KXQEcPBg2mIm3dNaTYwdpYxL&s=1"></script>-->
 
+    <style>
         ul, li {
             list-style: none;
         }
-
-
-
-
     </style>
 </head>
 <body>
-<!-- 
 <div class="preloader-mask">
     <div class="preloader"></div>
-</div> -->
+</div>
 <div class="main-container">
     <header class="header header-black">
         <div class="header-wrapper">
@@ -36,8 +33,9 @@
                 <div class="col-sm-2 col-xs-12 navigation-header">
                     <div class="table-container">
                         <div class="cell-container">
-                            <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
-                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+                            <a href="#" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                                    aria-expanded="false" aria-controls="navigation">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -49,16 +47,27 @@
                     <div class="table-container">
                         <div class="cell-container">
                             <div id="navigation" class="navbar-collapse collapse">
-                                <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_self"  href="index.html">首页</a></li>
-                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a target="_blank" href="introduction.html">九拍简介</a></li>
-                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="tesekecheng.html">特色课程</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="map.html">教学环境</a></li>
-                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a target="_blank" href="teachers.html">师资介绍</a></li>
-                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
-                                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
-                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                                <ul class="navigation-list pull-left">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412">
+                                        <a target="_blank" href="index.html">首页</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257">
+                                        <a target="_blank" href="introduction.html">九拍简介</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251">
+                                        <a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077">
+                                        <a target="_blank" href="tesekecheng.html">特色课程</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077">
+                                        <a target="_blank" href="map.html">教学环境</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487">
+                                        <a target="_blank" href="teachers.html">师资介绍</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521">
+                                        <a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074">
+                                        <a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
+                                        <a target="_blank" href="APP.html">APP下载</a></li>
+                                </ul>
+                                <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
                             </div>
 
                         </div>
@@ -80,7 +89,9 @@
                                 <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
 
                                     <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/标题logo.png" width="168" height="38" alt="" title=""></div>
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                height="38" alt="" title=""></div>
                                     </figure>
                                 </div>
 
@@ -93,13 +104,107 @@
 
                                 <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
                                     <div class="wpb_wrapper title-font">
-                                        <p><span>特色课程</span></p>
+                                        <p><span>校区主页</span></p>
 
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+                    </div>
+                 <div class="container">
+                     <div class="col-md-6"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/IMG_0831-750x475.jpg" alt=""></div>
+                     <div class="col-md-6" >
+                       <span style="color: #9b9b9b; font-family: 微软雅黑; font-size: 18pt;margin-left: 20px">天津九拍梅江校区</span>
+                         <p style="margin-left: 20px"><img class="alignnone  wp-image-1150" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/1977D294-7424-C2D3-3165-9EA9E67916F8.png" alt="" width="22" height="21"><img class="alignnone size-full wp-image-1150" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/1977D294-7424-C2D3-3165-9EA9E67916F8.png" alt="" width="22" height="21"><img class="alignnone size-full wp-image-1150" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/1977D294-7424-C2D3-3165-9EA9E67916F8.png" alt="" width="22" height="21"><img class="alignnone size-full wp-image-1150" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/1977D294-7424-C2D3-3165-9EA9E67916F8.png" alt="" width="22" height="21"><img class="alignnone size-full wp-image-1151" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/922CF265-3537-A6F1-BC7E-D47CC955243B.png" alt="" width="22" height="21"></p>
+                         <p style="margin-left: 20px"><span style="font-family: 微软雅黑; color: #acacac;">电话：13132268689</span></p>
+                         <p style="margin-left: 20px"><span style="font-family: 微软雅黑; color: #acacac;">地址：天津市河西区友谊南路梅江MIMI PARK三楼</span></p>
+                         <div style="margin-left: 20px;margin-top: 50px" class="wpb_raw_code wpb_content_element wpb_raw_html">
+                             <div class="wpb_wrapper" style="overflow: hidden;" id="listnews">
+                                 <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                         href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍南开南翠屏校区迎来新学期纳新</a>
+                                 </div>
+                                 <div class="b2"></div>
+                                 <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                         href="ninenews.html">2016-11-20 &nbsp;· &nbsp;九拍河东嘉里汇校区"结业仪式"</a></div>
+                                 <div class="b2"></div>
+                                 <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                         href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍河东中山门校区"魅力 &nbsp;·
+                                     &nbsp;宝贝&nbsp;活动"</a></div>
+                                 <div class="b2"></div>
+                                 <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                         href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍河西梅江校区"迎来你的美"动感音乐会</a>
+                                 </div>
+                                 <div class="b2"></div>
+                                 <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
+                                         href="ninenews.html">2016-11-18 &nbsp;· &nbsp;天津市鼓韵联盟主席莅临九拍河西华夏校区</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                 </div>
+                    <div class="container" style="margin-top:50px">
+                        <img src="images/标题logo.png" alt="" style="display: block;">
+                        <span style="margin-left: 50px">优秀学员</span>
+                    </div>
+                    <div class="vc_row vc_inner vc_row-fluid container">
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_wrapper">
+
+                                            <a href="" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示1.png"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                    <div class="wpb_wrapper">
+                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示2.png"></a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                    <div class="wpb_wrapper">
+                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示3.png"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="vc_col-sm-3 wpb_column column_container  ">
+                            <div class="wpb_wrapper">
+
+                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                    <div class="wpb_wrapper">
+                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示4.png"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top:50px">
+                        <img src="images/标题logo.png" alt="" style="display: block;">
+                        <span style="margin-left: 50px">特色课程</span>
                     </div>
                     <div class="vc_row vc_inner vc_row-fluid container">
                         <div class="vc_col-sm-12 wpb_column column_container  ">
@@ -109,10 +214,9 @@
                                         <div class="vc_tta-tabs-container">
                                             <ul class="vc_tta-tabs-list">
                                                 <li class="vc_tta-tab" data-vc-tab="">
-                                                    <!--<a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta" onclick="shaixuan1()"><span class="vc_tta-title-text">4-6岁</span></a></li>-->
-                                                    <a href="javascript:void(0);" data-vc-tabs="" data-vc-container=".vc_tta" onclick="shaixuan1()"><span class="vc_tta-title-text four-six">4-6岁</span></a></li>
-                                                <li class="vc_tta-tab  " data-vc-tab=""><a href="javascript:void(0);" onclick="shaixuan2()" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text six-eighteen">6-18岁</span></a></li>
-                                                <li class="vc_tta-tab" data-vc-tab=""><a href="javascript:void(0);" onclick="shaixuan3()" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text 18+">18岁以上</span></a></li>
+                                                    <a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">4-6岁</span></a></li>
+                                                <li class="vc_tta-tab  vc_active" data-vc-tab=""><a href="#1488357399823-4f2d132a-5696" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">6-18岁</span></a></li>
+                                                <li class="vc_tta-tab" data-vc-tab=""><a href="#1488357403754-8fcf6dd9-c097" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">18岁以上</span></a></li>
                                             </ul>
                                         </div>
                                         <div class="vc_tta-panels-container">
@@ -126,21 +230,21 @@
                                                     <div class="vc_tta-panel-body" style="">
                                                         <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                             <div class="wpb_wrapper">
-                                                               <div style="width:100%;">
+                                                                <div style="width:100%;">
 
-    <div class="tabPanel">
-        <ul>
-            <li class="hit"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
-            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
+                                                                    <div class="tabPanel">
+                                                                        <ul>
+                                                                            <li class="hit"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
 
-        </ul>
-         <div class="panell" style="margin-top:100px; overflow: hidden;display: block ">
+                                                                        </ul>
+                                                                        <div class="panell" style="margin-top:100px; overflow: hidden;display: block ">
                                                                             <div class="paness" style="display: none;">
                                                                                 <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
                                                                                 <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
@@ -166,9 +270,9 @@
                                                                             <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
 
                                                                         </div>
-    </div>
+                                                                    </div>
 
-</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -184,60 +288,60 @@
 
                                                             <div style="width:100%;">
 
-            <div class="tab-big">
-                <ul id="content">
-                    <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
-                    <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电贝司</p></li>
-                    <li class="" yqtype="djt"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电吉他</p></li>
-                    <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">民谣吉他</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
-                    <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
+                                                                <div class="tab-big">
+                                                                    <ul>
+                                                                        <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
+                                                                        <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电贝司</p></li>
+                                                                        <li class="" yqtype="djt"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电吉他</p></li>
+                                                                        <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">民谣吉他</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
+                                                                        <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
 
-                </ul>
-               <div class="pane" style="margin-top:100px; overflow: hidden;display: block ">
-                                                                            <div class="pan" style="display:block;" id="title">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
-                                                                                <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
-                                                                                <div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span></p></div>
-                                                                            </div>
-
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">整个乐队和声旋律的基石</p>
-                                                                                <p>电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                                <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png" alt="">
-                                                                                <p style="padding-top: 70px"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span></p>
-                                                                            </div>
-                                                                            <div class="pan" yqtype="djt"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">乐队情绪和音色的主导</p>
-                                                                                <p>电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
-                                                                                <div><img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png" alt="">
-                                                                                    <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span></p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">一人弹唱，众人瞩目</p><p>民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">专业 技巧 控制</p><p>小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p></div>
-
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">节奏与旋律的完美结合</p>
-                                                                                <p>马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
-                                                                                <div>
-                                                                                    <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png" alt="">
-                                                                                    <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span></p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">音乐学习的必修基本功</p><p>视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p></div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学，方便携带</p><p>尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">正宗韩国新后现代唱法</p><p>在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p></div>
-                                                                            <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">学钢琴就学专业</p><p>钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p></div>
-                                                                            <div class="pan"  id="fzg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
-
+                                                                    </ul>
+                                                                    <div class="pane" style="margin-top:100px; overflow: hidden;display: block ">
+                                                                        <div class="pan" style="display:block;">
+                                                                            <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
+                                                                            <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
+                                                                            <div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span></p></div>
                                                                         </div>
-            </div>
 
-        </div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">整个乐队和声旋律的基石</p>
+                                                                            <p>电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
+                                                                            <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png" alt="">
+                                                                            <p style="padding-top: 70px"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span></p>
+                                                                        </div>
+                                                                        <div class="pan" yqtype="djt"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">乐队情绪和音色的主导</p>
+                                                                            <p>电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
+                                                                            <div><img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png" alt="">
+                                                                                <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">一人弹唱，众人瞩目</p><p>民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">专业 技巧 控制</p><p>小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p></div>
+
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">节奏与旋律的完美结合</p>
+                                                                            <p>马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
+                                                                            <div>
+                                                                                <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png" alt="">
+                                                                                <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span></p>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">音乐学习的必修基本功</p><p>视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学，方便携带</p><p>尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">正宗韩国新后现代唱法</p><p>在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">学钢琴就学专业</p><p>钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p></div>
+                                                                        <div class="pan"  id="fzg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -314,170 +418,122 @@
                             </div>
                         </div>
                     </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <a  class="zxbm" style="cursor: pointer;" data-toggle="modal" data-target="#myModal"><span style="">在线报名</span></a>
+
+                    <div class="sz">
+                        <div class="vc_row vc_inner vc_row-fluid container">
+                            <div class="vc_col-sm-3 wpb_column column_container  ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487757176274">
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                    class="vc_single_image-img " src="images/标题logo.png" width="168"
+                                                    height="38" alt="" title=""></div>
+                                        </figure>
                                     </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-           
-             <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span></div>
-            <div class="modal-body">
-<div style=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png" style="float: left; margin-right: 20px; height:300px;" alt="">
-                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://101.201.140.178/form.html" style="height:400px;"></iframe></div>
-            </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
-                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
-            </div> -->
-        </div>
-    </div>
-</div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <div class="a"></div>
-                                        <div class="b"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
-
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/标题logo.png" width="168" height="38" alt="" title=""></div>
-                                    </figure>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
-                                    <div class="wpb_wrapper title-font">
-                                        <p><span>教学成果展示</span></p>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-3 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <div class="wpb_wrapper">
-
-                                            <a href="" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示1.png"></a>
-
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1488284749761">
+                                        <div class="wpb_wrapper title-font">
+                                            <p><span>师资介绍</span></p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                        </div>
-
-                        <div class="vc_col-sm-3 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示2.png"></a>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="vc_col-sm-3 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示3.png"></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="vc_col-sm-3 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper">
-                                        <a href="#" target="kk"> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示4.png"></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-4 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                            </div>
-                        </div>
-
-                        <div class="vc_col-sm-4 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1488359133539">
-                                    <div class="wpb_wrapper">
+                            <div class="vc_col-sm-9 wpb_column column_container  vc_custom_1487834093886 ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                         <div class="wpb_wrapper">
-                                            <ul class="share">
-                                                <li class="share_1">
-                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=weixin&amp;url=http://www.9beats.com/&amp;title=分享"></a>
-                                                </li>
-                                                <li class="share_2">
-                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=tsina&amp;url=http://www.9beats/&amp;title=分享"></a>
-                                                </li>
-                                                <li class="share_3">
-                                                    <a class="www" style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=cqq&amp;url=http://www.9beats.com/&amp;title=分享"></a>
-                                                </li>
-                                                <li class="share_4">
-                                                    <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=qzone&amp;url=http://www.9beats.com/&amp;title=分享"></a>
-                                                </li>
-                                            </ul>
-
+                                            <div style="float:right;">
+                                                <a class="teacher-study" href="teachers.html"
+                                                   style="display:inline-block;color:#777;margin-left:50px;margin-top:10px;font-family:微软雅黑;">了解九拍师资培训与认证系统
+                                                    &gt;</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="vc_row vc_inner vc_row-fluid container">
+                            <div class="vc_col-sm-12 wpb_column column_container  vc_custom_1487757331446 ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                        <div class="wpb_wrapper">
+                                            <div class="rollBox">
+                                                <div class="scrollcon">
+                                                    <div class="LeftBotton"><img src="images/prev.png"
+                                                                                 onmousedown="ISL_GoUp()"
+                                                                                 onmouseup="ISL_StopUp()"
+                                                                                 onmouseout="ISL_StopUp()"></div>
+                                                    <div class="Cont" id="ISL_Cont">
+                                                        <div class="ScrCont">
+                                                            <div id="List1">
 
+                                                                <div class="pic "><a title="" href="zhaozi.html"><img
+                                                                        width="180" height="180" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            赵 孜</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="jiangfeng.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            姜 峰</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程: 爵士鼓</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="yangbo.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
+                                                                            杨 波</p>
+                                                                        <p style="text-align: center;color:#777;font-family:微软雅黑;">
+                                                                            教授课程:贝司 少儿摇滚乐队</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pic"><a title="" href="xuxinwei.html"><img
+                                                                        width="183" height="68" alt=""
+                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>
+                                                                    <div>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#c20000;">
+                                                                            徐辛未</p>
+                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
+                                                                            教授课程：电吉他 民谣吉他</p>
+                                                                        <p style="text-align: left;font-family:微软雅黑;">
+                                                                            徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="List2"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightBotton"><img src="images/next.png"
+                                                                                  onmousedown="ISL_GoDown()"
+                                                                                  onmouseup="ISL_StopDown()"
+                                                                                  onmouseout="ISL_StopDown()"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
-                        <div class="vc_col-sm-4 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-
-                            </div>
-                        </div>
                     </div>
+
                     <div class="vc_row vc_inner vc_row-fluid container">
                         <div class="vc_col-sm-12 wpb_column column_container  ">
                             <div class="wpb_wrapper">
@@ -498,20 +554,24 @@
                                 <div class="wpb_single_image wpb_content_element vc_align_center">
 
                                     <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/QQ图片20161116170314.png" width="226" height="183" alt="" title=""></div>
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                                class="vc_single_image-img " src="images/QQ图片20161116170314.png"
+                                                width="226" height="183" alt="" title=""></div>
                                     </figure>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+
                     <div class="vc_row vc_inner vc_row-fluid container">
                         <div class="vc_col-sm-12 wpb_column column_container  ">
                             <div class="wpb_wrapper">
 
                                 <div class="wpb_text_column wpb_content_element  vc_custom_1487758813173">
                                     <div class="wpb_wrapper">
-                                        <p style="text-align: center;"><span style="font-family: 微软雅黑;">九拍合作伙伴</span></p>
+                                        <p style="text-align: center;"><span style="font-family: 微软雅黑;">九拍合作伙伴</span>
+                                        </p>
 
                                     </div>
                                 </div>
@@ -546,7 +606,7 @@
 
                                         <div class="wpb_text_column wpb_content_element  vc_custom_1487759465996">
                                             <div class="wpb_wrapper">
-                                                <p><span style="color: #acacac;" >DRUM CRAFT</span></p>
+                                                <p><span style="color: #acacac;">DRUM CRAFT</span></p>
 
                                             </div>
                                         </div>
@@ -813,7 +873,9 @@
                             <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487759844547">
 
                                 <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper all  vc_box_border_grey"><img class="vc_single_image-img " src="images/行业机构-1.png" width="794" height="352" alt="" title=""></div>
+                                    <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
+                                            class="vc_single_image-img " src="images/行业机构-1.png" width="794"
+                                            height="352" alt="" title=""></div>
                                 </figure>
                             </div>
 
@@ -831,36 +893,14 @@
                     <div class="">
                         <p class="text-alt">
                             <small>
-                                Copyright © 2016       　九拍音乐教育科技集团  　  | 　  Nine Beats Education &amp; Technology Group							</small>
+                                Copyright © 2016 　九拍音乐教育科技集团 　 | 　 Nine Beats Education &amp; Technology Group
+                            </small>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</div>
-<div style="position:fixed;right:20px;bottom:40px;">
-    <a class="zxzx" style="display:block;" ></a>
-    <a class="yyst" href="#" id="btn"  data-toggle="modal" data-target="#myModal"></a>
-    <a class="hddb" style="display:block;" href="#go-top"></a>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-           
-             <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span></div>
-            <div class="modal-body">
-<div style=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png" style="float: left; margin-right: 20px; height:300px;" alt="">
-                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://101.201.140.178/form.html" style="height:400px;"></iframe></div>
-            </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
-                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
-            </div> -->
-        </div>
-    </div>
 </div>
 </body>
 <script src="js/jquery.min.js"></script>
@@ -870,143 +910,6 @@
 <script src="js/vc-tabs.min.js"></script>
 <script>
 
-    function getvalue(name) {
-        var str = window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
-        var value;
-        if (str.indexOf(name) != -1) {
-            var pos_start = str.indexOf(name) + name.length + 1;
-            var pos_end = str.indexOf("&", pos_start);
-            if (pos_end == -1) {
-                value= str.substring(pos_start)
-            } else {
-                alert("对不起这个值不存在！");
-            }
-        }
-        return value;
-    }
-
-    $(function () {
-
-        var id=getvalue("id");
-        _getContent(id);
-
-    })
-
-    function _getContent(id) {
-
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id,"",function(data){
-            /*$('#content').empty();*/
-           /* $('#content').append('<li><img src="' + data.icon + '"><p>'+data.name+'</p></li>');*/
-            $('#title').empty();
-            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
-
-           /* $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+data.id+'"><img src="'+data.icon+'" alt=""><li><span>'+data.name+'</span></li></a>');*/
-            showbytag();
-        });
-
-    }
-
-    function showbytag() {
-
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=6-18岁", "", function (data) {
-           $('#content').empty();
-            // console.log("newsdata", data);
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
-
-                $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
-
-            }
-        })
-    }
-//$('.four-six').click(function () {
-//    $(this).addClass('vc_active').siblings().removeClass('vc_active');
-//    })
-//}
-    function shaixuan1() {
-        $('#content').empty();
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=4-6岁", "", function (data) {
-
-            // console.log("newsdata", data);
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
-
-                $('#content').append('<a style="display: inline-block;margin-right: 10px" href="javascript:void(0);" onclick="fourtosix('+ rowdata.id +')"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
-
-                fourtosix(data[0].id);
-            }
-
-        })
-    }
-
-    function fourtosix(id) {
-
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
-            /*$('#content').empty();*/
-            // console.log("newsdata", data);
-                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
-
-            /*$('#content').append('<a style="display: inline-block;margin-right: 10px" href="javascript:void(0);"><img src="'+data.icon+'" alt=""><li><span>'+data.name+'</span></li></a>');*/
-            $('#title').empty();
-            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
-
-
-        })
-
-    }
-    function shaixuan2() {
-        $('#content').empty();
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=6-18岁", "", function (data) {
-
-            // console.log("newsdata", data);
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
-
-                $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
-
-                sixtoeighteen(data[0].id);
-            }
-        })
-    }
-    function sixtoeighteen(id) {
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
-
-            $('#title').empty();
-            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
-
-
-        })
-    }
-    function shaixuan3() {
-        $('#content').empty();
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=18岁以上", "", function (data) {
-
-            // console.log("newsdata", data);
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
-
-                $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
-
-                eighteenup(data[0].id);
-            }
-        })
-    }
-
-    function eighteenup(id) {
-        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
-
-            $('#title').empty();
-            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
-
-
-        })
-    }
-
-
     $(function(){
         var yq=localStorage.getItem("yq");
         $('.tab-big2 ul li').click(function(){
@@ -1014,10 +917,10 @@
             $('.pangg>div:eq('+$(this).index()+')').show().siblings().hide();
         });
         $("li").each(function () {
-           if($(this).attr('yqtype')==yq){
-               $(this).addClass('hit');
-               $(this).trigger('click');
-           }
+            if($(this).attr('yqtype')==yq){
+                $(this).addClass('hit');
+                $(this).trigger('click');
+            }
         });
     });
 
@@ -1036,5 +939,119 @@
             $('.panell>div:eq('+$(this).index()+')').show().siblings().hide();
         })
     })
+</script>
+<script type="text/javascript">
+
+    var Speed = 0.01;
+    var Space = 5;
+    var PageWidth = 910;
+    var fill = 0;
+    var MoveLock = false;
+    var MoveTimeObj;
+    var Comp = 0;
+    var AutoPlayObj = null;
+    GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+    GetObj('ISL_Cont').scrollLeft = fill;
+    GetObj("ISL_Cont").onmouseover = function () {
+        clearInterval(AutoPlayObj);
+    }
+    GetObj("ISL_Cont").onmouseout = function () {
+        AutoPlay();
+    }
+
+    AutoPlay();
+
+    function GetObj(objName) {
+        if (document.getElementById) {
+            return eval('document.getElementById("' + objName + '")')
+        } else {
+            return eval('document.all.' + objName)
+        }
+    }
+
+    function AutoPlay() {
+        clearInterval(AutoPlayObj);
+        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 10000);
+    }
+
+    function ISL_GoUp() {
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
+    }
+
+    function ISL_StopUp() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrUp() {
+        if (GetObj('ISL_Cont').scrollLeft <= 0) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
+        }
+        GetObj('ISL_Cont').scrollLeft -= Space;
+    }
+
+    function ISL_GoDown() {
+        clearInterval(MoveTimeObj);
+        if (MoveLock) return;
+        clearInterval(AutoPlayObj);
+        MoveLock = true;
+        ISL_ScrDown();
+        MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
+    }
+    function ISL_StopDown() {
+        clearInterval(MoveTimeObj);
+        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+            Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+            CompScr();
+        } else {
+            MoveLock = false;
+        }
+        AutoPlay();
+    }
+
+    function ISL_ScrDown() {
+        if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
+            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
+        }
+        GetObj('ISL_Cont').scrollLeft += Space;
+    }
+
+    function CompScr() {
+        var num;
+        if (Comp == 0) {
+            MoveLock = false;
+            return;
+        }
+        if (Comp < 0) {
+            if (Comp < -Space) {
+                Comp += Space;
+                num = Space;
+            } else {
+                num = -Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft -= num;
+            setTimeout('CompScr()', Speed);
+        } else {
+            if (Comp > Space) {
+                Comp -= Space;
+                num = Space;
+            } else {
+                num = Comp;
+                Comp = 0;
+            }
+            GetObj('ISL_Cont').scrollLeft += num;
+            setTimeout('CompScr()', Speed);
+        }
+    }
 </script>
 </html>

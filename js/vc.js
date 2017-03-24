@@ -1053,7 +1053,7 @@ var Ventcamp;
 
             if ( this.options.smoothScroll ) this.smoothScrollInit();
 
-            if ( this.options.pseudoSelect ) this.initPseudoSelect();
+            //if ( this.options.pseudoSelect ) this.initPseudoSelect();
 
             if ( typeof google != 'undefined') this.initGoogleMap();
 

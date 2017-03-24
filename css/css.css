@@ -7966,53 +7966,53 @@ a span:hover{
 }
 .ke1{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png);
+    background-image: url(../images/jsg.png);
 }
 .ke1:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg2-1.png);
+    background-image: url(../images/爵士鼓.png);
 }
 .ke2{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/dbs-1.png);
+    background-image: url(../images/电贝司.png);
 }
 .ke2:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/dbs2-1.png);
+    background-image: url(../images/电贝司2.png);
 }
 .ke3{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/djt-1.png);
+    background-image: url(../images/电吉他.png);
 }
 .ke3:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/djt2-1.png);
+    background-image: url(../images/电吉他2.png);
 }
 .ke4{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/myjt-1.png);
+    background-image: url(../images/民谣吉他.png);
 }
 .ke4:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/myjt2-1.png);
+    background-image: url(../images/民谣吉他2.png);
 }
 .ke5{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50xjg.png);
+    background-image: url(../images/小军鼓.png);
 }
 .ke5:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50xjg22.png);
+    background-image: url(../images/小军鼓2.png);
 }
 .ke6{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb.png);
+    background-image: url(../images/马林巴.png);
 
 }
 .ke6:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb2.png);
+    background-image: url(../images/马林巴2.png);
 }
 .ke7{
 
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/scle.png);
+    background-image: url(../images/初唱练耳.png);
 }
 .ke7:hover{
-    background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2016/12/scle2.png);
+    background-image: url(../images/初唱练耳2.png);
 }
 .ke8{
 
@@ -8093,7 +8093,7 @@ a:hover{
 
 .rollBox{
     height:400px;
-    margin-left:50px ;
+    /*margin-left:50px ;*/
     width:980px;
     float:left;
     overflow:hidden;
@@ -8220,7 +8220,7 @@ a:hover{
 }
 
 .tab-big ul li {
-    float: left;
+    /*float: left;*/
     margin: 0 2px 0 0;
     font-size: 11px;
     height:29px;
