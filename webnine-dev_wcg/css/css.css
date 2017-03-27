@@ -8220,7 +8220,7 @@ a:hover{
 }
 
 .tab-big ul li {
-    /*float: left;*/
+    float: left;
     margin: 0 2px 0 0;
     font-size: 11px;
     height:29px;
