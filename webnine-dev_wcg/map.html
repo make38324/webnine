@@ -21,6 +21,7 @@
             list-style: none;
         }
     </style>
+    <link rel="stylesheet" href="../../css.css">
 </head>
 <body>
 <div class="preloader-mask">
@@ -546,6 +547,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vc.js"></script>
+<script src="js/common.js"></script>
 <script>
     var list = [{
         schoolname: '南翠屏校区',
@@ -601,6 +603,7 @@
     }
     ];
 
+
     $("#reset").click(function(){
 
         var index = document.getElementById("selCity").selectedIndex;
@@ -647,7 +650,36 @@
         }
         ;
     }
+    map = new BMap.Map("map");
+    function _getmapnumber() {
 
+        _getparam("api/webschool/list", "", function (data) {
+            //console.log(data);
+            list.splice(1,list.length);
+            $('#map-list').empty();
+            for (var i = 0; i < data.length; i++) {
+                var school={
+                    schoolname: data[i].name,
+                    longitude: data[i].longitude,
+                    latitude: data[i].latitude,
+                    star: 4,
+                    address: data[i].address,
+                    tel: data[i].tel
+                };
+                list[i]=school;
+//                rowdata = data[i];
+//                if(rowdata.type==1) {
+//                    $('#map-list').append('<div class="map-list"><h6>'+rowdata.name+'</h6><div class="sart"><img src="images/sart.png" alt=""><img src="images/sart.png" alt=""><img src="images/sart.png" alt=""><img src="images/sart.png" alt=""></div><p>'+rowdata.address+'</p><p>电话：'+rowdata.phone+'</p></div>')
+//                }
+            }
+            initMap(list);
+        }, function (error) {
+
+        })
+    }
+$(function () {
+    _getmapnumber();
+})
 
     function addHtml(arr) {
         var h = '<div class="map-list" data-lng="' + arr.longitude + '" data-lat="' + arr.latitude + '">';
