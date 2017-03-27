@@ -80,7 +80,8 @@
             _post("http://101.201.140.178:8080/api/users/register",{"username":username,"password":pwd},function (data) {
                 console.log(data);
                 if(data.state){
-                    alert("注册成功")
+                    alert("注册成功");
+                    location.href="login.html"
                 }else{
                     alert(data.msg);
                 }

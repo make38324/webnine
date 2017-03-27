@@ -172,17 +172,19 @@
             var username= $("#username").val();
             var pwd=$("#pwd").val();
             _post("http://101.201.140.178:8080/api/users/login",{"username":username,"password":pwd},function (data) {
-//                alert(username);
-//                alert(pwd);
-                //console.log(data);
                 if(data.state){
                     alert('登录成功');
                     $("#login-ok").empty();
-                    $("#login-ok").append('您好'+username);
-                    window.history.back();
-                    localStorage.setItem("userid",data.res.user_id);
+
+                    sessionStorage.setItem("userid",data.res.user_id);
                     sessionStorage.setItem("username",data.res.username);
                     sessionStorage.getItem("username");
+                    var value = sessionStorage.getItem("username");
+                    console.log(value);
+                   //window.history.back();
+                    $("#login-ok").append(value);
+
+
                 }else{
                     alert('用户名或密码错误')
                 }
@@ -196,6 +198,9 @@
         $(function () {
 
         })
+    </script>
+    <script type="text/javascript">
+
     </script>
 </head>
 <body>
@@ -233,7 +238,6 @@
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
                                 </ul>                                               <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>
-
                             </div>
 
                         </div>

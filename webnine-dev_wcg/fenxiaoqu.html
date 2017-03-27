@@ -237,16 +237,15 @@
                                         <div class="vc_tta-tabs-container">
                                             <ul class="vc_tta-tabs-list" id="tagLists">
                                                 <li class="vc_tta-tab" data-vc-tab="">
-                                                    <a href="#1488357399823-43c7b909-eadd" data-vc-tabs=""
-                                                       data-vc-container=".vc_tta"><span
+                                                    <a href="javascript:getTese1()" data-vc-tabs=""
+                                                       data-vc-container=".vc_tta" onclick="getTese1()"><span
                                                             class="vc_tta-title-text">4-6岁</span></a></li>
                                                 <li class="vc_tta-tab  vc_active" data-vc-tab=""><a
-                                                        href="#1488357399823-4f2d132a-5696" data-vc-tabs=""
-                                                        data-vc-container=".vc_tta"><span class="vc_tta-title-text">6-18岁</span></a>
+                                                        href="javascript:getTese2()" data-vc-tabs=""
+                                                        data-vc-container=".vc_tta" onclick="getTese2()"><span class="vc_tta-title-text">6-18岁</span></a>
                                                 </li>
-                                                <li class="vc_tta-tab" data-vc-tab=""><a
-                                                        href="#1488357403754-8fcf6dd9-c097" data-vc-tabs=""
-                                                        data-vc-container=".vc_tta"><span class="vc_tta-title-text">18岁以上</span></a>
+                                                <li class="vc_tta-tab" data-vc-tab=""><a href="javascript:getTese3()" data-vc-tabs=""
+                                                        data-vc-container=".vc_tta" onclick="getTese3()"><span class="vc_tta-title-text">18岁以上</span></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -256,9 +255,9 @@
                                                      data-vc-content=".vc_tta-panel-body">
                                                     <div class="vc_tta-panel-heading">
                                                         <h4 class="vc_tta-panel-title">
-                                                            <a href="#1488357399823-43c7b909-eadd" data-vc-accordion=""
+                                                            <a href="javascript:void(0)" data-vc-accordion=""
                                                                data-vc-container=".vc_tta-container"><span
-                                                                    class="vc_tta-title-text">4-6岁</span></a>
+                                                                    class="vc_tta-title-text" onclick='getTese1()'>4-6岁</span></a>
                                                         </h4>
                                                     </div>
                                                     <div class="vc_tta-panel-body" style="">
@@ -268,46 +267,47 @@
 
                                                                     <div class="tabPanel">
                                                                         <ul class="course-list">
-                                                                            <li class="hit"><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">
-                                                                                    爵士鼓</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">
-                                                                                    小军鼓</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    马林巴</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    视唱练耳</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">
-                                                                                    尤克里里</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">
-                                                                                    声乐</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">
-                                                                                    钢琴</p></li>
-                                                                            <li><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">
-                                                                                    非洲鼓</p></li>
+                                                                            <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb2.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                            <!--<li class="hit"><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--爵士鼓</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--小军鼓</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--马林巴</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--视唱练耳</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--尤克里里</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--声乐</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--钢琴</p></li>-->
+                                                                            <!--<li><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--非洲鼓</p></li>-->
 
                                                                         </ul>
                                                                         <div class="panell  compents" id="panelListsTwo"
@@ -387,6 +387,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <
                                                 <div class="vc_tta-panel  vc_active" id="1488357399823-4f2d132a-5696"
                                                      data-vc-content=".vc_tta-panel-body">
                                                     <div class="vc_tta-panel-heading">
@@ -404,61 +405,62 @@
 
                                                                     <div class="tab-big">
                                                                         <ul class="course-list">
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    爵士鼓</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    电贝司</p></li>
-                                                                            <li class="" yqtype="djt"><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    电吉他</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    民谣吉他</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">
-                                                                                    小军鼓</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">
-                                                                                    马林巴</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">
-                                                                                    视唱练耳</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    尤克里里</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    声乐</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    钢琴</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    非洲鼓</p></li>
+                                                                          <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--爵士鼓</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--电贝司</p></li>-->
+                                                                            <!--<li class="" yqtype="djt"><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--电吉他</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--民谣吉他</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--小军鼓</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--马林巴</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--视唱练耳</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--尤克里里</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--声乐</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--钢琴</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--非洲鼓</p></li>-->
 
                                                                         </ul>
                                                                         <div class="pane  compents"
@@ -583,61 +585,62 @@
                                                                 <div style="width:100%;">
                                                                     <div class="tab-big2">
                                                                         <ul class="course-list">
-                                                                            <li class="hit"><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    爵士鼓</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    电贝司</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    电吉他</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">
-                                                                                    民谣吉他</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">
-                                                                                    小军鼓</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">
-                                                                                    马林巴</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">
-                                                                                    视唱练耳</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    尤克里里</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    声乐</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    钢琴</p></li>
-                                                                            <li class=""><img
-                                                                                    src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"
-                                                                                    alt="">
-                                                                                <p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">
-                                                                                    非洲鼓</p></li>
+                                                                            <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                            <!--<li class="hit"><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--爵士鼓</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--电贝司</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--电吉他</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--民谣吉他</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--小军鼓</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--马林巴</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--视唱练耳</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--尤克里里</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--声乐</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--钢琴</p></li>-->
+                                                                            <!--<li class=""><img-->
+                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
+                                                                                    <!--alt="">-->
+                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
+                                                                                    <!--非洲鼓</p></li>-->
 
                                                                         </ul>
                                                                         <div class="pangg  compents"
@@ -1250,7 +1253,9 @@
 <script src="js/vc-tabs.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-
+    $(".tab-big").click(function () {
+        $(this).show().siblings().hide();
+    })
     $(function () {
         var yq = localStorage.getItem("yq");
         $('.tab-big2 ul li').click(function () {
@@ -1301,7 +1306,15 @@
     }
 
     AutoPlay();
-
+    function getTese1(){
+        getSchoolTese("4-6岁")
+    }
+    function getTese2(){
+        getSchoolTese("6-18岁")
+    }
+    function getTese3(){
+        getSchoolTese("18岁以上")
+    }
     function GetObj(objName) {
         if (document.getElementById) {
             return eval('document.getElementById("' + objName + '")')
@@ -1434,17 +1447,35 @@
             type: '优秀学员'
         },
         success: function (data) {
-            //console.log(data);
             $.each(data, function (k, v) {
                 $("#videoList").empty();
                 $("#videoList").append("<div class='vc_col-sm-3 wpb_column column_container'><div class='wpb_wrapper'><div class='wpb_raw_code wpb_content_element wpb_raw_html'><div class='wpb_wrapper'><a href='./jiaoxuechengguo.html?type=优秀学员' ><img src='http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示1.png'></a></div></div></div></div>")
             });
         }
     });
-
-
+    getSchoolTese("6-18岁")
+    function getSchoolTese(tag){
+        var schoolid=localStorage.getItem("schoolid");
+        //alert(tag);
+        _getparam("api/tesecourse/tesecourseschoollist",{"schoolid":schoolid,"tag":tag},function(data){
+            console.log("tesecourse",data);
+            $('.course-list').empty();
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                if(rowdata.type==2) {
+                    $('.course-list').append('<li><a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="'+rowdata.icon+'" alt=""><span style="text-align: center">'+rowdata.name+'</span></a></li>');
+                }
+            }
+        })
+    }
+    function tohref(id){
+       $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id,"",function(data){
+            console.log(data);
+           //TODO 填充详情数据
+        });
+    }
     //特色课程详情
-    $.ajax({
+   /* $.ajax({
         type: "get",
         url: "http://101.201.140.178:8080/api/tesecourse/tesecourse",
         async: true,
@@ -1475,6 +1506,7 @@
         }
     });
     //特色课程
+
     $.ajax({
         type: "get",
         url: "http://101.201.140.178:8080/api/tesecourse/tesecourselist",
@@ -1486,7 +1518,7 @@
                 $(".course-list").append('<li class=""><img src="' + v.icon + '" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">' + v.name + '</p></li>')
             });
         }
-    });
+    });*/
     //教师列表
     $.ajax({
         type: "get",
