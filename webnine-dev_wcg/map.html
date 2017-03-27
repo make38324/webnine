@@ -546,7 +546,6 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vc.js"></script>
-
 <script>
     var list = [{
         schoolname: '南翠屏校区',
@@ -601,18 +600,6 @@
         tel: "01065499339"
     }
     ];
-
-    function _getschoolnum() {
-        _get("http://101.201.140.178:8080/api/webschool/list","", function (data) {
-            $('#map-list').empty();
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                $('#map-list').append('<video id="mvideo" height="400px"width="100%"src="'+rowdata.url+'"controls="controls"></video>')
-            }
-        }, function (error) {
-
-        })
-    }
 
     $("#reset").click(function(){
 
