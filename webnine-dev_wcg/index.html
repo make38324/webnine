@@ -1540,7 +1540,7 @@ function _getscrollvideo() {
         $('#scrollvideo').empty();
         for (var i = 0; i < data.length; i++) {
             rowdata = data[i];
-            $('#scrollvideo').append('<lc autoplay="autoplay" href="'+rowdata.url+'"class="first" style="cursor:pointer;width:500px;height: 83px;background-color: #F2F2F2;float: left;margin-bottom: 10px;margin-top:4px;margin-bottom:2px;"><imgsrc="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_1973-1.png"alt=""style="display: block;margin-top:-0px;height:83px;float:left;"><pstyle="float: left;padding-left: 30px;margin-top:15px;color:#333;">2016/11/14</p><br><spanstyle="float:left;margin-left:-80px;margin-top:10px;color:#333;">九拍李思瑾演奏的爵士鼓-Islandmagic</span></lc>')
+            $('#scrollvideo').append('<lc autoplay="autoplay" href="'+rowdata.url+'"class="first" style="cursor:pointer;width:500px;height: 83px;background-color: #F2F2F2;float: left;margin-bottom: 10px;margin-top:4px;margin-bottom:2px;"><imgsrc="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_1973-1.png"alt=""style="display: block;margin-top:-0px;height:83px;float:left;"><spanstyle="float:left;margin-left:-80px;margin-top:10px;color:#333;">'+rowdata.name+'</span></lc>')
         }
     }, function (error) {
 
@@ -1883,7 +1883,7 @@ function _getscrollvideo() {
         tesecourselist();
         _getwebshcoollist();
         _getwebteacher();
-        _getindexvideo();
+//        _getindexvideo();
         _getscrollvideo();
     })
 </script>
@@ -1900,6 +1900,7 @@ function _getscrollvideo() {
 <script>
     function tesecourselist() {
         _get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=6-18岁", "", function (data) {
+            console.log("tesecourse",data);
             $('#tesecourselist').empty();
             for (var i = 0; i < data.length; i++) {
                 rowdata = data[i];
