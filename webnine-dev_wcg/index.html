@@ -1835,7 +1835,9 @@ function _getscrollvideo() {
            // console.log("newsdata", data);
             for (var i = 0; i < data.length; i++) {
                 rowdata = data[i];
-                $('#listnews').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')
+                if(rowdata.type==1) {
+                    $('#listnews').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')
+                }
             }
 //            <div><aclass="riqi"style="font-family: 微软雅黑; color: #333;"href="ninenews.html">2016-11-18&nbsp;·&nbsp;九拍南开南翠屏校区迎来新学期纳新</a></div>
         })
