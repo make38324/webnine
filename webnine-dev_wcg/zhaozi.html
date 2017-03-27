@@ -608,12 +608,14 @@
         return value;
     }
     
-    _getparam('api/webteacher/listschoolnews',{"schoolid":1},function(data){
-    	console.log("teachers",data)
+    _getparam('api/webteacher/list',"",function(data){
+    	console.log("teachers",data);
+        $("#teaches-intures").empty();
     	$.each(data, function(item,obje) {
-    		console.log(item,obje)
-    		$("#teaches-intures").empty();  
-    		$("#teaches-intures").append('<div class="container" style="margin-top: 50px"><img class="center-block " src="'+obje.icon+'" width="300" height="300" style="border-radius: 150px" alt="" title=""><p class="text-center" style="margin-top: 50px"><span style="font-family: 微软雅黑">'+obje.name+'</span></p><p class="text-center"><span style="font-family: 微软雅黑; color: #acacac;">教授课程:'+obje.course+'</span></p></div><div class="container"><p class="text-left words">'+obje.summary+'</p></div>')
+    		console.log(item,obje);
+            if(obje.id==localStorage.getItem("teacherid")) {
+                $("#teaches-intures").append('<div class="container" style="margin-top: 50px"><img class="center-block " src="' + obje.icon + '" width="300" height="300" style="border-radius: 150px" alt="" title=""><p class="text-center" style="margin-top: 50px"><span style="font-family: 微软雅黑">' + obje.name + '</span></p><p class="text-center"><span style="font-family: 微软雅黑; color: #acacac;">教授课程:' + obje.course + '</span></p></div><div class="container"><p class="text-left words">' + obje.summary + '</p></div>')
+            }
     	});
     })
     

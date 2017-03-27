@@ -1490,15 +1490,19 @@
     //教师列表
     $.ajax({
         type: "get",
-        url: "http://101.201.140.178:8080/api/webteacher/list",
+        url: "http://101.201.140.178:8080/api/webteacher/listschoolnews?schoolid="+localStorage.getItem("schoolid"),
         async: true,
         success: function (data) {
-            //console.log(data);
+            console.log(data);
             $("#course").empty();
             $.each(data, function (i, v) {
-                $("#course").append('<div class="pic"><a title="" href="zhaozi.html"><img width="180" height="180" alt=""src="' + v.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + v.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: ' + v.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + v.summary + '</p></div></div>');
+                $("#course").append('<div class="pic"><a title="" href="javascript:toteacher('+v.id+')"><img width="180" height="180" alt=""src="' + v.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + v.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: ' + v.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + v.summary + '</p></div></div>');
             });
         }
     });
+    toteacher=function (id) {
+        localStorage.setItem("teacherid",id);
+        location.href="./zhaozi.html";
+    }
 </script>
 </html>
