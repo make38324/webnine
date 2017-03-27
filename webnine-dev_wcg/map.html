@@ -620,10 +620,6 @@
         initMap(listFilter);
         if(city != "--请选择--"){
             map.centerAndZoom(city,11);
-
-
-
-
         }else{
             alert("请选择省市");
         }
@@ -644,12 +640,13 @@
             marker.addEventListener("click", attribute);
             marker.addEventListener("mouseover", setBz);
             marker.addEventListener("mouseout", removeBz);
-            map.centerAndZoom(point, 15);  // 编写自定义函数，创建标注
+//            map.centerAndZoom(, 5);  // 编写自定义函数，创建标注
+            map.centerAndZoom(new BMap.Point(108.8,34.3), 5);
             addHtml(list[i]);
 
-        }
-        ;
+        };
     }
+
 
     function _getmapnumber() {
         _getparam("api/webschool/list", "", function (data) {
@@ -759,46 +756,8 @@ $(function () {
             }
         });
     }
-    map.centerAndZoom(new BMap.Point(103.388611, 38.563611), 5)
-
-
+//  map.centerAndZoom(new BMap.Point(103.388611, 38.563611), 5)
 </script>
-
-<!--<script type="text/javascript">-->
-<!--$(function(){-->
-<!--function getAjax(){-->
-<!--$.ajax({-->
-<!--type :"get",-->
-<!--url:"city.json",-->
-<!--dataType:"json",-->
-<!--data:{},-->
-<!--async:true,-->
-<!--success:function(data){-->
-<!--$msg = data;-->
-<!--$.each($msg, function(i,val) {-->
-<!--$("#province").append("<option>"+val.name+"</option>");-->
-<!--console.log(val.name)-->
-
-<!--});-->
-<!--}-->
-<!--})-->
-<!--}-->
-<!--getAjax();-->
-<!--$("#province").change(function(){-->
-<!--$("#city").children().remove();-->
-<!--var $val = $("#province :selected").val();-->
-<!--console.log($val);-->
-<!--getAjax();-->
-<!--$.each($msg, function(j,value) {-->
-<!--if(value.name == $val){-->
-<!--$.each(value.sub, function(o,_value) {-->
-<!--$("#city").append("<option>"+_value.name+"</option>")-->
-<!--});-->
-<!--}-->
-<!--});-->
-<!--});-->
-<!--})-->
-<!--</script>-->
 <script type="text/javascript">
     $(function () {
         var provinceJson = [{"id": "2", "province": "\u5317\u4eac\u5e02", "parent": "1"}, {
