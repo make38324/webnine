@@ -204,7 +204,7 @@
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
-                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                                </ul>                                               <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>
                             </div>
 
                         </div>
@@ -291,7 +291,7 @@
                                     </div>
                                 </div>
                                 <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                    <div class="wpb_wrapper" style="overflow: hidden;" id="listnews">
+                                    <div class="wpb_wrapper" style="overflow: hidden;height: 200px;" id="listnews" >
                                         <div><a class="riqi" style="font-family: 微软雅黑; color: #333;"
                                                 href="ninenews.html">2016-11-18 &nbsp;· &nbsp;九拍南开南翠屏校区迎来新学期纳新</a>
                                         </div>
@@ -1025,7 +1025,7 @@
 
                                         <p style="text-align: right;margin-top:20px;"><a class="more-result"
                                                                                          style="font-family: 微软雅黑; color: #777;"
-                                                                                         href="page_2.html">了解更多教学成果
+                                                                                         href="jiaoxuechengguo.html">了解更多教学成果
                                             &nbsp;&gt;</a></p>
 
 
@@ -1459,7 +1459,7 @@
     })
     $("#x-click").click(function () {
         $(".chatbox").hide();
-    })
+    });
 </script>
 <!--教师界面接口-->
 <script>
@@ -1640,120 +1640,7 @@ function _getscrollvideo() {
         }
     }
 </script>
-<script type="text/javascript">
 
-    var Speed = 0.01;
-    var Space = 5;
-    var PageWidth = 910;
-    var fill = 0;
-    var MoveLock = false;
-    var MoveTimeObj;
-    var Comp = 0;
-    var AutoPlayObj = null;
-    GetObj("List2").innerHTML = GetObj("List1").innerHTML;
-    GetObj('ISL_Cont').scrollLeft = fill;
-    GetObj("ISL_Cont").onmouseover = function () {
-        clearInterval(AutoPlayObj);
-    }
-    GetObj("ISL_Cont").onmouseout = function () {
-        AutoPlay();
-    }
-
-    AutoPlay();
-
-    function GetObj(objName) {
-        if (document.getElementById) {
-            return eval('document.getElementById("' + objName + '")')
-        } else {
-            return eval('document.all.' + objName)
-        }
-    }
-
-    function AutoPlay() {
-        clearInterval(AutoPlayObj);
-        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 10000);
-    }
-
-    function ISL_GoUp() {
-        if (MoveLock) return;
-        clearInterval(AutoPlayObj);
-        MoveLock = true;
-        MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
-    }
-
-    function ISL_StopUp() {
-        clearInterval(MoveTimeObj);
-        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
-            Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
-            CompScr();
-        } else {
-            MoveLock = false;
-        }
-        AutoPlay();
-    }
-
-    function ISL_ScrUp() {
-        if (GetObj('ISL_Cont').scrollLeft <= 0) {
-            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
-        }
-        GetObj('ISL_Cont').scrollLeft -= Space;
-    }
-
-    function ISL_GoDown() {
-        clearInterval(MoveTimeObj);
-        if (MoveLock) return;
-        clearInterval(AutoPlayObj);
-        MoveLock = true;
-        ISL_ScrDown();
-        MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
-    }
-    function ISL_StopDown() {
-        clearInterval(MoveTimeObj);
-        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
-            Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
-            CompScr();
-        } else {
-            MoveLock = false;
-        }
-        AutoPlay();
-    }
-
-    function ISL_ScrDown() {
-        if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
-            GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
-        }
-        GetObj('ISL_Cont').scrollLeft += Space;
-    }
-
-    function CompScr() {
-        var num;
-        if (Comp == 0) {
-            MoveLock = false;
-            return;
-        }
-        if (Comp < 0) {
-            if (Comp < -Space) {
-                Comp += Space;
-                num = Space;
-            } else {
-                num = -Comp;
-                Comp = 0;
-            }
-            GetObj('ISL_Cont').scrollLeft -= num;
-            setTimeout('CompScr()', Speed);
-        } else {
-            if (Comp > Space) {
-                Comp -= Space;
-                num = Space;
-            } else {
-                num = Comp;
-                Comp = 0;
-            }
-            GetObj('ISL_Cont').scrollLeft += num;
-            setTimeout('CompScr()', Speed);
-        }
-    }
-</script>
 
 <script>
 
@@ -1863,7 +1750,13 @@ function _getscrollvideo() {
         _getwebteacher();
         _getindexvideo();
         _getscrollvideo();
+        setloginmsg();
     })
+    function setloginmsg(){
+        var value = sessionStorage.getItem("username");
+        $("#login-ok").empty();
+        $("#login-ok").append(value);
+    }
 </script>
 <script type='text/javascript' src='js/webim.config.js'></script>
 <script type='text/javascript' src='js/strophe-1.2.8.min.js'></script>
@@ -1871,10 +1764,7 @@ function _getscrollvideo() {
 <script src="js/adapter.js"></script>
 <script src="js/webrtc-1.4.10.js"></script>
 <script src='js/jquery.min.js'></script>
-<script>
-    //    var textarea=document.querySelector('textarea');
-    //    var messagees=document.querySelector('.messages');
-</script>
+
 <script>
     function tesecourselist() {
         _get("http://101.201.140.178:8080/api/tesecourse/tesecoursebytag?tag=6-18岁", "", function (data) {
