@@ -1030,7 +1030,6 @@
 
     function eighteenup(id) {
         $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
-
             $('#title').empty();
             $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
 

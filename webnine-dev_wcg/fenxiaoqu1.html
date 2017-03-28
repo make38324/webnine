@@ -1446,7 +1446,7 @@
         console.log("news", data);
         $("#newsList").empty();
         $.each(data, function (item, obje) {
-            console.log(item, obje)
+            //console.log(item, obje)
             $("#newsList").append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + obje.id + '">' + obje.title + '</a></div>')
 
         });
@@ -1472,49 +1472,49 @@
 
 
     //特色课程详情
-    $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecourse",
-        async: true,
-        data: {
-            id: 1
-        },
-        success: function (data) {
-            //console.log(data);
-            $(".compents").empty();
-            $.each(data, function (i, v) {
-                $(".compents").append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">' + v.title + '</p><p>' + v.summary + '</p><div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;"></span></p></div>')
-            });
-        }
-    });
-    //特色课程（tag）
-    $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecoursebytag",
-        async: true,
-        data: {
-            tag: '4-6岁'
-        },
-        success: function (data) {
-            $("#tagLists").empty();
-            $.each(data, function (i, v) {
-                $("#tagLists").append('<li class="vc_tta-tab" data-vc-tab=""><a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">' + v.tag + '</span></a></li>')
-            });
-        }
-    });
-    //特色课程
-    $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecourselist",
-        async: true,
-        success: function (data) {
-            //console.log(data);
-            $(".course-list").empty();
-            $.each(data, function (i, v) {
-                $(".course-list").append('<li class=""><img src="' + v.icon + '" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">' + v.name + '</p></li>')
-            });
-        }
-    });
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecourse",
+//      async: true,
+//      data: {
+//          id: 1
+//      },
+//      success: function (data) {
+//          //console.log(data);
+//          $(".compents").empty();
+//          $.each(data, function (i, v) {
+//              $(".compents").append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">' + v.title + '</p><p>' + v.summary + '</p><div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;"></span></p></div>')
+//          });
+//      }
+//  });
+//  //特色课程（tag）
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecoursebytag",
+//      async: true,
+//      data: {
+//          tag: '4-6岁'
+//      },
+//      success: function (data) {
+//          $("#tagLists").empty();
+//          $.each(data, function (i, v) {
+//              $("#tagLists").append('<li class="vc_tta-tab" data-vc-tab=""><a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">' + v.tag + '</span></a></li>')
+//          });
+//      }
+//  });
+//  //特色课程
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecourselist",
+//      async: true,
+//      success: function (data) {
+//          //console.log(data);
+//          $(".course-list").empty();
+//          $.each(data, function (i, v) {
+//              $(".course-list").append('<li class=""><img src="' + v.icon + '" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">' + v.name + '</p></li>')
+//          });
+//      }
+//  });
     //教师列表
     $.ajax({
         type: "get",

@@ -1893,13 +1893,14 @@ function _getscrollvideo() {
     mysend = function () {
         var msg = $('#msg').val();
         sendPrivateText(msg, "user1490088656193");
-        $(".messages").append("<div class='send'>  " + msg + "</div><br />");
+        $(".messages").append("我：</br><div class='send' style='display: inline;'> "+msg + "</div><br />");
         $('#msg').val("");
     };
     toteacher=function (id) {
         localStorage.setItem("teacherid",id);
         location.href="./zhaozi.html";
     }
+    
     /**
      * Created by clock on 16-11-25.
      */
@@ -1928,7 +1929,7 @@ function _getscrollvideo() {
             console.log(message.type);
             console.log(message);
             console.log('Text');
-            $(".messages").append("<div class='recive'>" + message.data + "</div><br />");
+            $(".messages").append("<div style='float: right;'>在线客服：</div><br /><div class='recive'>" + message.data + "</div><br /> ");
         },  //收到文本消息
         onEmojiMessage: function (message) {
             // 当为WebIM添加了Emoji属性后，若发送的消息含WebIM.Emoji里特定的字符串，connection就会自动将

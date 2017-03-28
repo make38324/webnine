@@ -705,7 +705,7 @@
     mysend = function () {
         var msg = $('#msg').val();
         sendPrivateText(msg, "user1490088656193");
-        $(".messages").append("<div class='send'>" + msg + "</div><br />");
+        $(".messages").append("我：</br><div class='send' style='display: inline;'> "+msg + "</div><br />");
         $('#msg').val("");
     };
 
