@@ -17,17 +17,99 @@
     <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=KXQEcPBg2mIm3dNaTYwdpYxL&s=1"></script>-->
 
     <style>
+     .chatbox {
+            width: 500px;
+            height: 500px;
+            /*   margin: 0 auto; */
+            float: right;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            border: 1px solid #CCC;
+            background-color: #FFF;
+            border-radius: 5px;
+        }
+
+        .messages {
+            height: 350px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #CCC;
+            overflow: scroll;
+        }
+
+        .messages h5 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .messages p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /*.self {
+            text-align: left;
+        }
+
+        .other {
+            text-align: right;
+        }
+*/
+        .form {
+            height: 150px;
+        }
+
+        .form .input {
+            /*height: 110px;*/
+            /*padding: 10px;*/
+            box-sizing: border-box;
+        }
+
+        .form .btn {
+            height: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid #CCC;
+        }
+
+        .form textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: none;
+            resize: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .send {
+            color: pink;
+        }
+
+        .recive {
+            float: right;
+            color: blue;
+        }
+
+        .form input {
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin-top: -30px;
+            /*margin-right: 20px;*/
+            float: right;
+        }
         ul, li {
             list-style: none;
         }
     </style>
-    <link rel="stylesheet" href="../../css.css">
 </head>
 <body>
 <div class="preloader-mask">
     <div class="preloader"></div>
 </div>
-<div class="main-container">
+<div class="main-container" id="go-top">
     <header class="header header-black">
         <div class="header-wrapper">
             <div class="container">
@@ -68,7 +150,7 @@
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
                                         <a target="_blank" href="APP.html">APP下载</a></li>
                                 </ul>
-                                <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                                <a href="login.html" id="login-ok"  class="pull-right btn-alt btn-sm buy-btn">登录</a>
                             </div>
 
                         </div>
@@ -543,11 +625,105 @@
         </div>
     </section>
 </div>
+<div style="position:fixed;right:20px;bottom:40px;z-index: 1000;">
+    <a class="zxzx" style="display:block;"></a>
+    <a class="yyst" href="#" id="btn" data-toggle="modal" data-target="#myModal"></a>
+    <a class="hddb" style="display:block;" href="#go-top"></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span>
+            </div>
+            <div class="modal-body" style="margin-left: 48px">
+                <div style=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png"
+                                   style="float: left; margin-right: 20px; height:300px;" alt="">
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"
+                            src="http://101.201.140.178/form.html" style="height:400px;"></iframe>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
+                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="chatbox" style="display: none;border:1px solid  #DDDDDD; z-index: 9999;">
+    <img id="x-click" src="images/X.png"style="position:absolute;right:20px;cursor:pointer;top: 10px;" />
+    <div style="height: 50px;width: 500px;background: #EEEEEE;">
+
+
+
+    </div>
+    <div class="messages" style="border: 1px solid #DDDDDD;">
+
+    </div>
+
+    <div class="form">
+
+        <div class="input">
+            <textarea id="msg" style="border-color: yellowgreen;min-height: 0;" ></textarea>
+        </div>
+        <div>
+            <input id="send" type="button" value="发送" onclick="mysend()" style="background:#C20000;border-radius:6px;color:#ffffff;border:none;outline:none;">
+        </div>
+    </div>
+</div>
+
 </body>
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vc.js"></script>
+<script src="js/vc-accordion.js"></script>
+<script src="js/vc-tabs.min.js"></script>
 <script src="js/common.js"></script>
+<script type="text/javascript">
+    $(".zxzx").click(function () {
+        $(".chatbox").show();
+    })
+    $("#x-click").click(function () {
+        $(".chatbox").hide();
+    })
+     function add() {
+        var name = $('#name').val();
+        var phone = $('#phone').val();
+        var schoolid = $('#sel_school').val();
+        var musicid = $('#sel_music').val();
+        var flag = true;
+        if (name.length <= 0) {
+            alert('姓名不能为空')
+            flag = false;
+        }
+        if (phone.length != 11) {
+            flag = false;
+            alert("手机号格式不正确");
+        }
+        if (flag) {
+            _post("http://101.201.140.178:8080/api/yuyue/add", {
+                'name': name,
+                'phone': phone,
+                'schoolid': schoolid,
+                'musicid': musicid
+            }, function (data) {
+                if (data.msg == 'success') {
+                    alert('预约成功');
+                    window.history.back(-1);
+                } else {
+                    alert('预约失败')
+                }
+                console.log(data);
+            }, function (error) {
+                console.log(error);
+            });
+        }
+        return false;
+    }
+   
+</script>
 <script>
     var list = [{
         schoolname: '南翠屏校区',
@@ -757,6 +933,14 @@ $(function () {
         });
     }
 //  map.centerAndZoom(new BMap.Point(103.388611, 38.563611), 5)
+    $(function () {
+        setloginmsg();
+    });
+    function setloginmsg(){
+        var value = sessionStorage.getItem("username");
+        $("#login-ok").empty();
+        $("#login-ok").append(value);
+    }
 </script>
 <script type="text/javascript">
     $(function () {

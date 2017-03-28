@@ -3,78 +3,202 @@
 
 <head>
     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <link href="css/vc.css" rel="stylesheet">
+   <link href="css/vc.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
     <style type="text/css">
-        .a {
-            float: left;
-            width: 50%;
-            height: 1px;
-            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#fff), to(#e3e3e3));
+        body {
+            background-image: url(http://101.201.140.178/wordpress/wp-content/uploads/2017/02/登录页面边花.png);
+        }
+        .chatbox {
+            width: 500px;
+            height: 500px;
+            /*   margin: 0 auto; */
+            float: right;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            border: 1px solid #CCC;
+            background-color: #FFF;
+            border-radius: 5px;
         }
 
-        .b {
-            float: left;
-            width: 50%;
-            height: 1px;
-            background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+        .messages {
+            height: 350px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #CCC;
+            overflow: scroll;
         }
 
-        .share {
-            height: 50px;
+        .messages h5 {
+            font-size: 20px;
+            margin: 10px 0;
         }
 
-        .share li {
-            list-style: none;
-            margin-right: 27px;
+        .messages p {
+            font-size: 18px;
+            margin: 0;
         }
 
-        .share_1 {
-            width: 50px;
-            float: left;
-            margin-right: 15px;
-            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wx.png") no-repeat;
+        /*.self {
+            text-align: left;
         }
 
-        .share_2 {
-            width: 50px;
-            float: left;
-            margin-right: 15px;
-            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/wb.png") no-repeat;
+        .other {
+            text-align: right;
+        }
+*/
+        .form {
+            height: 150px;
         }
 
-        .share_3 {
-            width: 50px;
-            float: left;
-            margin-right: 15px;
-            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/qq.png") no-repeat;
+        .form .input {
+            /*height: 110px;*/
+            /*padding: 10px;*/
+            box-sizing: border-box;
         }
 
-        .share_4 {
-            width: 50px;
-            float: left;
-            background: url("http://101.201.140.178/wordpress/wp-content/uploads/2016/11/zone.png") no-repeat;
+        .form .btn {
+            height: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid #CCC;
         }
 
-        .tixi:hover img {
-            cursor: pointer;
-            -webkit-filter: blur(10px) grayscale(1);
-            -moz-filter: blur(10px) grayscale(1);
-            -o-filter: blur(10px) grayscale(1);
-            -ms-filter: blur(10px) grayscale(1);
-            filter: blur(10px) grayscale(1);
-            opacity: .7;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -ms-transition: all .3s ease;
-            -o-transition: all .3s ease;
-            transition: all .3s ease;
+        .form textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: none;
+            resize: none;
+            outline: none;
+            font-size: 20px;
+        }
 
+        .send {
+            color: pink;
+        }
+
+        .recive {
+            float: right;
+            color: blue;
+        }
+
+        .form input {
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin-top: -30px;
+            /*margin-right: 20px;*/
+            float: right;
+        }
+        form >div {
+            font-family:microsoft yahei;
+        }
+        #username {
+            width: 300px;
+            height: 40px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            border-radius:5px;
+            outline:none;
+            border: 1px solid #cacaca;
+        }
+        #pwd{
+            width: 300px;
+            height: 40px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            border-radius:5px;
+            outline:none;
+            border: 1px solid #cacaca;
+            margin-top:30px;
+        }
+        .forget {
+            float: right;
+            color:#acacac;
+            margin-top:10px;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .bts {
+            clear: both;
+            margin-top:50px;
+            margin-bottom:220px;
+        }
+        .bts>.pull-left>input {
+            display:block;
+            outline: none;
+            width:150px;
+            height:50px;
+            background-color:#c20000;
+            border:none;color:#FFF;
+            border-radius:10px
+        }
+        .bts>.pull-right {
+            display:block;
+            top:400px;
+            right: 10px;
+            width:150px;
+            height:50px;
+            background-color:#fff;
+            border:1px solid #c20000;
+            color:#c20000;
+            border-radius:10px;
+            line-height:50px;
+            text-align:center;
         }
     </style>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function _post(url,data,callback,failcall){
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data:data,
+                success: function (data) {
+                    callback(data);
+                },
+                error: function (xhr) {
+                    failcall(xhr);
+                }
+            });
+        }
+
+        function login() {
+            var username= $("#username").val();
+            var pwd=$("#pwd").val();
+            _post("http://101.201.140.178:8080/api/users/login",{"username":username,"password":pwd},function (data) {
+                if(data.state){
+                    alert('登录成功');
+
+                    sessionStorage.setItem("userid",data.res.user_id);
+                    sessionStorage.setItem("username",data.res.username);
+                    sessionStorage.getItem("username");
+                    var value = sessionStorage.getItem("username");
+                    window.history.back();
+                    $("#login-ok").empty();
+                    $("#login-ok").append(value);
+
+
+                }else{
+                    alert('用户名或密码错误')
+                }
+
+//            location.href()
+            },function (error) {
+                alert(error);
+            })
+            return false;
+        }
+        $(function () {
+
+        })
+    </script>
+
 </head>
 <body>
 <!-- <div class="preloader-mask">
@@ -82,13 +206,13 @@
 </div> -->
 
 <!-- 头部区域 -->
-<header class="header header-black">
+ <header class="header header-black">
         <div class="header-wrapper">
             <div class="container">
                 <div class="col-sm-2 col-xs-12 navigation-header">
                     <div class="table-container">
                         <div class="cell-container">
-                           <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
+                            <a href="index.html" class="logo"><img src="images/logo_02.png" height="78" width="59"></a>
                             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -101,7 +225,7 @@
                     <div class="table-container">
                         <div class="cell-container">
                             <div id="navigation" class="navbar-collapse collapse">
-                                <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_self"  href="index.html">首页</a></li>
+                              <ul  class="navigation-list pull-left"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a target="_self"  href="index.html">首页</a></li>
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a target="_blank" href="introduction.html">九拍简介</a></li>
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a target="_blank" href="tesekecheng.html">特色课程</a></li>
@@ -110,7 +234,7 @@
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
-                                </ul>                                               <a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                                </ul>                                               <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>
                             </div>
 
                         </div>
@@ -121,66 +245,28 @@
 
         </div>
     </header>
-
 <!--导航end-->
-<!-- 教学体系 -->
-<div class="container" style="margin-top:50px;">
-    <img src="images/标题logo.png" alt="" style="display: block;">
-    <span style="margin-left: 50px;">九拍新闻</span>
-</div>
-<div class="container" style="margin-top: 50px;">
-    <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/王子乐队2-.png" width="100%" alt="">
-</div>
-<div class="container" style="margin-top: 50px">
+<div class="container" style="margin-top: 200px;" id="go-top">
+    <div class="col-md-6"></div>
     <div class="col-md-6">
-        <p><span style="font-family: PingFangSC-Regular, 微软雅黑; font-size: 30px;">文章标题 : 九拍王子乐队演出</span></p>
-        <p><span
-                style="font-family: PingFangSC-Regular, 微软雅黑; height: 25px; width: 80px; border: 2px solid #ccc; text-align: center; border-radius: 10px;">&nbsp; &nbsp;原创 &nbsp;&nbsp;</span>&nbsp;<span
-                style="font-family: PingFangSC-Regular, 微软雅黑;">&nbsp; 2016-05-08 九拍官方微信平台</span></p>
-    </div>
-    <div class="col-md-6">
-        <ul class="share" >
-            <li class="share_1">
-                <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=weixin&url='location.href'/&title=分享" id="weixinshare"></a>
-            </li>
-            <li class="share_2">
-                <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=tsina&url='location.href'/&title=分享" id="sinashare"></a>
-            </li>
-            <li class="share_3">
-                <a class="www" style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=cqq&url='location.href'/&title=分享" id="qqshare"></a>
-            </li>
-            <li class="share_4">
-                <a style=" display: block;height: 50px;" target="_blank" href="http://www.jiathis.com/send/?webid=qzone&url='location.href'/&title=分享" id="qzoneshare"></a>
-            </li>
-        </ul>
+        <form onsubmit="return login()" style="position: relative;float: right;">
+            <div class="pull-right">  用户名：<input class="name-people" type="text" id="username"></div>
+            <div class=""> <span style="font-family:微软雅黑;display:inline-block; padding-top:30px;"> &nbsp;&nbsp;&nbsp;密码：</span><input class="password-people" type="password" id="pwd"></div>
+            <div><a href="" class="forget">忘记密码？</a></div>
+
+          <div class="bts">
+              <a class="pull-left"><input type="submit"  value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></a>
+              <a href="register.html" class="pull-right">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</a>
+          </div>
+        </form>
+
     </div>
 </div>
 
-<div class="container">
-    <p style="margin-top: 50px;margin-bottom: 50px"><span style="font-family: 微软雅黑;">九拍是中国现代音乐教育行业的旗帜和典范，九拍取得的成就带动了中国爵士鼓及现代音乐的全面发展。李红育老师独创的九拍教学体系、九拍集体课教学法、九拍拇指教育理念等被国内外音乐教育机构广泛认可和推崇，每年都会有众多机构和教师前来九拍总部学习、参观，很多国际知名教育企业如Yamaha、KHS等也纷纷与九拍合作，引进和使用九拍教学体系。九拍颠覆了传统的手把手模糊教学及练功式教育模式，用科学训练的方式将基础乐理、音乐基础结构等知识的学习与听力训练、肌能训练、演奏技巧等训练内容巧妙、合理的结合起来，做到让孩子听的懂、学的会、演的好。</span>
-    </p>
-</div>
-<div class="container" style="margin-top: 50px;margin-bottom: 50px">
-    <div class="a"></div>
-    <div class="b"></div>
-</div>
-<div class="container">
-    <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/王子乐队.png" width="100%" alt="">
-</div>
-<div class="container">
-    <p style="margin-top: 50px" class="text-center">图片简介：王子乐队是九拍音乐的乐队</p>
-</div>
-<div class="container">
-    <p style="margin-top: 50px">
-        九拍是中国现代音乐教育行业的旗帜和典范，九拍取得的成就带动了中国爵士鼓及现代音乐的全面发展。李红育老师独创的九拍教学体系、九拍集体课教学法、九拍拇指教育理念等被国内外音乐教育机构广泛认可和推崇，每年都会有众多机构和教师前来九拍总部学习、参观，很多国际知名教育企业如Yamaha、KHS等也纷纷与九拍合作，引进和使用九拍教学体系。九拍颠覆了传统的手把手模糊教学及练功式教育模式，用科学训练的方式将基础乐理、音乐基础结构等知识的学习与听力训练、肌能训练、演奏技巧等训练内容巧妙、合理的结合起来，做到让孩子听的懂、学的会、演的好。</p>
-</div>
-
-<div class="container" style="margin-top: 50px;margin-bottom: 50px">
-    <div class="a"></div>
-    <div class="b"></div>
-</div>
 
 
+
+<!-- 底部合作伙伴 -->
 <!-- 底部合作伙伴 -->
 <div class="container">
     <div><img class="center-block" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/QQ图片20161116170314.png" width="226" height="183" alt="" title=""></div>
@@ -498,9 +584,9 @@
             </div>
         </div>
     </section>
-    <div style="position:fixed;right:20px;bottom:40px;">
-    <a class="zxzx" style="display:block;" ></a>
-    <a class="yyst" href="#" id="btn"  data-toggle="modal" data-target="#myModal"></a>
+   <div style="position:fixed;right:20px;bottom:40px;z-index: 1000;">
+    <a class="zxzx" style="display:block;"></a>
+    <a class="yyst" href="#" id="btn" data-toggle="modal" data-target="#myModal"></a>
     <a class="hddb" style="display:block;" href="#go-top"></a>
 </div>
 
@@ -508,11 +594,15 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-           
-             <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span></div>
-            <div class="modal-body">
-<div style=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png" style="float: left; margin-right: 20px; height:300px;" alt="">
-                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://101.201.140.178/form.html" style="height:400px;"></iframe></div>
+
+            <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span>
+            </div>
+            <div class="modal-body" style="margin-left: 48px">
+                <div style=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png"
+                                   style="float: left; margin-right: 20px; height:300px;" alt="">
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"
+                            src="http://101.201.140.178/form.html" style="height:400px;"></iframe>
+                </div>
             </div>
             <!-- <div class="modal-footer">
                 <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
@@ -521,43 +611,65 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
-<script src="js/jquery.min.js"></script>
+<div class="chatbox" style="display: none;border:1px solid  #DDDDDD; z-index: 9999;">
+    <img id="x-click" src="images/X.png"style="position:absolute;right:20px;cursor:pointer;top: 10px;" />
+    <div style="height: 50px;width: 500px;background: #EEEEEE;">
+
+
+
+    </div>
+    <div class="messages" style="border: 1px solid #DDDDDD;">
+
+    </div>
+
+    <div class="form">
+
+        <div class="input">
+            <textarea id="msg" style="border-color: yellowgreen;min-height: 0;" ></textarea>
+        </div>
+        <div>
+            <input id="send" type="button" value="发送" onclick="mysend()" style="background:#C20000;border-radius:6px;color:#ffffff;border:none;outline:none;">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".zxzx").click(function () {
+        $(".chatbox").show();
+    })
+    $("#x-click").click(function () {
+        $(".chatbox").hide();
+    })
+    mysend = function () {
+        var msg = $('#msg').val();
+        sendPrivateText(msg, "user1490088656193");
+        $(".messages").append("<div class='send'>" + msg + "</div><br />");
+        $('#msg').val("");
+    };
+
+</script>
+
+<script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vc.js"></script>
 <script src="js/vc-accordion.js"></script>
 <script src="js/vc-tabs.min.js"></script>
+<script src="js/common.js"></script>
 <script type="text/javascript">
-
-    $(function(){
-        var newsid=getvalue("newsid");
-        _getContent(newsid);
-        $('#weixinshare').attr('href','http://www.jiathis.com/send/?webid=weixin&url='+location.href+'/&title=分享');
-        $('#sinashare').attr('href','http://www.jiathis.com/send/?webid=tsina&url='+location.href+'/&title=分享');
-        $('#qqshare').attr('href','http://www.jiathis.com/send/?webid=cqq&url='+location.href+'/&title=分享');
-        $('#qzoneshare').attr('href','http://www.jiathis.com/send/?webid=qzone&url='+location.href+'/&title=分享');
-        //alert(location.href);
+    $(".zxzx").click(function () {
+        $(".chatbox").show();
     })
-    function _getContent(newsid){
-        $.get("http://101.201.140.178:8080/api/news/del?newsid="+newsid,"",function(data){
-            $('#content').append(data.content);
-        })
-    }
-    function getvalue(name) {
-        var str = window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
-        var value;
-        if (str.indexOf(name) != -1) {
-            var pos_start = str.indexOf(name) + name.length + 1;
-            var pos_end = str.indexOf("&", pos_start);
-            if (pos_end == -1) {
-                value= str.substring(pos_start)
-            } else {
-                alert("对不起这个值不存在！");
-            }
-        }
-        return value;
-    }
+    $("#x-click").click(function () {
+        $(".chatbox").hide();
+    })
 </script>
+<script type='text/javascript' src='js/webim.config.js'></script>
+<script type='text/javascript' src='js/strophe-1.2.8.min.js'></script>
+<script src='js/websdk-1.4.5.js'></script>
+<script src="js/adapter.js"></script>
+<script src="js/webrtc-1.4.10.js"></script>
+<script src='js/jquery.min.js'></script>
+
 </body>
 
 </html>
