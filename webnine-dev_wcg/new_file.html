@@ -1,0 +1,57 @@
+<div id="eg">
+    <style type="text/css">
+        #eg ul li {clear: both; margin: 20px 0; min-height: 80px; _height: 80px; width: 230px; list-style: none;}
+        #eg .avatar {width: 80px; height: 80px; background-color: red; color: #fff;}
+        #eg .content {background-color: yellow; }
+
+        #eg .example1 .avatar {float: left;}
+        #eg .example1 .content {margin-left: 100px;}
+
+        #eg .example2 .avatar {float: left; margin-right: 20px;}
+        #eg .example2 .content {overflow: hidden; zoom: 1;}
+
+        #eg .example3 .avatar {float: left; margin-right: 20px;}
+        #eg .example3 .content {display: table-cell; zoom: 1;}
+
+        #eg .example4 .avatar {float: left; margin-right: 20px;}
+        #eg .example4 .content {display: table-cell; zoom: 1;}
+
+        #eg .example5 .avatar {float: left; margin-right: 20px;}
+        #eg .example5 .content {display: table-cell; zoom: 1;}
+        #eg .example5 .content:after {display: block; visibility: hidden; height: 0; line-height: 0; content:'x x x x x x x x x x x x x x x x x x x x x x';}
+    </style>
+
+    <ul>
+        <li class="example1">
+            <div class="avatar">
+                文字固定左边距
+            </div>
+            <div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        </li>
+        <li class="example2">
+            <div class="avatar">
+                overflow:<br />hidden<br />
+                (子元素位置受限）
+            </div>
+            <div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        </li>
+        <li class="example3">
+            <div class="avatar">
+                display:<br />table-cell
+            </div>
+            <div class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+        </li>
+        <li class="example4">
+            <div class="avatar">
+                display:<br />table-cell<br />导致块不撑满
+            </div>
+            <div class="content">内容内容</div>
+        </li>
+        <li class="example5">
+            <div class="avatar">
+                display:<br />table-cell<br />修复
+            </div>
+            <div class="content">内容内容</div>
+        </li>
+    </ul>
+</div>

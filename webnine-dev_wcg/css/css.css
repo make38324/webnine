@@ -7910,19 +7910,19 @@ section.error-404.not-found {
     float: left;
     width: 50%;
     height: 1px;
-    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#fff), to(#e3e3e3));
+    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#f7f7f7), to(#e3e3e3));
 }
 .b {
     float: left;
     width: 50%;
     height: 1px;
-    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#f7f7f7));
 }
 .b2 {
 
     width: 500px;;
     height: 1px;
-    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#f7f7f7));
 }
 .riqi{
     text-decoration: none;
@@ -8054,7 +8054,7 @@ a span:hover{
     margin-top:-5px;
     width: 300px;
     height: 1px;
-    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#fff));
+    background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#f7f7f7));
 }
 .country:hover{
     color:#c20000  !important;
