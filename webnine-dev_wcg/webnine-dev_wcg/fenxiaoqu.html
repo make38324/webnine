@@ -150,7 +150,7 @@
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
                                         <a target="_blank" href="APP.html">APP下载</a></li>
                                 </ul>
-                                <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                                <!--<a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>-->
                             </div>
 
                         </div>
@@ -350,7 +350,7 @@
 
                                                                     <div class="tabPanel">
                                                                         <ul class="course-list">
-                                                                            <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb2.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                            <li>  <a style="display: inline-block;margin-right: 10px;text-align: center;" href="javascript:tohref('+rowdata.id+')"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb2.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
                                                                             <!--<li class="hit"><img-->
                                                                                     <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
                                                                                     <!--alt="">-->
@@ -488,7 +488,8 @@
 
                                                                     <div class="tab-big">
                                                                         <ul class="course-list">
-                                                                          <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                          <li>
+                                                                              <a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
                                                                             <!--<li class=""><img-->
                                                                                     <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
                                                                                     <!--alt="">-->
@@ -668,7 +669,7 @@
                                                                 <div style="width:100%;">
                                                                     <div class="tab-big2">
                                                                         <ul class="course-list">
-                                                                            <li>  <a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
+                                                                            <li>  <a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
                                                                             <!--<li class="hit"><img-->
                                                                                     <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
                                                                                     <!--alt="">-->
@@ -1611,7 +1612,7 @@
             for (var i = 0; i < data.length; i++) {
                 rowdata = data[i];
                 if(rowdata.type==2) {
-                    $('.course-list').append('<li><a style="display: inline-block;margin-right: 10px" href="javascript:tohref('+rowdata.id+')"><img src="'+rowdata.icon+'" alt=""><span style="text-align: center">'+rowdata.name+'</span></a></li>');
+                    $('.course-list').append('<li><a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="'+rowdata.icon+'" alt=""><span>'+rowdata.name+'</span></a></li>');
                 }
             }
         })

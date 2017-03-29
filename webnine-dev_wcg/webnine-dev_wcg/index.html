@@ -106,6 +106,71 @@
             /*margin-right: 20px;*/
             float: right;
         }
+        .rollBox{
+            height:400px;
+            margin-left:50px ;
+            width:980px;
+            float:left;
+            overflow:hidden;
+        }
+
+        .rollBox .scrollcon{
+            width:1120px;
+            height:200px;
+            position:absolute;
+            top:1px;
+
+        }
+        .rollBox .LeftBotton{
+            padding-top:10%;
+            width:42px;
+            overflow:hidden;
+            float:left;
+            display:inline;
+            margin-right:30px;
+        }
+        .rollBox .RightBotton{
+            padding-top:10%;
+            padding-left: 0px;
+            width:42px;
+            overflow:hidden;
+            float:left;
+            display:inline;
+            margin-left:30px;
+            cursor:pointer;
+        }
+        .rollBox .LeftBotton img,.rollBox .RightBotton img{
+            width:20px;
+            height:42px;
+            cursor:pointer;
+        }
+        .rollBox .Cont{
+            width:908px;
+            overflow:hidden;
+            float:left;
+            /*height:250px;*/
+            margin:0px 17px;
+        }
+        .rollBox .ScrCont{
+            width:10000000px;
+        }
+        .rollBox .Cont .pic{
+            width:192px;
+            height:500px;
+            /*overflow:hidden;*/
+            float:left;
+            margin:0px 35px 0px 0px;
+            display:inline;
+        }
+        .rollBox .Cont .pic img{
+            width:200px;
+            height:200px;
+            display:block;
+            border-radius: 100px;
+        }
+        .rollBox #List1, .rollBox #List2{
+            float:left;
+        }
     </style>
 </head>
 <body>
@@ -140,7 +205,7 @@
                 <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
             <!--</ol>-->
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" id='lunbocontent'>
+            <div class="carousel-inner" role="listbox" id='lunbocontent' style="height: 945px">
                 <div class="item active" data-image-large="images/banner1.png" data-image-small="">
                     <img src="images/banner1.png" width="100%">
                     <a class="btn btn-lg" data-toggle="modal" data-target="#myModal"
@@ -204,7 +269,7 @@
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a target="_blank" href="pinpaihuodong.html">品牌活动</a></li>
                                     <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a target="_blank" href="jiaoxuechengguo.html">教学成果</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_blank" href="APP.html">APP下载</a></li>
-                                </ul>                                               <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>
+                               </ul>                                               <!-- <a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>-->
                             </div>
 
                         </div>
@@ -218,59 +283,85 @@
     <div class="container-fluid">
         <div class="content">
             <article class="post-2429 page type-page status-publish hentry" id="go-top">
-                <div class="entry-content">
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container " style="text-align: center;">
-                            <img src="images/main_tu.png" alt="" style="margin-top: 100px;"/>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487755768173">
-                                    <div class="wpb_wrapper">
-                                        <div class="a"></div>
-                                        <div class="b"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
+                <!--<div class="entry-content">-->
+                    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+                        <!--<div class="vc_col-sm-12 wpb_column column_container " style="text-align: center;">-->
+                            <!--<img src="images/main_tu.png" alt="" style="margin-top: 100px;"/>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+                        <!--<div class="vc_col-sm-12 wpb_column column_container  ">-->
+                            <!--<div class="wpb_wrapper">-->
+                                <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1487755768173">-->
+                                    <!--<div class="wpb_wrapper">-->
+                                        <!--<div class="a"></div>-->
+                                        <!--<div class="b"></div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+                        <!--<div class="vc_col-sm-12 wpb_column column_container  ">-->
+                            <!--<div class="wpb_wrapper">-->
 
-                                <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">
+                                <!--<div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487755791838">-->
 
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
-                                                class="vc_single_image-img " src="images/标题logo.png" width="168"
-                                                height="38" alt="" title=""></div>
-                                    </figure>
-                                </div>
+                                    <!--<figure class="wpb_wrapper vc_figure">-->
+                                        <!--<div class="vc_single_image-wrapper all  vc_box_border_grey"><img-->
+                                                <!--class="vc_single_image-img " src="images/标题logo.png" width="168"-->
+                                                <!--height="38" alt="" title=""></div>-->
+                                    <!--</figure>-->
+                                <!--</div>-->
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
-                        <div class="vc_col-sm-12 wpb_column column_container  ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
-                                    <div class="wpb_wrapper title-font">
-                                        <p><span>九拍简介</span></p>
-                                    </div>
-                                </div>
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+                        <!--<div class="vc_col-sm-12 wpb_column column_container  ">-->
+                            <!--<div class="wpb_wrapper">-->
+                                <!--<div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">-->
+                                    <!--<div class="wpb_wrapper title-font">-->
+                                        <!--<p><span>九拍简介</span></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vc_row vc_inner vc_row-fluid container">
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="vc_row vc_inner vc_row-fluid container" style="margin-top:100px;">
                         <div class="vc_col-sm-6 wpb_column column_container  ">
                             <div class="wpb_wrapper">
                                 <div class="wpb_single_image wpb_content_element vc_align_left">
                                     <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper all  vc_box_border_grey"><img
-                                                class="vc_single_image-img " src="images/中国地图.png" alt="" title="">
+                                        <div class="vc_single_image-wrapper all  vc_box_border_grey">
+                                            <!--<img class="vc_single_image-img " src="images/bg.jpg" alt="" title="">-->
+
+                                            <div id="myCarousel" class="carousel slide">
+                                                <!-- 轮播（Carousel）指标 -->
+                                                <!--<ol class="carousel-indicators">-->
+                                                    <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                                                    <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                                                    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                                                <!--</ol>-->
+                                                <!-- 轮播（Carousel）项目 -->
+                                                <div class="carousel-inner" id="headnewspics">
+                                                    <div class="item active">
+                                                        <a href=""><img src="images/bg.jpg" alt="First slide"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="">  <img src="images/bg.jpg" alt="Second slide"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="images/bg.jpg" alt="Third slide">
+                                                    </div>
+                                                </div>
+                                                <!-- 轮播（Carousel）导航 左右箭头 -->
+                                                <a class="carousel-control left" href="#myCarousel"
+                                                   data-slide="prev" style="font-size: 50px;margin-top: 20%">&lsaquo;</a>
+                                                <a class="carousel-control right" href="#myCarousel"
+                                                   data-slide="next"  style="font-size: 50px;margin-top: 20%">&rsaquo;</a>
+                                            </div>
                                         </div>
                                     </figure>
                                 </div>
@@ -279,15 +370,16 @@
                         <div class="vc_col-sm-6 wpb_column column_container  ">
                             <div class="wpb_wrapper">
                                 <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p style="text-align: center;"><span
-                                                style="font-family: 微软雅黑; font-size: 24pt;">60000名孩子与你为伴</span></p>
-                                        <p><span style="font-family: 微软雅黑;">九拍音乐教育由李红育老师于2003年创办，是中国知名音乐教育连锁机构。截至2016年10月，九拍已经覆盖全国30个省、直辖市和自治区的322座城市，建立了550余所校区，有62000余名四岁以上孩子在学，4200余名教师在九拍任教…</span>
-                                        </p>
-                                        <p style="text-align: right;"><span style="font-family: 微软雅黑;"><a
-                                                style="font-family: 微软雅黑; color: #777777;" href="introduction.html">了解详情 &gt;</a></span>
-                                        </p>
-
+                                    <div class="wpb_wrapper" id="headnews">
+                                        <div>
+                                        <!--<p style="text-align: center;" ><span-->
+                                                <!--style="font-family: 微软雅黑; font-size: 24pt;">60000名孩子与你为伴</span></p>-->
+                                        <!--<p><span style="font-family: 微软雅黑;">九拍音乐教育由李红育老师于2003年创办，是中国知名音乐教育连锁机构。截至2016年10月，九拍已经覆盖全国30个省、直辖市和自治区的322座城市，建立了550余所校区，有62000余名四岁以上孩子在学，4200余名教师在九拍任教…</span>-->
+                                        <!--</p>-->
+                                        <!--<p style="text-align: right;"><span style="font-family: 微软雅黑;"><a-->
+                                                <!--style="font-family: 微软雅黑; color: #777777;" href="introduction.html">了解详情 &gt;</a></span>-->
+                                        <!--</p>-->
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="wpb_raw_code wpb_content_element wpb_raw_html">
@@ -743,72 +835,19 @@
                                 <div class="wpb_wrapper">
                                     <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                         <div class="wpb_wrapper">
-                                            <div class="rollBox" >
+                                            <div class="rollBox">
                                                 <div class="scrollcon">
-                                                    <div class="LeftBotton"><img src="images/prev.png"
-                                                                                 onmousedown="ISL_GoUp()"
-                                                                                 onmouseup="ISL_StopUp()"
-                                                                                 onmouseout="ISL_StopUp()"></div>
+                                                    <div class="LeftBotton" ><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/prev.png" onclick="ISL_StopUp()"/></div>
                                                     <div class="Cont" id="ISL_Cont">
                                                         <div class="ScrCont">
                                                             <div id="List1">
 
-                                                                <div class="pic "><a title="" href="zhaozi.html"><img
-                                                                        width="180" height="180" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            赵 孜</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程: 爵士鼓</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="jiangfeng.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            姜 峰</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程: 爵士鼓</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="yangbo.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            杨 波</p>
-                                                                        <p style="text-align: center;color:#777;font-family:微软雅黑;">
-                                                                            教授课程:贝司 少儿摇滚乐队</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="xuxinwei.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#c20000;">
-                                                                            徐辛未</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程：电吉他 民谣吉他</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                             <div id="List2"></div>
                                                         </div>
                                                     </div>
-                                                    <div class="RightBotton"><img src="images/next.png"
-                                                                                  onmousedown="ISL_GoDown()"
-                                                                                  onmouseup="ISL_StopDown()"
-                                                                                  onmouseout="ISL_StopDown()"></div>
+                                                    <div class="RightBotton"><img   src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/next.png" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -962,7 +1001,7 @@
                                                                     style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;">
                                                                     <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png"
                                                                          alt=""
-                                                                         style="display: block;float: left;height:80px;margin-top:-0px;width:">
+                                                                         style="display: block;float: left;height:80px;margin-top:-0px;">
                                                                     <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
                                                                         2017/01/10</p><br><p
                                                                         style="float:left;margin-left:-80px;margin-top:10px;color:#333;">擦亮双眼Don't Blink别眨眼163秒九拍快闪
@@ -976,7 +1015,7 @@
                                                         style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;">
                                                         <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png"
                                                              alt=""
-                                                             style="display: block;float: left;height:80px;margin-top:-0px;width:">
+                                                             style="display: block;float: left;height:80px;margin-top:-0px;">
                                                         <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
                                                             2017/01/10</p><br><span
                                                             style="float:left;margin-left:-80px;margin-top:10px;color:#333;">擦亮双眼Don't Blink别眨眼163秒九拍快闪
@@ -990,7 +1029,7 @@
                                                         style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;">
                                                         <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png"
                                                              alt=""
-                                                             style="display: block;float: left;height:80px;margin-top:-0px;width:">
+                                                             style="display: block;float: left;height:80px;margin-top:-0px;">
                                                         <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
                                                             2017/01/10</p><br><span
                                                             style="float:left;margin-left:-80px;margin-top:10px;color:#333;">擦亮双眼Don't Blink别眨眼163秒九拍快闪
@@ -1004,7 +1043,7 @@
                                                         style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;">
                                                         <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png"
                                                              alt=""
-                                                             style="display: block;float: left;height:80px;margin-top:-0px;width:">
+                                                             style="display: block;float: left;height:80px;margin-top:-0px;">
                                                         <p style="float: left;padding-left: 30px;margin-top:15px;color:#333;">
                                                             2017/01/10</p><br><span
                                                             style="float:left;margin-left:-80px;margin-top:10px;color:#333;">擦亮双眼Don't Blink别眨眼163秒九拍快闪
@@ -1468,11 +1507,12 @@ function _getwebteacher() {
         console.log(data);
        // alert(data);
         //res = data.res;
-        $('#ISL_Cont').empty();
+        $('#List1').empty();
         for (var i = 0; i < data.length; i++) {
             rowdata = data[i];
             if(rowdata.type==1) {
-                $('#ISL_Cont').append('<div class="pic"><a title="" href="javascript:toteacher('+rowdata.id+')"><img width="180" height="180" src="' + rowdata.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + rowdata.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">' + rowdata.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + rowdata.summary + '</p></div></div>')
+//                                        <div class="pic"><a title="" href="http://101.201.140.178/wordpress/?page_id=2113"><img width="183" height="68"  src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">杨 波</p><p style="text-align: center;color:#777;font-family:微软雅黑;">教授课程:贝司 少儿摇滚乐队</p><p style="text-align: left;font-family:微软雅黑;">杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p></div></div>
+                $('#List1').append('<div class="pic" style="float:left;"><a title="" href="javascript:toteacher('+rowdata.id+')"><img width="180" height="180" src="' + rowdata.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + rowdata.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">' + rowdata.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + rowdata.summary + '</p></div></div>')
             }
         }
     }, function (error) {
@@ -1497,15 +1537,18 @@ tohref=function (schoolid) {
     localStorage.setItem("schoolid",schoolid);
     location.href="./fenxiaoqu.html?schoolid="+schoolid;
 }
-//    首页视频列表
+   // 首页视频列表
         function _getindexvideo() {
             _get("http://101.201.140.178:8080/api/video/chengguolist?type=1","", function (data) {
                 $('#indexvideo').empty();
                 for (var i = 0; i < data.length; i++) {
                     rowdata = data[i];
+                    if(i==0){
+
+
                     $('#indexvideo').append('<video id="mvideo" height="400px"width="100%"src="'+rowdata.url+'"controls="controls"></video> <p style="text-align: right;"><a class="konw-more"  style="font-family: 微软雅黑; color: #777;" href="#">了解更多优秀学员 &gt;&nbsp;</a></p>')
 
-
+                    }
                 }
             }, function (error) {
 
@@ -1516,9 +1559,7 @@ function _getscrollvideo() {
         $('#scrollvideo').empty();
         for (var i = 0; i < data.length; i++) {
             rowdata = data[i];
-            $('#scrollvideo').append('<lc autoplay="autoplay" class="first"    href="'+rowdata.href+'" style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png" style="display: block;float: left;height:80px;margin-top:-0px;"><p style="float: left;padding-left: 30px;color:#333;">'+rowdata.time+'</p><p style="float:left;margin-left:-80px;margin-top:30px;color:#333;">'+rowdata.name+'</p></lc>');
-
-
+            $('#scrollvideo').append('<lc onclick="tovideo(rowdata.url)" style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png" style="display: block;float: left;height:80px;margin-top:-0px;"><p style="float: left;padding-left: 30px;color:#333;">'+rowdata.time+'</p><p style="float:left;margin-left:-80px;margin-top:30px;color:#333;">'+rowdata.name+'</p></lc>');
         }
     }, function (error) {
 
@@ -1538,109 +1579,107 @@ function _getscrollvideo() {
     var AutoPlayObj = null;
     GetObj("List2").innerHTML = GetObj("List1").innerHTML;
     GetObj('ISL_Cont').scrollLeft = fill;
-    GetObj("ISL_Cont").onmouseover = function () {
+    GetObj("ISL_Cont").onmouseover = function(){
         clearInterval(AutoPlayObj);
     }
-    GetObj("ISL_Cont").onmouseout = function () {
+    GetObj("ISL_Cont").onmouseout = function(){
         AutoPlay();
     }
 
     AutoPlay();
 
-    function GetObj(objName) {
-        if (document.getElementById) {
-            return eval('document.getElementById("' + objName + '")')
-        } else {
-            return eval('document.all.' + objName)
+    function GetObj(objName){
+        if(document.getElementById){
+            return eval('document.getElementById("'+objName+'")')
+        }else{
+            return eval('document.all.'+objName)
         }
     }
 
-    function AutoPlay() {
+    function AutoPlay(){
         clearInterval(AutoPlayObj);
-        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 10000);
+        AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',10000);
     }
 
-    function ISL_GoUp() {
-        if (MoveLock) return;
+    function ISL_GoUp(){
+        if(MoveLock) return;
         clearInterval(AutoPlayObj);
-        MoveLock = true;
-        MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
+        MoveLock = false;
+        MoveTimeObj = setInterval('ISL_ScrUp();',Speed);
     }
 
-    function ISL_StopUp() {
+    function ISL_StopUp(){
         clearInterval(MoveTimeObj);
-        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+        if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0){
             Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
             CompScr();
-        } else {
+        }else{
             MoveLock = false;
         }
         AutoPlay();
     }
 
-    function ISL_ScrUp() {
-        if (GetObj('ISL_Cont').scrollLeft <= 0) {
+    function ISL_ScrUp(){
+        if(GetObj('ISL_Cont').scrollLeft <= 0){
             GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
         }
-        GetObj('ISL_Cont').scrollLeft -= Space;
+        GetObj('ISL_Cont').scrollLeft -= Space ;
     }
 
-    function ISL_GoDown() {
+    function ISL_GoDown(){
         clearInterval(MoveTimeObj);
-        if (MoveLock) return;
+        if(MoveLock) return;
         clearInterval(AutoPlayObj);
         MoveLock = true;
         ISL_ScrDown();
-        MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
+        MoveTimeObj = setInterval('ISL_ScrDown()',Speed);
     }
-    function ISL_StopDown() {
+    function ISL_StopDown(){
         clearInterval(MoveTimeObj);
-        if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+        if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 ){
             Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
             CompScr();
-        } else {
+        }else{
             MoveLock = false;
         }
         AutoPlay();
     }
 
-    function ISL_ScrDown() {
-        if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
+    function ISL_ScrDown(){
+        if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){
             GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
         }
-        GetObj('ISL_Cont').scrollLeft += Space;
+        GetObj('ISL_Cont').scrollLeft += Space ;
     }
 
-    function CompScr() {
+    function CompScr(){
         var num;
-        if (Comp == 0) {
-            MoveLock = false;
-            return;
+        if(Comp == 0){
+            MoveLock = false;return;
         }
-        if (Comp < 0) {
-            if (Comp < -Space) {
+        if(Comp < 0){
+            if(Comp < -Space){
                 Comp += Space;
                 num = Space;
-            } else {
+            }else{
                 num = -Comp;
                 Comp = 0;
             }
             GetObj('ISL_Cont').scrollLeft -= num;
-            setTimeout('CompScr()', Speed);
-        } else {
-            if (Comp > Space) {
+            setTimeout('CompScr()',Speed);
+        }else{
+            if(Comp > Space){
                 Comp -= Space;
                 num = Space;
-            } else {
+            }else{
                 num = Comp;
                 Comp = 0;
             }
             GetObj('ISL_Cont').scrollLeft += num;
-            setTimeout('CompScr()', Speed);
+            setTimeout('CompScr()',Speed);
         }
     }
 </script>
-
 
 <script>
 
@@ -1704,7 +1743,7 @@ function _getscrollvideo() {
                     $('#listnews').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')
                 }
             }
-//            <div><aclass="riqi"style="font-family: 微软雅黑; color: #333;"href="ninenews.html">2016-11-18&nbsp;·&nbsp;九拍南开南翠屏校区迎来新学期纳新</a></div>
+
         })
     }
     function add() {
@@ -1751,10 +1790,13 @@ function _getscrollvideo() {
         _getindexvideo();
         _getscrollvideo();
         setloginmsg();
+        lunbolist();
+        headnews();
+        headnewspics();
     })
     function setloginmsg(){
         var value = sessionStorage.getItem("username");
-        $("#login-ok").empty();
+//        $('#login-ok').empty();
         $("#login-ok").append(value);
     }
 </script>
@@ -2527,21 +2569,57 @@ function _getscrollvideo() {
     });
 </script>
 <script type="text/javascript">
+//    新闻头条
+function headnews() {
+    _getparam("http://101.201.140.178:8080/api/news/list", "", function (data) {
+        $('#headnews').empty();
+        for (var i = 0; i < data.length; i++) {
+            rowdata = data[i];
+            if(rowdata.type==1) {
+//                                          <div><p style="text-align: center;" ><span style="font-family: 微软雅黑; font-size: 24pt;">600</span></p><p><span style="font-family: 微软雅黑;">教…</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a style="font-family: 微软雅黑; color: #777777;" href="introduction.html">了解详情 &gt;</a></span></p></div>
+                $('#headnews').append('<div><p style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 20px;">'+rowdata.title+'</span></p><p><span style="font-family: 微软雅黑;">'+rowdata.content+'</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a  style="font-family: 微软雅黑; color: #777777;" href="muban.html?newsid='+rowdata.id+'">了解详情 &gt;</a></span></p></div>')
+                break;
+            }
+        }
+    });
+}
+function headnewspics() {
+    _getparam("http://101.201.140.178:8080/api/news/list", "", function (data) {
+        $('#headnewspics').empty();
+        var j=0;
+        for (var i = 0; i < data.length; i++) {
+            rowdata = data[i];
+            var imgurl = rowdata.imgurl;
+            if(rowdata.type==1) {
+              if(j==0){
+                $('#headnewspics').append('<div class="item active"><a  href="muban.html?newsid=' + rowdata.id + '"><img style="width: 500px;height: 400px;" src="' + imgurl + '"></a></div>')
+              }else{
+                  $('#headnewspics').append('<div  class="item "><a  href="muban.html?newsid=' + rowdata.id + '"><img style="width: 500px;height: 400px;" src="' + imgurl + '"></a></div>')
+              }
+                ++j;
+
+
+            }
+        }
+    });
+}
+
+
     function lunbolist() {
         _getparam("http://101.201.140.178:8080/api/news/listlunbo", "", function (data) {
             $('#lunbocontent').empty();
             var j = 0;
             for (var i = 0; i < data.length; i++) {
                 rowdata = data[i];
-                var state = rowdata.state
+                var state = rowdata.state;
                 if (state == 1) {
                     var imgurl = rowdata.imgurl;
                     if (j == 0) {
-                         var item='<div class="item active" data-image-large="'+imgurl+'" data-image-small=""><img src="'+imgurl+'" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+                         var item='<div class="item active" data-image-large="'+imgurl+'" data-image-small=""><a href="muban.html?newsid='+rowdata.id+'"><img src="'+imgurl+'" width="100%" ></a><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
 //                        var item = '<div class="item active" data-image-large="images/banner1.png" data-image-small=""><img src="images/banner1.png" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
                         $('#lunbocontent').append(item);
                     } else {
-                        var item='<div class="item" data-image-large="'+imgurl+'" data-image-small=""><img src="'+imgurl+'" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
+                        var item='<div class="item" data-image-large="'+imgurl+'" data-image-small=""><a href="muban.html?newsid='+rowdata.id+'"><img src="'+imgurl+'" width="100%"></a><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
 //                        var item = '<div class="item" data-image-large="images/banner1.png" data-image-small=""><img src="images/banner1.png" width="100%"><a class="btn btn-lg"  data-toggle="modal" data-target="#myModal" style="position: absolute;bottom: 10%;left: 47%;text-align: center;">在线报名</a></div>';
                         $('#lunbocontent').append(item);
                     }
@@ -2566,14 +2644,12 @@ function _getscrollvideo() {
         });
     }
 
-    $(function () {
-        $('lc').click(function () {
-            var href = $(this).attr('href');
-            $('#mvideo').attr('src', href);
-            $('#mvideo')[0].play();
-        });
-        lunbolist();
 
-    })
+
+    function  tovideo(videourl) {
+        //alert('dd')
+        $('#mvideo').attr('src',videourl);
+        $('#mvideo')[0].play();
+    };
 </script>
 </html>

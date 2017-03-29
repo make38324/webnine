@@ -1040,7 +1040,7 @@ small {
     color: #8d93a0;
 }
 a {
-    color: #c20000;
+    color: #333;
     -webkit-transition: color 0.2s ease;
     -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
@@ -8226,7 +8226,7 @@ a:hover{
     /*height:29px;*/
     /*line-height: 70px;*/
     width:80px;
-    text-align: center;
+    /*text-align: center;*/
     cursor: pointer;
 }
 
