@@ -8,6 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
     <style type="text/css">
+        body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
      .chatbox {
             width: 500px;
             height: 500px;
@@ -454,6 +455,71 @@
                             </div>
                         </div> -->
 
+<!--<div class="sz">-->
+    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+        <!--<div class="vc_col-sm-3 wpb_column column_container  ">-->
+            <!--<div class="wpb_wrapper">-->
+                <!--<div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1487757176274">-->
+                    <!--<figure class="wpb_wrapper vc_figure">-->
+                        <!--<div class="vc_single_image-wrapper all  vc_box_border_grey"><img-->
+                                <!--class="vc_single_image-img " src="images/标题logo.png" width="168"-->
+                                <!--height="38" alt="" title=""></div>-->
+                    <!--</figure>-->
+                <!--</div>-->
+
+                <!--<div class="wpb_text_column wpb_content_element  vc_custom_1488284749761">-->
+                    <!--<div class="wpb_wrapper title-font">-->
+                        <!--<p><span>师资介绍</span></p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="vc_col-sm-9 wpb_column column_container  vc_custom_1487834093886 ">-->
+            <!--<div class="wpb_wrapper">-->
+                <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html">-->
+                    <!--<div class="wpb_wrapper">-->
+                        <!--<div style="float:right;">-->
+                            <!--<a class="teacher-study" href="teachers.html"-->
+                               <!--style="display:inline-block;color:#777;margin-left:50px;margin-top:10px;font-family:微软雅黑;">了解九拍师资培训与认证系统-->
+                                <!--&gt;</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="vc_row vc_inner vc_row-fluid container">-->
+        <!--<div class="vc_col-sm-12 wpb_column column_container  vc_custom_1487757331446 ">-->
+            <!--<div class="wpb_wrapper">-->
+                <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html">-->
+                    <!--<div class="wpb_wrapper">-->
+                        <!--<div class="rollBox">-->
+                            <!--<div class="scrollcon">-->
+                                <!--<div class="LeftBotton" ><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/prev.png" onclick="ISL_StopUp()"/></div>-->
+                                <!--<div class="Cont" id="ISL_Cont">-->
+                                    <!--<div class="ScrCont">-->
+                                        <!--<div id="List1">-->
+
+                                        <!--</div>-->
+                                        <!--<div id="List2"></div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="RightBotton"><img   src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/next.png" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"/>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<script>-->
+
+
+    <!--</script>-->
+
+<!--</div>-->
 
 <div class="vc_row vc_inner vc_row-fluid container">
                         <div class="vc_col-sm-4 wpb_column column_container  ">
@@ -872,6 +938,40 @@
 <script src="js/vc.js"></script>
 <script src="js/vc-accordion.js"></script>
 <script src="js/vc-tabs.min.js"></script>
+<!--教师接口-->
+<script>
+    function _get(url, data, callback, failcall) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: data,
+            success: function (data) {
+                callback(data);
+            },
+            error: function (xhr) {
+                failcall(xhr);
+            }
+        });
+    }
+    function _getwebteacher() {
+        _get("http://101.201.140.178:8080/api/webteacher/list", "", function (data) {
+            console.log(data);
+            // alert(data);
+            //res = data.res;
+            $('#List1').empty();
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                if(rowdata.type==1) {
+//                                        <div class="pic"><a title="" href="http://101.201.140.178/wordpress/?page_id=2113"><img width="183" height="68"  src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">杨 波</p><p style="text-align: center;color:#777;font-family:微软雅黑;">教授课程:贝司 少儿摇滚乐队</p><p style="text-align: left;font-family:微软雅黑;">杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p></div></div>
+                    $('#List1').append('<div class="pic" style="float:left;"><a title="" href="javascript:toteacher('+rowdata.id+')"><img width="180" height="180" src="' + rowdata.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + rowdata.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">' + rowdata.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + rowdata.summary + '</p></div></div>')
+                }
+            }
+        }, function (error) {
+
+        })
+    }
+</script>
+
 <script type="text/javascript">
     $(".zxzx").click(function () {
         $(".chatbox").show();
@@ -923,6 +1023,7 @@
 <script type="text/javascript">
 $(function () {
         setloginmsg();
+    _getwebteacher();
     });
     function setloginmsg(){
         var value = sessionStorage.getItem("username");

@@ -12,6 +12,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+        body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
          .chatbox {
             width: 500px;
             height: 500px;
@@ -598,17 +599,6 @@
         }
         return false;
     }
-    $(function () {
-        _getSchoollist();
-        _getMusiclist();
-        listnews();
-        tesecourselist();
-        _getwebshcoollist();
-        _getwebteacher();
-        _getindexvideo();
-        _getscrollvideo();
-         setloginmsg();
-    });
     function setloginmsg(){
         var value = sessionStorage.getItem("username");
         $("#login-ok").empty();
@@ -628,6 +618,9 @@
     function _getContent(newsid){
         $.get("http://101.201.140.178:8080/api/news/del?newsid="+newsid,"",function(data){
             $('#content').append(data.content);
+            $("video").each(function () {
+                $(this)[0].pause();
+            });
         })
     }
     function getvalue(name) {

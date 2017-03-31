@@ -17,89 +17,7 @@
     <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=KXQEcPBg2mIm3dNaTYwdpYxL&s=1"></script>-->
 
     <style>
-    .chatbox {
-            width: 500px;
-            height: 500px;
-            /*   margin: 0 auto; */
-            float: right;
-            position: fixed;
-            right: 0;
-            bottom: 50px;
-            border: 1px solid #CCC;
-            background-color: #FFF;
-            border-radius: 5px;
-        }
-
-        .messages {
-            height: 350px;
-            padding: 20px 40px;
-            box-sizing: border-box;
-            border-bottom: 1px solid #CCC;
-            overflow: scroll;
-        }
-
-        .messages h5 {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-
-        .messages p {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        /*.self {
-            text-align: left;
-        }
-
-        .other {
-            text-align: right;
-        }
-*/
-        .form {
-            height: 150px;
-        }
-
-        .form .input {
-            /*height: 110px;*/
-            /*padding: 10px;*/
-            box-sizing: border-box;
-        }
-
-        .form .btn {
-            height: 40px;
-            box-sizing: border-box;
-            border-top: 1px solid #CCC;
-        }
-
-        .form textarea {
-            display: block;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            border: none;
-            resize: none;
-            outline: none;
-            font-size: 20px;
-        }
-
-        .send {
-            color: pink;
-        }
-
-        .recive {
-            float: right;
-            color: blue;
-        }
-
-        .form input {
-            display: block;
-            width: 100px;
-            height: 30px;
-            margin-top: -30px;
-            /*margin-right: 20px;*/
-            float: right;
-        }
+        body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
         ul, li {
             list-style: none;
         }
@@ -138,7 +56,7 @@
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251">
                                         <a target="_blank" href="jiaoxuetixi.html">教学体系</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077">
-                                        <a target="_blank" href="tesekecheng.html">特色课程</a></li>
+                                        <a target="_blank" href="tesekecheng.html" onclick="findall()">特色课程</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077">
                                         <a target="_blank" href="map.html">教学环境</a></li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487">
@@ -150,7 +68,7 @@
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
                                         <a target="_blank" href="APP.html">APP下载</a></li>
                                 </ul>
-                                <!--<a href="login.html" id="login-ok" class="pull-right btn-alt btn-sm buy-btn">登录</a>-->
+                                <!--<a href="login.html" class="pull-right btn-alt btn-sm buy-btn">登录</a>-->
                             </div>
 
                         </div>
@@ -187,7 +105,7 @@
 
                                 <div class="wpb_text_column wpb_content_element  vc_custom_1488284776234">
                                     <div class="wpb_wrapper title-font">
-                                        <p id="go-top"><span>校区主页</span></p>
+                                        <p><span>校区主页</span></p>
 
                                     </div>
                                 </div>
@@ -312,35 +230,55 @@
                         <img src="images/标题logo.png" alt="" style="display: block;">
                         <span style="margin-left: 50px">特色课程</span>
                     </div>
+                    <!--<section id="products">-->
+                        <!--<div class="container">-->
+                            <!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+                            <!--<div class="ul-wapper">-->
+                                <!--<ul class="nav nav-tabs" role="tablist">-->
+                                    <!--<li role="presentation" class="active"><a href="#product1" aria-controls="product1" role="tab" data-toggle="tab">4-6岁</a></li>-->
+                                    <!--<li role="presentation"><a href="#product2" aria-controls="product2" role="tab" data-toggle="tab">6-18岁</a></li>-->
+                                    <!--<li role="presentation"><a href="#product3" aria-controls="product3" role="tab" data-toggle="tab">18岁以上</a></li>-->
+
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+                            <!--<div class="tab-content">-->
+                                <!--<div role="tabpanel" class="tab-pane fade in active" id="product1">-->
+                                    <!--<div class="row">-->
+                                        <!--<img src="" alt="">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div role="tabpanel" class="tab-pane fade" id="product2">-->
+
+                                <!--</div>-->
+                                <!--<div role="tabpanel" class="tab-pane fade" id="product3">-->
+                               <!---->
+                                <!--</div>-->
+                                <!--<div role="tabpanel" class="tab-pane fade" id="product7">...</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</section>-->
+
                     <div class="vc_row vc_inner vc_row-fluid container">
                         <div class="vc_col-sm-12 wpb_column column_container  ">
                             <div class="wpb_wrapper">
                                 <div class="vc_tta-container" data-vc-action="collapse">
                                     <div class="vc_general vc_tta vc_tta-tabs vc_tta-color-accent-color vc_tta-style-outline vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
                                         <div class="vc_tta-tabs-container">
-                                            <ul class="vc_tta-tabs-list" id="tagLists">
-                                                <li class="vc_tta-tab" data-vc-tab="">
-                                                    <a href="javascript:getTese1()" data-vc-tabs=""
-                                                       data-vc-container=".vc_tta" onclick="getTese1()"><span
-                                                            class="vc_tta-title-text">4-6岁</span></a></li>
-                                                <li class="vc_tta-tab  vc_active" data-vc-tab=""><a
-                                                        href="javascript:getTese2()" data-vc-tabs=""
-                                                        data-vc-container=".vc_tta" onclick="getTese2()"><span class="vc_tta-title-text">6-18岁</span></a>
-                                                </li>
-                                                <li class="vc_tta-tab" data-vc-tab=""><a href="javascript:getTese3()" data-vc-tabs=""
-                                                        data-vc-container=".vc_tta" onclick="getTese3()"><span class="vc_tta-title-text">18岁以上</span></a>
-                                                </li>
+                                            <ul class="vc_tta-tabs-list">
+                                                <li id="xx" class="vc_tta-tab" data-vc-tab="">
+                                                    <!--<a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta" onclick="shaixuan1()"><span class="vc_tta-title-text">4-6岁</span></a></li>-->
+                                                    <a id="one" href="javascript:void(0);" data-vc-tabs="" data-vc-container=".vc_tta" onclick="shaixuan1(this.value)"><span class="vc_tta-title-text four-six ">4-6岁</span></a></li>
+                                                <li id="yy" class="vc_tta-tab" data-vc-tab=""><a id="two" href="javascript:void(0);" onclick="shaixuan2(this.value)" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text six-eighteen">6-18岁</span></a></li>
+                                                <li id="zz" class="vc_tta-tab" data-vc-tab=""><a id="three" href="javascript:void(0);" onclick="shaixuan3(this.value)" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text 18+">18岁以上</span></a></li>
                                             </ul>
                                         </div>
                                         <div class="vc_tta-panels-container">
                                             <div class="vc_tta-panels">
-                                                <div class="vc_tta-panel" id="1488357399823-43c7b909-eadd"
-                                                     data-vc-content=".vc_tta-panel-body">
+                                                <div class="vc_tta-panel" id="1488357399823-43c7b909-eadd" data-vc-content=".vc_tta-panel-body">
                                                     <div class="vc_tta-panel-heading">
                                                         <h4 class="vc_tta-panel-title">
-                                                            <a href="javascript:void(0)" data-vc-accordion=""
-                                                               data-vc-container=".vc_tta-container"><span
-                                                                    class="vc_tta-title-text" onclick='getTese1()'>4-6岁</span></a>
+                                                            <a href="#1488357399823-43c7b909-eadd" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">4-6岁</span></a>
                                                         </h4>
                                                     </div>
                                                     <div class="vc_tta-panel-body" style="">
@@ -349,118 +287,41 @@
                                                                 <div style="width:100%;">
 
                                                                     <div class="tabPanel">
-                                                                        <ul class="course-list">
-                                                                            <li>  <a style="display: inline-block;margin-right: 10px;text-align: center;" href="javascript:tohref('+rowdata.id+')"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/50mlb2.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
-                                                                            <!--<li class="hit"><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--爵士鼓</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--小军鼓</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--马林巴</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--视唱练耳</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--尤克里里</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--声乐</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--钢琴</p></li>-->
-                                                                            <!--<li><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--非洲鼓</p></li>-->
+                                                                        <ul>
+                                                                            <li class="hit"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -17px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -13px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
+                                                                            <li> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -20px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
 
                                                                         </ul>
-                                                                        <div class="panell  compents" id="panelListsTwo"
-                                                                             style="margin-top:100px; overflow: hidden;display: block ">
+                                                                        <div class="panell" style="margin-top:100px; overflow: hidden;display: block ">
                                                                             <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    爵士鼓4-6岁最佳启蒙乐器</p>
-                                                                                <p>
-                                                                                    爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
-                                                                                <div style="margin-top:50px"><img
-                                                                                        style="width:594px;height: 257px; float: left;"
-                                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png">
-                                                                                    <p style="padding-top: 70px"><span
-                                                                                            style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span>
-                                                                                    </p></div>
+                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
+                                                                                <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
+                                                                                <div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span></p></div>
                                                                             </div>
 
 
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    专业 技巧 控制</p>
-                                                                                <p>
-                                                                                    小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p>
-                                                                            </div>
 
-                                                                            <div class="paness" style="display: block;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    节奏与旋律的完美结合</p>
-                                                                                <p>
-                                                                                    马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">专业 技巧 控制</p><p>小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p></div>
+
+                                                                            <div class="paness" style="display: block;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">节奏与旋律的完美结合</p>
+                                                                                <p>马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
                                                                                 <div>
-                                                                                    <img style="width: 594px;height: 257px; float: left;"
-                                                                                         src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png"
-                                                                                         alt="">
-                                                                                    <p style="padding-top: 70px;"><span
-                                                                                            style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span>
-                                                                                    </p>
+                                                                                    <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png" alt="">
+                                                                                    <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span></p>
 
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    音乐学习的必修基本功</p>
-                                                                                <p>
-                                                                                    视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p>
-                                                                            </div>
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    简单易学，方便携带</p>
-                                                                                <p>
-                                                                                    尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                            </div>
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    正宗韩国新后现代唱法</p>
-                                                                                <p>
-                                                                                    在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p>
-                                                                            </div>
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    学钢琴就学专业</p>
-                                                                                <p>
-                                                                                    钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p>
-                                                                            </div>
-                                                                            <div class="paness" style="display: none;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    简单易学的节奏启蒙课程</p>
-                                                                                <p>
-                                                                                    非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p>
-                                                                            </div>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">音乐学习的必修基本功</p><p>视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p></div>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学，方便携带</p><p>尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">正宗韩国新后现代唱法</p><p>在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p></div>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">学钢琴就学专业</p><p>钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p></div>
+                                                                            <div class="paness" style="display: none;"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
 
                                                                         </div>
                                                                     </div>
@@ -470,362 +331,132 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="vc_tta-panel  vc_active" id="1488357399823-4f2d132a-5696"
-                                                     data-vc-content=".vc_tta-panel-body">
+                                                <div class="vc_tta-panel  vc_active" id="1488357399823-4f2d132a-5696" data-vc-content=".vc_tta-panel-body">
                                                     <div class="vc_tta-panel-heading">
                                                         <h4 class="vc_tta-panel-title">
-                                                            <a href="#1488357399823-4f2d132a-5696" data-vc-accordion=""
-                                                               data-vc-container=".vc_tta-container"><span
-                                                                    class="vc_tta-title-text">6-18岁</span></a>
+                                                            <a href="#1488357399823-4f2d132a-5696" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">6-18岁</span></a>
                                                         </h4>
-                                                    </div>
-                                                    <div class="vc_tta-panel-body" style="">
-                                                        <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-                                                            <div class="wpb_wrapper">
+                                                    </div><div class="vc_tta-panel-body" style="">
+                                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                        <div class="wpb_wrapper">
 
-                                                                <div style="width:100%;">
+                                                            <div style="width:100%;">
 
-                                                                    <div class="tab-big">
-                                                                        <ul class="course-list">
-                                                                          <li>
-                                                                              <a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--爵士鼓</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--电贝司</p></li>-->
-                                                                            <!--<li class="" yqtype="djt"><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--电吉他</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--民谣吉他</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--小军鼓</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--马林巴</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--视唱练耳</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--尤克里里</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--声乐</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--钢琴</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--非洲鼓</p></li>-->
+                                                                <div class="tab-big">
+                                                                    <ul id="content">
+                                                                        <!--<li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>-->
+                                                                        <!--<li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电贝司</p></li>-->
+                                                                        <!--<li class="" yqtype="djt"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电吉他</p></li>-->
+                                                                        <!--<li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">民谣吉他</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">声乐</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>-->
+                                                                        <!--<li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>-->
 
-                                                                        </ul>
-                                                                        <div class="pane  compents"
-                                                                             style="margin-top:100px; overflow: hidden;display: block ">
-                                                                            <div class="pan" style="display:block;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    爵士鼓4-6岁最佳启蒙乐器</p>
-                                                                                <p>
-                                                                                    爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
-                                                                                <div style="margin-top:50px"><img
-                                                                                        style="width:594px;height: 257px; float: left;"
-                                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png">
-                                                                                    <p style="padding-top: 70px"><span
-                                                                                            style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span>
-                                                                                    </p></div>
-                                                                            </div>
-
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                整个乐队和声旋律的基石</p>
-                                                                                <p>
-                                                                                    电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                                <img style="width: 594px;height: 257px; float: left;"
-                                                                                     src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png"
-                                                                                     alt="">
-                                                                                <p style="padding-top: 70px"><span
-                                                                                        style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span>
-                                                                                </p>
-                                                                            </div>
-                                                                            <div class="pan" yqtype="djt"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                乐队情绪和音色的主导</p>
-                                                                                <p>
-                                                                                    电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
-                                                                                <div><img
-                                                                                        style="width: 594px;height: 257px; float: left;"
-                                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png"
-                                                                                        alt="">
-                                                                                    <p style="padding-top: 70px;"><span
-                                                                                            style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span>
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                一人弹唱，众人瞩目</p>
-                                                                                <p>
-                                                                                    民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                专业 技巧 控制</p>
-                                                                                <p>
-                                                                                    小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p>
-                                                                            </div>
-
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                节奏与旋律的完美结合</p>
-                                                                                <p>
-                                                                                    马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
-                                                                                <div>
-                                                                                    <img style="width: 594px;height: 257px; float: left;"
-                                                                                         src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png"
-                                                                                         alt="">
-                                                                                    <p style="padding-top: 70px;"><span
-                                                                                            style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span>
-                                                                                    </p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                音乐学习的必修基本功</p>
-                                                                                <p>
-                                                                                    视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                简单易学，方便携带</p>
-                                                                                <p>
-                                                                                    尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                正宗韩国新后现代唱法</p>
-                                                                                <p>
-                                                                                    在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p>
-                                                                            </div>
-                                                                            <div class="pan"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                学钢琴就学专业</p>
-                                                                                <p>
-                                                                                    钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p>
-                                                                            </div>
-                                                                            <div class="pan" id="fzg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                简单易学的节奏启蒙课程</p>
-                                                                                <p>
-                                                                                    非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p>
-                                                                            </div>
-
+                                                                    </ul>
+                                                                    <div class="pane" style="margin-top:100px; overflow: hidden;display: block ">
+                                                                        <div class="pan" style="display:block;" id="title">
+                                                                            <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
+                                                                            <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
+                                                                            <div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span></p></div>
                                                                         </div>
-                                                                    </div>
 
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">整个乐队和声旋律的基石</p>
+                                                                            <p>电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
+                                                                            <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png" alt="">
+                                                                            <p style="padding-top: 70px"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span></p>
+                                                                        </div>
+                                                                        <div class="pan" yqtype="djt"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">乐队情绪和音色的主导</p>
+                                                                            <p>电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
+                                                                            <div><img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png" alt="">
+                                                                                <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">一人弹唱，众人瞩目</p><p>民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">专业 技巧 控制</p><p>小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p></div>
+
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">节奏与旋律的完美结合</p>
+                                                                            <p>马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
+                                                                            <div>
+                                                                                <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png" alt="">
+                                                                                <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span></p>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">音乐学习的必修基本功</p><p>视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学，方便携带</p><p>尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">正宗韩国新后现代唱法</p><p>在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p></div>
+                                                                        <div class="pan"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">学钢琴就学专业</p><p>钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p></div>
+                                                                        <div class="pan"  id="fzg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
+
+                                                                    </div>
                                                                 </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="vc_tta-panel" id="1488357403754-8fcf6dd9-c097"
-                                                     data-vc-content=".vc_tta-panel-body">
+                                                </div>
+                                                <div class="vc_tta-panel" id="1488357403754-8fcf6dd9-c097" data-vc-content=".vc_tta-panel-body">
                                                     <div class="vc_tta-panel-heading">
-                                                        <h4 class="vc_tta-panel-title"><a
-                                                                href="#1488357403754-8fcf6dd9-c097" data-vc-accordion=""
-                                                                data-vc-container=".vc_tta-container"><span
-                                                                class="vc_tta-title-text">18岁以上</span></a></h4>
+                                                        <h4 class="vc_tta-panel-title"><a href="#1488357403754-8fcf6dd9-c097" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">18岁以上</span></a></h4>
                                                     </div>
                                                     <div class="vc_tta-panel-body" style="">
                                                         <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                             <div class="wpb_wrapper">
                                                                 <div style="width:100%;">
                                                                     <div class="tab-big2">
-                                                                        <ul class="course-list">
-                                                                            <li>  <a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="http://9beatsupload.oss-cn-shanghai.aliyuncs.com/webupload/G3xeQs2DhW.png" alt=""><span style="text-align: center">爵士鼓</span></a></li>
-                                                                            <!--<li class="hit"><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--爵士鼓</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--电贝司</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--电吉他</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--民谣吉他</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--小军鼓</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--马林巴</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--视唱练耳</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--尤克里里</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--声乐</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--钢琴</p></li>-->
-                                                                            <!--<li class=""><img-->
-                                                                                    <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png"-->
-                                                                                    <!--alt="">-->
-                                                                                <!--<p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">-->
-                                                                                    <!--非洲鼓</p></li>-->
+                                                                        <ul>
+                                                                            <li class="hit"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/jsg-1.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">爵士鼓</p></li>
+                                                                            <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电贝司</p></li>
+                                                                            <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/电贝斯.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">电吉他</p></li>
+                                                                            <li class=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/民谣吉他.png" alt=""><p style="margin-top: -15px;font-family:微软雅黑;font-size:15px;">民谣吉他</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/page1.png" alt=""><p style="margin-top: -6px;font-family:微软雅黑;font-size:15px;">小军鼓</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/马林巴.png" alt=""><p style="margin-top: -8px;font-family:微软雅黑;font-size:15px;">马林巴</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/Page2.png" alt=""><p style="margin-top: -7px;font-family:微软雅黑;font-size:15px;">视唱练耳</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/尤克里里.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">尤克里里</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/声乐.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">声乐</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/钢琴.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">钢琴</p></li>
+                                                                            <li class=""> <img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/非洲鼓.png" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">非洲鼓</p></li>
 
                                                                         </ul>
-                                                                        <div class="pangg  compents"
-                                                                             style="margin-top:100px; overflow: hidden;display: block ">
+                                                                        <div class="pangg" style="margin-top:100px; overflow: hidden;display: block ">
                                                                             <div class="pagg" style="display:block;">
-                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                    爵士鼓4-6岁最佳启蒙乐器</p>
-                                                                                <p>
-                                                                                    爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
-                                                                                <div style="margin-top:50px"><img
-                                                                                        style="width:594px;height: 257px; float: left;"
-                                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png">
-                                                                                    <p style="padding-top: 70px"><span
-                                                                                            style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span>
-                                                                                    </p></div>
+                                                                                <p style="font-family:微软雅黑;font-size:20px;font-weight:700;">爵士鼓4-6岁最佳启蒙乐器</p>
+                                                                                <p>爵士鼓即通常所说的“架子鼓”，是乐队中十分重要的打击乐器。运用李红育老师独创的九拍集体课教学法、九拍课堂有效训练法及拇指教育理念，讲解基础乐理知识、演奏方法和技巧，并进行四肢协调性开发，完成练习曲及乐曲的演奏，在班级中每个人的配合下，树立自信，建立友谊，提高情商。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加爵士鼓的考级。</p>
+                                                                                <div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍爵士鼓系统教程》由九拍创始人李红育老师亲自编写，共六集18册.</span></p></div>
                                                                             </div>
 
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                整个乐队和声旋律的基石</p>
-                                                                                <p>
-                                                                                    电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                                <img style="width: 594px;height: 257px; float: left;"
-                                                                                     src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png"
-                                                                                     alt="">
-                                                                                <p style="padding-top: 70px"><span
-                                                                                        style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span>
-                                                                                </p>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">整个乐队和声旋律的基石</p>
+                                                                                <p>电bass是一件特点及其鲜明的现代低音乐器，在乐队中扮演非常重要的角色。它掌管着音乐中几乎所有的低音声部，能够使音乐的节奏，旋律，和声完美的结合在一起从而使音乐更加的整体化。通过学习电BASS，不但能让孩子全方位的学习音乐知识，更能够对孩子的左右脑开发，思维模式的改善，分析判断能力的加强以及思想创造性方面得到很大帮助。每学期结束，学员学会1-2首乐曲演奏。可组建少儿乐队，加强孩子合作意识。随着孩子技术水平的提高，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
+                                                                                <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10s0Dvs0F1g_1494_958.png" alt="">
+                                                                                <p style="padding-top: 70px"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电贝司系统教程》由著名音乐人孙锐老师与九拍创始人李红育老师共同编写，共四集12册。</span></p>
                                                                             </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                乐队情绪和音色的主导</p>
-                                                                                <p>
-                                                                                    电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
-                                                                                <div><img
-                                                                                        style="width: 594px;height: 257px; float: left;"
-                                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png"
-                                                                                        alt="">
-                                                                                    <p style="padding-top: 70px;"><span
-                                                                                            style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span>
-                                                                                    </p>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">乐队情绪和音色的主导</p>
+                                                                                <p>电吉他是乐队中的重要组成部分。九拍电吉他课程讲解基础乐理知识、演奏方法和技巧，视唱能力训练，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会，并且可以参加电吉他的考级。</p>
+                                                                                <div><img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH13c0Dvs0IuQ_2233_958.png" alt="">
+                                                                                    <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍电吉他系统教程》由著名音乐人李悦老师及九拍创始人李红育老师共同编写，共六集18册。</span></p>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;"
-                                                                                    id="www">一人弹唱，众人瞩目</p>
-                                                                                <p>
-                                                                                    民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                            </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                专业 技巧 控制</p>
-                                                                                <p>
-                                                                                    小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p>
-                                                                            </div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;" id="www">一人弹唱，众人瞩目</p><p>民谣吉他通常用于歌曲伴奏。九拍民谣吉他课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏，通过表演建立自信，提高情商，同时提高孩子多方面综合能力。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                            <div class="pa"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">专业 技巧 控制</p><p>小军鼓的技巧可以说是所有打击乐器中最基本且共通的技巧，所以说想要学好其他的打击乐器，首先一定得具备相当程度的小鼓技巧才行。练习小军鼓可以增强孩子对速度力度的控制性、对音符演奏的准确性、提高听力、重奏能力、创作能力、培养精确的节奏感和反应能力，提高视奏水平和双手协调能力。 </p></div>
 
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                节奏与旋律的完美结合</p>
-                                                                                <p>
-                                                                                    马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">节奏与旋律的完美结合</p>
+                                                                                <p>马林巴是键盘打击乐器的一种。不但学习了节奏，培养孩子的节奏感，还能掌握乐理视唱知识，提高孩子的表演能力，身体协调性，让孩子学会用肢体语言打动别人，感染别人。使孩子可以用音乐表达自己内心的想法，开发想象力、模仿能力、创作能力，提高理解能力和学习能力，克服心里上的恐惧感。训练耳朵的听力，培养孩子独立思考的能力。</p>
                                                                                 <div>
-                                                                                    <img style="width: 594px;height: 257px; float: left;"
-                                                                                         src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png"
-                                                                                         alt="">
-                                                                                    <p style="padding-top: 70px;"><span
-                                                                                            style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span>
-                                                                                    </p>
+                                                                                    <img style="width: 594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2017/03/lALOqdH10c0Dvs0F1g_1494_958.png" alt="">
+                                                                                    <p style="padding-top: 70px;"><span style=" font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;">《九拍马林巴系统教程》由九拍特级教师、培训师王威老师及九拍创始人李红育老师共同编写，共四集12册。</span></p>
 
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                音乐学习的必修基本功</p>
-                                                                                <p>
-                                                                                    视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p>
-                                                                            </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                简单易学，方便携带</p>
-                                                                                <p>
-                                                                                    尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p>
-                                                                            </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                正宗韩国新后现代唱法</p>
-                                                                                <p>
-                                                                                    在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p>
-                                                                            </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                学钢琴就学专业</p>
-                                                                                <p>
-                                                                                    钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p>
-                                                                            </div>
-                                                                            <div class="pagg"><p
-                                                                                    style="font-family:微软雅黑;font-size:20px;font-weight:700;">
-                                                                                简单易学的节奏启蒙课程</p>
-                                                                                <p>
-                                                                                    非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p>
-                                                                            </div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">音乐学习的必修基本功</p><p>视唱练耳是学习音乐的基础，是所有音乐类学习必修的一种基本能力。学习视唱练耳可锻炼音乐听辨力，提高自身音乐素养。</p></div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学，方便携带</p><p>尤克里里是旋律乐器，能够自弹自唱，方便携带，声音清脆充满童趣，适合各个年龄段学习。九拍尤克里里课程讲解基础乐理知识、演奏方法和技巧，完成练习曲及乐曲的演奏。在第一学期最少可以完成一至两首乐曲，不定期为学员创造各种大中小型的演出及电视台节目录制的机会。</p></div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">正宗韩国新后现代唱法</p><p>在声乐学习中，认识钢琴标准音的音高和模唱位置，掌握演唱时的站姿、表情，掌握发声方法以及音准。在学期中老师会安排学员学习歌曲演唱，孩子在第一学期最少可以完成一至两首歌曲，通过演唱歌曲，学期末结束可在舞台演唱表演,以及专业考级。</p></div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">学钢琴就学专业</p><p>钢琴素有“乐器之王”的美称。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出，并且可以参加钢琴的考级。</p></div>
+                                                                            <div class="pagg"><p style="font-family:微软雅黑;font-size:20px;font-weight:700;">简单易学的节奏启蒙课程</p><p>非洲鼓靠徒手演奏，主要有低、中、高三个音，一般采用合奏的形式，也可以培养孩子和孩子之间的合作配合能力。在学期中老师会安排孩子们学习练习曲和乐曲演奏，孩子在第一学期最少可以完成一至两首乐曲，通过演奏乐曲孩子就可以参加九拍活动登台演出。</p></div>
 
                                                                         </div>
                                                                     </div>
@@ -868,7 +499,7 @@
                                             <div style="float:right;">
                                                 <a class="teacher-study" href="teachers.html"
                                                    style="display:inline-block;color:#777;margin-left:50px;margin-top:10px;font-family:微软雅黑;">了解九拍师资培训与认证系统
-                                                    &gt;</a>
+                                                    ></a>
                                             </div>
                                         </div>
                                     </div>
@@ -888,60 +519,60 @@
                                                                                  onmouseout="ISL_StopUp()"></div>
                                                     <div class="Cont" id="ISL_Cont">
                                                         <div class="ScrCont">
-                                                            <div id="course">
+                                                            <div id="List1">
                                                                 <!--
                                                                     作者：zhangguanglei@qq.com
                                                                     时间：2017-03-26
                                                                     描述：教师课程介绍
                                                                 -->
-                                                                <div class="pic "><a title="" href="zhaozi.html"><img
-                                                                        width="180" height="180" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            赵 孜</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程: 爵士鼓</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="jiangfeng.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            姜 峰</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程: 爵士鼓</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="yangbo.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;color:#c20000;font-family:微软雅黑;">
-                                                                            杨 波</p>
-                                                                        <p style="text-align: center;color:#777;font-family:微软雅黑;">
-                                                                            教授课程:贝司 少儿摇滚乐队</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="pic"><a title="" href="xuxinwei.html"><img
-                                                                        width="183" height="68" alt=""
-                                                                        src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>
-                                                                    <div>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#c20000;">
-                                                                            徐辛未</p>
-                                                                        <p style="text-align: center;font-family:微软雅黑;color:#777;">
-                                                                            教授课程：电吉他 民谣吉他</p>
-                                                                        <p style="text-align: left;font-family:微软雅黑;">
-                                                                            徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>
-                                                                    </div>
-                                                                </div>
+                                                                <!--<div class="pic "><a title="" href="zhaozi.html"><img-->
+                                                                        <!--width="180" height="180" alt=""-->
+                                                                        <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/赵孜.jpg"></a>-->
+                                                                    <!--<div>-->
+                                                                        <!--<p style="text-align: center;color:#c20000;font-family:微软雅黑;">-->
+                                                                            <!--赵 孜</p>-->
+                                                                        <!--<p style="text-align: center;font-family:微软雅黑;color:#777;">-->
+                                                                            <!--教授课程: 爵士鼓</p>-->
+                                                                        <!--<p style="text-align: left;font-family:微软雅黑;">-->
+                                                                            <!--中央音乐学院本科毕业，现任九拍特级教师，九拍总部教研中心总监，九拍集团培训师，九拍爵士鼓系统教程执行编辑。累计培训了2500余名爵士鼓教师在全国音乐教育机构中任教…</p>-->
+                                                                    <!--</div>-->
+                                                                <!--</div>-->
+                                                                <!--<div class="pic"><a title="" href="jiangfeng.html"><img-->
+                                                                        <!--width="183" height="68" alt=""-->
+                                                                        <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/jf1.jpg"></a>-->
+                                                                    <!--<div>-->
+                                                                        <!--<p style="text-align: center;color:#c20000;font-family:微软雅黑;">-->
+                                                                            <!--姜 峰</p>-->
+                                                                        <!--<p style="text-align: center;font-family:微软雅黑;color:#777;">-->
+                                                                            <!--教授课程: 爵士鼓</p>-->
+                                                                        <!--<p style="text-align: left;font-family:微软雅黑;">-->
+                                                                            <!--九拍教育科技集团培训师，特级教师，于2008年在九拍开始从事教学工作，已培养出众多全国比赛冠军学员，连续多年被评为中国打击乐优秀指导教师…</p>-->
+                                                                    <!--</div>-->
+                                                                <!--</div>-->
+                                                                <!--<div class="pic"><a title="" href="yangbo.html"><img-->
+                                                                        <!--width="183" height="68" alt=""-->
+                                                                        <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/杨波.png"></a>-->
+                                                                    <!--<div>-->
+                                                                        <!--<p style="text-align: center;color:#c20000;font-family:微软雅黑;">-->
+                                                                            <!--杨 波</p>-->
+                                                                        <!--<p style="text-align: center;color:#777;font-family:微软雅黑;">-->
+                                                                            <!--教授课程:贝司 少儿摇滚乐队</p>-->
+                                                                        <!--<p style="text-align: left;font-family:微软雅黑;">-->
+                                                                            <!--杨波老师于2004年加入九拍，从事教学工作至今，现任九拍音乐教育的少儿摇滚乐队总指导、音乐总监。培养了20088乐队、九拍小子乐队等众多少儿摇滚乐队…</p>-->
+                                                                    <!--</div>-->
+                                                                <!--</div>-->
+                                                                <!--<div class="pic"><a title="" href="xuxinwei.html"><img-->
+                                                                        <!--width="183" height="68" alt=""-->
+                                                                        <!--src="http://101.201.140.178/wordpress/wp-content/uploads/2016/12/徐辛未.png"></a>-->
+                                                                    <!--<div>-->
+                                                                        <!--<p style="text-align: center;font-family:微软雅黑;color:#c20000;">-->
+                                                                            <!--徐辛未</p>-->
+                                                                        <!--<p style="text-align: center;font-family:微软雅黑;color:#777;">-->
+                                                                            <!--教授课程：电吉他 民谣吉他</p>-->
+                                                                        <!--<p style="text-align: left;font-family:微软雅黑;">-->
+                                                                            <!--徐辛未老师从事吉他教学工作已有5年时间，毕业于天津音乐学院现代音乐系电吉他专业，授课过程中因材施教，重视学生音乐素养的培养…</p>-->
+                                                                    <!--</div>-->
+                                                                <!--</div>-->
                                                             </div>
                                                             <div id="List2"></div>
                                                         </div>
@@ -1329,54 +960,6 @@
         </div>
     </section>
 </div>
-<div style="position:fixed;right:20px;bottom:40px;z-index: 1000;">
-    <a class="zxzx" style="display:block;"></a>
-    <a class="yyst" href="#" id="btn" data-toggle="modal" data-target="#myModal"></a>
-    <a class="hddb" style="display:block;" href="#go-top"></a>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <div data-dismiss="modal"><span style="display: inline-block;cursor: pointer; margin-left: 95%">X</span>
-            </div>
-            <div class="modal-body" style="margin-left: 48px">
-                <div style=""><img src="http://101.201.140.178/wordpress/wp-content/uploads/2017/02/IMG_0055.png"
-                                   style="float: left; margin-right: 20px; height:300px;" alt="">
-                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"
-                            src="http://101.201.140.178/form.html" style="height:400px;"></iframe>
-                </div>
-            </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn-alt btn-sm pop-but"  data-dismiss="modal">关闭</button>
-                <button type="button" class="btn-alt btn-sm pop-but">提交</button>
-            </div> -->
-        </div>
-    </div>
-</div>
-<div class="chatbox" style="display: none;border:1px solid  #DDDDDD; z-index: 9999;">
-    <img id="x-click" src="images/X.png"style="position:absolute;right:20px;cursor:pointer;top: 10px;" />
-    <div style="height: 50px;width: 500px;background: #EEEEEE;">
-
-
-
-    </div>
-    <div class="messages" style="border: 1px solid #DDDDDD;">
-
-    </div>
-
-    <div class="form">
-
-        <div class="input">
-            <textarea id="msg" style="border-color: yellowgreen;min-height: 0;" ></textarea>
-        </div>
-        <div>
-            <input id="send" type="button" value="发送" onclick="mysend()" style="background:#C20000;border-radius:6px;color:#ffffff;border:none;outline:none;">
-        </div>
-    </div>
-</div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1384,19 +967,8 @@
 <script src="js/vc-accordion.js"></script>
 <script src="js/vc-tabs.min.js"></script>
 <script src="js/common.js"></script>
-<script type="text/javascript">
-    $(".zxzx").click(function () {
-        $(".chatbox").show();
-    })
-    $("#x-click").click(function () {
-        $(".chatbox").hide();
-    })
-</script>
-
 <script>
-    $(".tab-big").click(function () {
-        $(this).show().siblings().hide();
-    })
+
     $(function () {
         var yq = localStorage.getItem("yq");
         $('.tab-big2 ul li').click(function () {
@@ -1426,14 +998,6 @@
             $('.panell>div:eq(' + $(this).index() + ')').show().siblings().hide();
         })
     })
-    $(function () {
-        setloginmsg();
-    });
-    function setloginmsg(){
-        var value = sessionStorage.getItem("username");
-        $("#login-ok").empty();
-        $("#login-ok").append(value);
-    }
 </script>
 <script type="text/javascript">
 
@@ -1455,15 +1019,7 @@
     }
 
     AutoPlay();
-    function getTese1(){
-        getSchoolTese("4-6岁")
-    }
-    function getTese2(){
-        getSchoolTese("6-18岁")
-    }
-    function getTese3(){
-        getSchoolTese("18岁以上")
-    }
+
     function GetObj(objName) {
         if (document.getElementById) {
             return eval('document.getElementById("' + objName + '")')
@@ -1580,11 +1136,12 @@
         console.log("news", data);
         $("#newsList").empty();
         $.each(data, function (item, obje) {
-            console.log(item, obje)
-            $("#newsList").append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid='+ obje.id + '">' + obje.title + '</a></div>')
+            //console.log(item, obje)
+            $("#newsList").append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + obje.id + '">' + obje.title + '</a></div>')
 
         });
     });
+
 
     //优秀学员
     $.ajax({
@@ -1596,900 +1153,241 @@
             type: '优秀学员'
         },
         success: function (data) {
+            //console.log(data);
             $.each(data, function (k, v) {
                 $("#videoList").empty();
                 $("#videoList").append("<div class='vc_col-sm-3 wpb_column column_container'><div class='wpb_wrapper'><div class='wpb_raw_code wpb_content_element wpb_raw_html'><div class='wpb_wrapper'><a href='./jiaoxuechengguo.html?type=优秀学员' ><img src='http://101.201.140.178/wordpress/wp-content/uploads/2016/11/展示1.png'></a></div></div></div></div>")
             });
         }
     });
-    getSchoolTese("6-18岁")
-    function getSchoolTese(tag){
-        var schoolid=localStorage.getItem("schoolid");
-        //alert(tag);
-        _getparam("api/tesecourse/tesecourseschoollist",{"schoolid":schoolid,"tag":tag},function(data){
-            console.log("tesecourse",data);
-            $('.course-list').empty();
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                if(rowdata.type==2) {
-                    $('.course-list').append('<li><a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:tohref('+rowdata.id+')"><img src="'+rowdata.icon+'" alt=""><span>'+rowdata.name+'</span></a></li>');
-                }
-            }
-        })
+
+    function findall(){
+        alert()
     }
-    function tohref(id){
-       $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id,"",function(data){
-            console.log(data);
-           //TODO 填充详情数据
-            $('.compents').empty();
-            for (var i = 0; i < data.length; i++) {
-                rowdata = data[i];
-                $('.compents').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+rowdata.title+'</p><p>'+rowdata.summary+'</p><img style="display:block;" src="'+rowdata.sumarryimg+'"/>')
-            }
-        }, function (error) {
-
-        })
 
 
-        });
-    }
     //特色课程详情
-   /* $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecourse",
-        async: true,
-        data: {
-            id: 1
-        },
-        success: function (data) {
-            //console.log(data);
-            $(".compents").empty();
-            $.each(data, function (i, v) {
-                $(".compents").append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">' + v.title + '</p><p>' + v.summary + '</p><div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;"></span></p></div>')
-            });
-        }
-    });
-    //特色课程（tag）
-    $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecoursebytag",
-        async: true,
-        data: {
-            tag: '4-6岁'
-        },
-        success: function (data) {
-            $("#tagLists").empty();
-            $.each(data, function (i, v) {
-                $("#tagLists").append('<li class="vc_tta-tab" data-vc-tab=""><a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">' + v.tag + '</span></a></li>')
-            });
-        }
-    });
-    //特色课程
-
-    $.ajax({
-        type: "get",
-        url: "http://101.201.140.178:8080/api/tesecourse/tesecourselist",
-        async: true,
-        success: function (data) {
-            //console.log(data);
-            $(".course-list").empty();
-            $.each(data, function (i, v) {
-                $(".course-list").append('<li class=""><img src="' + v.icon + '" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">' + v.name + '</p></li>')
-            });
-        }
-    });*/
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecourse",
+//      async: true,
+//      data: {
+//          id: 1
+//      },
+//      success: function (data) {
+//          //console.log(data);
+//          $(".compents").empty();
+//          $.each(data, function (i, v) {
+//              $(".compents").append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">' + v.title + '</p><p>' + v.summary + '</p><div style="margin-top:50px"><img style="width:594px;height: 257px; float: left;" src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/book.png"> <p style="padding-top: 70px"><span style="font-family: PingFangSC-Regular,微软雅黑; font-size: 10pt;"></span></p></div>')
+//          });
+//      }
+//  });
+//  //特色课程（tag）
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecoursebytag",
+//      async: true,
+//      data: {
+//          tag: '4-6岁'
+//      },
+//      success: function (data) {
+//          $("#tagLists").empty();
+//          $.each(data, function (i, v) {
+//              $("#tagLists").append('<li class="vc_tta-tab" data-vc-tab=""><a href="#1488357399823-43c7b909-eadd" data-vc-tabs="" data-vc-container=".vc_tta"><span class="vc_tta-title-text">' + v.tag + '</span></a></li>')
+//          });
+//      }
+//  });
+//  //特色课程
+//  $.ajax({
+//      type: "get",
+//      url: "http://101.201.140.178:8080/api/tesecourse/tesecourselist",
+//      async: true,
+//      success: function (data) {
+//          //console.log(data);
+//          $(".course-list").empty();
+//          $.each(data, function (i, v) {
+//              $(".course-list").append('<li class=""><img src="' + v.icon + '" alt=""><p style="margin-top: -12px;font-family:微软雅黑;font-size:15px;">' + v.name + '</p></li>')
+//          });
+//      }
+//  });
     //教师列表
     $.ajax({
         type: "get",
-        url: "http://101.201.140.178:8080/api/webteacher/listschoolnews?schoolid="+localStorage.getItem("schoolid"),
+        url: "http://101.201.140.178:8080/api/webteacher/listschoolnews?schoolid=" + localStorage.getItem("schoolid"),
         async: true,
         success: function (data) {
             console.log(data);
-            $("#course").empty();
+            $("#List1").empty();
             $.each(data, function (i, v) {
-                $("#course").append('<div class="pic"><a title="" href="javascript:toteacher('+v.id+')"><img width="180" height="180" alt=""src="' + v.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + v.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: ' + v.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + v.summary + '</p></div></div>');
+                $("#List1").append('<div class="pic"><a title="" href="javascript:toteacher(' + v.id + ')"><img width="180" height="180" alt=""src="' + v.icon + '"></a><div><p style="text-align: center;color:#c20000;font-family:微软雅黑;">' + v.name + '</p><p style="text-align: center;font-family:微软雅黑;color:#777;">教授课程: ' + v.course + '</p><p style="text-align: left;font-family:微软雅黑;">' + v.summary + '</p></div></div>');
             });
         }
     });
-    toteacher=function (id) {
-        localStorage.setItem("teacherid",id);
-        location.href="./zhaozi.html";
+    toteacher = function (id) {
+        localStorage.setItem("teacherid", id);
+        location.href = "./zhaozi.html";
     }
-
-    function add() {
-        var name = $('#name').val();
-        var phone = $('#phone').val();
-        var schoolid = $('#sel_school').val();
-        var musicid = $('#sel_music').val();
-        var flag = true;
-        if (name.length <= 0) {
-            alert('姓名不能为空')
-            flag = false;
+</script>
+<!--乐器-->
+<script>
+    function getvalue(name) {
+        var str = window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
+        var value;
+        if (str.indexOf(name) != -1) {
+            var pos_start = str.indexOf(name) + name.length + 1;
+            var pos_end = str.indexOf("&", pos_start);
+            if (pos_end == -1) {
+                value= str.substring(pos_start)
+            } else {
+                alert("对不起这个值不存在！");
+            }
         }
-        if (phone.length != 11) {
-            flag = false;
-            alert("手机号格式不正确");
-        }
-        if (flag) {
-            _post("http://101.201.140.178:8080/api/yuyue/add", {
-                'name': name,
-                'phone': phone,
-                'schoolid': schoolid,
-                'musicid': musicid
-            }, function (data) {
-                if (data.msg == 'success') {
-                    alert('预约成功');
-                    window.history.back(-1);
-                } else {
-                    alert('预约失败')
-                }
-                console.log(data);
-            }, function (error) {
-                console.log(error);
-            });
-        }
-        return false;
+        return value;
     }
     $(function () {
-        _getSchoollist();
-        _getMusiclist();
-        listnews();
-        tesecourselist();
-        _getwebshcoollist();
-        _getwebteacher();
-        _getindexvideo();
-        _getscrollvideo();
+        var schoolid = getvalue("schoolid");
+
+        $("#one").val(schoolid);
+        $("#two").val(schoolid);
+        $("#three").val(schoolid);
+        /*_getContent(schoolid);*/
+        showbytag(schoolid);
     })
-</script>
-<script type='text/javascript' src='js/webim.config.js'></script>
-<script type='text/javascript' src='js/strophe-1.2.8.min.js'></script>
-<script src='js/websdk-1.4.5.js'></script>
-<script src="js/adapter.js"></script>
-<script src="js/webrtc-1.4.10.js"></script>
-<script>
-    mysend = function () {
-        var msg = $('#msg').val();
-        sendPrivateText(msg, "user1490088656193");
-        $(".messages").append("<div class='send'>  " + msg + "</div><br />");
-        $('#msg').val("");
-    };
-    toteacher=function (id) {
-        localStorage.setItem("teacherid",id);
-        location.href="./zhaozi.html";
+/*
+    function _getContent(schoolid) {
+
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id,"",function(data){
+            /!*$('#content').empty();*!/
+            /!* $('#content').append('<li><img src="' + data.icon + '"><p>'+data.name+'</p></li>');*!/
+            $('#title').empty();
+            $("#yy").removeClass();
+            $("#yy").addClass("vc_tta-tab vc_active")
+            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
+
+            /!* $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+data.id+'"><img src="'+data.icon+'" alt=""><li><span>'+data.name+'</span></li></a>');*!/
+            showbytag();
+        });
+
+    }*/
+
+    function showbytag(schoolid) {
+       // http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=6-18%E5%B2%81&schoolid=1
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=6-18岁&schoolid="+schoolid, "", function (data) {
+            alert(data.length)
+            $('#content').empty();
+            // console.log("newsdata", data);
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
+
+                $('#content').append('<a style="display: inline-block;margin-right: 10px;text-align: center" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+
+            }
+        })
     }
-    /**
-     * Created by clock on 16-11-25.
-     */
-    var conn = {};
-    conn = new WebIM.connection({
-        isMultiLoginSessions: WebIM.config.isMultiLoginSessions,
-        https: typeof WebIM.config.https === 'boolean' ? WebIM.config.https : location.protocol === 'https:',
-        url: WebIM.config.xmppURL,
-        isAutoLogin: true,
-        heartBeatWait: WebIM.config.heartBeatWait,
-        autoReconnectNumMax: WebIM.config.autoReconnectNumMax,
-        autoReconnectInterval: WebIM.config.autoReconnectInterval
-    });
+    function shaixuan1(schoolid) {
+        alert(schoolid)
+        $("#xx").removeClass();
+        $("#xx").addClass("vc_tta-tab vc_active")
+        $("#yy").removeClass();
+        $("#yy").addClass("vc_tta-tab")
+        $("#zz").removeClass();
+        $("#zz").addClass("vc_tta-tab")
+        $('#content').empty();
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=4-6岁&schoolid="+schoolid, "", function (data) {
 
-    // listern，添加回调函数
-    conn.listen({
-        onOpened: function (message) {          //连接成功回调，连接成功后才可以发送消息
-            //如果isAutoLogin设置为false，那么必须手动设置上线，否则无法收消息
-            // 手动上线指的是调用conn.setPresence(); 在本例中，conn初始化时已将isAutoLogin设置为true
-            // 所以无需调用conn.setPresence();
-            console.log("opened");
-            console.log("msg", message);
-        },
-        onTextMessage: function (message) {
-            // 在此接收和处理消息，根据message.type区分消息来源，私聊或群组或聊天室
-            console.log(message.type);
-            console.log(message);
-            console.log('Text');
-            $(".messages").append("<div class='recive'>" + message.data + "</div><br />");
-        },  //收到文本消息
-        onEmojiMessage: function (message) {
-            // 当为WebIM添加了Emoji属性后，若发送的消息含WebIM.Emoji里特定的字符串，connection就会自动将
-            // 这些字符串和其它文字按顺序组合成一个数组，每一个数组元素的结构为{type: 'emoji(或者txt)', data:''}
-            // 当type='emoji'时，data表示表情图像的路径，当type='txt'时，data表示文本消息
-            console.log('Emoji');
-            var data = message.data;
-            for (var i = 0, l = data.length; i < l; i++) {
-                console.log(data[i]);
+            // console.log("newsdata", data);
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
+
+                $('#content').append('<a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:void(0);" onclick="fourtosix('+ rowdata.id +')"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+
+                fourtosix(data[0].id);
             }
-        },   //收到表情消息
-        onPictureMessage: function (message) {
-            console.log('Picture');
 
-            var options = {url: message.url};
-            options.onFileDownloadComplete = function () {
-                // 图片下载成功
-                console.log('Image download complete!');
-            };
-            options.onFileDownloadError = function () {
-                // 图片下载失败
-                console.log('Image download failed!');
-            };
-            WebIM.utils.download.call(conn, options);       // 意义待查
-
-        }, //收到图片消息
-        onCmdMessage: function (message) {
-            console.log('CMD');
-        },     //收到命令消息
-        onAudioMessage: function (message) {
-            console.log("Audio");
-        },   //收到音频消息
-        onLocationMessage: function (message) {
-            console.log("Location");
-        },//收到位置消息
-        onFileMessage: function (message) {
-            console.log("File");
-        },    //收到文件消息
-        onVideoMessage: function (message) {
-            var node = document.getElementById('privateVideo');
-            var option = {
-                url: message.url,
-                headers: {
-                    'Accept': 'audio/mp4'
-                },
-                onFileDownloadComplete: function (response) {
-                    var objectURL = WebIM.utils.parseDownloadResponse.call(conn, response);
-                    node.src = objectURL;
-                },
-                onFileDownloadError: function () {
-                    console.log('File down load error.')
-                }
-            };
-            WebIM.utils.download.call(conn, option);
-        },   //收到视频消息
-        onPresence: function (message) {
-            switch (message.type) {
-                case 'subscribe':                           // 对方请求添加好友
-                    // 同意对方添加好友
-                    document.getElementById('agreeFriends').onclick = function (message) {
-                        conn.subscribed({
-                            to: 'asdfghj',
-                            message: "[resp:true]"
-                        });
-                        // 需要反向添加对方好友
-                        conn.subscribe({
-                            to: message.from,
-                            message: "[resp:true]"
-                        });
-                    };
-                    // 拒绝对方添加好友
-                    document.getElementById('rejectFriends').onclick = function (message) {
-                        conn.unsubscribed({
-                            to: message.from,
-                            message: "rejectAddFriend"                  // 拒绝添加好友回复信息
-                        });
-                    };
-
-                    break;
-                case 'subscribed':                          // 对方同意添加好友，已方同意添加好友
-                    break;
-                case 'unsubscribe':                         // 对方删除好友
-                    break;
-                case 'unsubscribed':                        // 被拒绝添加好友，或被对方删除好友成功
-                    break;
-                case 'joinChatRoomSuccess':                 // 成功加入聊天室
-                    console.log('join chat room success');
-                    break;
-                case 'joinChatRoomFaild':                   // 加入聊天室失败
-                    console.log('join chat room faild');
-                    break;
-                case 'joinPublicGroupSuccess':              // 意义待查
-                    console.log('join public group success', message.from);
-                    break;
-            }
-        },       //收到联系人订阅请求（加好友）、处理群组、聊天室被踢解散等消息
-        onRoster: function (message) {
-            console.log('Roster');
-        },         //处理好友申请
-        onInviteMessage: function (message) {
-            console.log('Invite');
-        },  //处理群组邀请
-        onOnline: function () {
-            console.log('onLine');
-        },                  //本机网络连接成功
-        onOffline: function () {
-            console.log('offline');
-        },                 //本机网络掉线
-        onError: function (message) {
-            console.log('Error');
-        },           //失败回调
-        onBlacklistUpdate: function (list) {
-            // 查询黑名单，将好友拉黑，将好友从黑名单移除都会回调这个函数，list则是黑名单现有的所有好友信息
-            console.log(list);
-        }     // 黑名单变动
-    });
-    // 初始化WebRTC Call
-    var rtcCall = new WebIM.WebRTC.Call({
-        connection: conn,
-
-        mediaStreamConstaints: {
-            audio: true,
-            video: true
-        },
-
-        listener: {
-            onAcceptCall: function (from, options) {
-                console.log('onAcceptCall::', 'from: ', from, 'options: ', options);
-            },
-            onGotRemoteStream: function (stream) {
-                console.log('onGotRemoteStream::', 'stream: ', stream);
-                var video = document.getElementById('video');
-                video.src = window.URL.createObjectURL(stream);
-            },
-            onGotLocalStream: function (stream) {
-                console.log('onGotLocalStream::', 'stream:', stream);
-                var video = document.getElementById('localVideo');
-                video.src = window.URL.createObjectURL(stream);
-            },
-            onRinging: function (caller) {
-                console.log('onRinging::', 'caller:', caller);
-            },
-            onTermCall: function (reason) {
-                console.log('onTermCall::');
-                console.log('reason:', reason);
-            },
-            onIceConnectionStateChange: function (iceState) {
-                console.log('onIceConnectionStateChange::', 'iceState:', iceState);
-            },
-            onError: function (e) {
-                console.log(e);
-            }
-        }
-    });
-</script>
-<script>
-    /**
-     * Created by clock on 16-11-30.
-     */
-// open，登录
-    var login = function () {
-        var options = {
-            apiUrl: WebIM.config.apiURL,
-            user: 'local18910940347',
-            pwd: '123456',
-            appKey: WebIM.config.appkey,
-            success: function (token) {
-                var token = token.access_token;
-                WebIM.utils.setCookie('webim_' + encryptUsername, token, 1);
-                console.log('success')
-            },
-            error: function () {
-                console.log('fail')
-            }
-        };
-        conn.open(options);
-    };
-    var register = function () {
-        var option = {
-            username: 'test',
-            password: '123456',
-            nickname: 'clock',
-            appKey: WebIM.config.appkey,
-            success: function () {
-                console.log('regist success!');
-            },
-            error: function () {
-                console.log('regist error');
-            },
-            apiUrl: WebIM.config.apiURL
-        };
-        conn.signup(option);
-    };
-
-    // 私聊发送文本消息，发送表情同发送文本消息，只是会在对方客户端将表情文本进行解析成图片
-    var sendPrivateText = function (tomsg, toid) {
-        var id = conn.getUniqueId();
-        var msg = new WebIM.message('txt', id);
-        msg.set({
-            msg: tomsg,                       // 消息内容
-            to: toid,                          // 接收消息对象
-            roomType: false,
-            success: function (id, serverMsgId) {
-                console.log("send private text Success");
-            }
-        });
-        msg.body.chatType = 'singleChat';
-        conn.send(msg.body);
-    };
-
-    // 私聊发送命令消息
-    var sendPrivateCmd = function () {
-        var id = conn.getUniqueId();
-        var msg = new WebIM.message('cmd', id);
-        msg.set({
-            msg: 'ls',
-            to: 'asdfghj',
-            roomType: false,
-            success: function (id, serverMsgId) {
-                console.log('CMD Success');
-            }
-        });
-        msg.body.chatType = 'singleChat';
-        conn.send(msg.body);
-    };
-
-    // 私聊发送图片消息
-    var sendPrivateImg = function () {
-        var id = conn.getUniqueId();
-        var msg = new WebIM.message('img', id);
-        var input = document.getElementById('image');               // 选择图片的input
-        var file = WebIM.utils.getFileUrl(input);                   // 将图片转化为二进制文件
-        var allowType = {
-            'jpg': true,
-            'gif': true,
-            'png': true,
-            'bmp': true
-        };
-        if (file.filetype.toLowerCase() in allowType) {
-            console.log('send');
-            var option = {
-                apiUrl: WebIM.config.apiURL,
-                file: file,
-                to: 'asdfghj',
-                roomType: false,
-                chatType: 'singleChat',
-                onFileUploadError: function () {
-                    console.log('onFileUploadError');
-                },
-                onFileUploadComplete: function () {
-                    console.log('onFileUploadComplete');
-                },
-                success: function () {
-                    console.log('Success');
-                },
-                // flashUpload: WebIM.flashUpload               // 意义待查
-            };
-            msg.set(option);
-            conn.send(msg.body);
-        }
-    };
-
-    // 获取好友列表
-    var getRoasters = function () {
-        var option = {
-            success: function (roster) {
-                // roster是所有好友，格式为：
-                /*
-                 [
-                 {
-                 jid:"easemob#chatdemoui_test1@easemob.com",
-                 name:"test1",
-                 subscription: "both"
-                 // subscription的值的集合是{both, to, from, none},
-                 // both表示互相在对方的好友列表中，
-                 // to 和 from意义待定
-                 // 如果添加对方为好友被拒绝则为none
-                 }
-                 ]
-                 */
-                for (var o in roster) {
-                    console.log("jid: ", roster[o].jid);
-                    console.log("name: ", roster[o].name);
-                    console.log("subscription: ", roster[o].subscription);
-                }
-            }
-        };
-        conn.getRoster(option);
-    };
-
-    // 添加好友
-    var addFriends = function () {
-        conn.subscribe({
-            to: "asdfghj",
-            message: "Hello World!"                   // Demo里面接收方没有展现出来这个message，在status字段里面
-        });
-    };
-
-    // 删除好友
-    var removeFriends = function () {
-        conn.removeRoster({
-            to: 'asdfghj',
-            success: function () {
-                conn.unsubscribed({
-                    to: 'asdfghj'
-                });
-            },
-            error: function () {
-            }
-        });
-    };
-
-    // 拉黑好友，对方好友列表依然可以看到已方，但无法向已方发送消息
-    // list的结构为{username_1: {}, username_2: {}...}，拉黑好友需要将拉黑后的黑名单里的好友信息全部传入，
-    // 如黑名单此时已有A，B两位好友，现想将C也拉进黑名单，正确的操作是同时将ABC的信息都传入接口中。
-    /*
-     var list = {
-     username_1:{
-     jid: 'appKey_'+username_1+'@easemob.com',
-     name: username_1,
-     subscription: 'both',
-     order: 2
-     },
-     username_2:{
-     jid: 'appKey_'+username_2+'@easemob.com',
-     name: username_2,
-     subscription: 'both',
-     order: 3,
-     type: 'jid'
-     },
-     username_3:{
-     jid: 'appKey_'+username_3+'@easemob.com',
-     name: username_3,
-     subscription: 'both',
-     order: 4,
-     type: 'jid'
-     }
-     }
-     jid, username, subscription均在获取好友列表时已获取到，用户可根据好友列表动态获取这些参数，
-     order不重复即可
-     */
-    var addToBlackList = function () {
-        var list = {
-            // user_1
-            asdfghj: {
-                jid: "easemob-demo#chatdemoui_asdfghj@easemob.com",
-                name: "asdfghj",
-                subscription: 'both',
-                order: 2,
-                type: 'jid'
-            },
-            // user_2
-            wjy6: {
-                jid: "easemob-demo#chatdemoui_wjy6@easemob.com",
-                name: "wjy6",
-                subscription: 'both',
-                order: 3,
-                type: 'jid'
-            }
-        };
-        conn.addToBlackList({
-            list: list,
-            type: 'jid',
-            success: function () {
-                console.log('Add friend to black list success');
-            },
-            error: function () {
-                console.log('Add friend to black list error');
-            }
-        });
+        })
     }
 
-    // 获取好友黑名单，调用这个函数会回调conn.listen里的onBlacklistUpdate函数，具体细节请参照test.js
-    var getBlackList = function () {
-        conn.getBlacklist();
-    };
+    function fourtosix(id) {
 
-    // 将好友从黑名单拉出来
-    var removeBlackList = function () {
-        var list = {};
-        conn.removeFromBlackList({
-            list: list,
-            type: 'jid',
-            success: function () {
-                console.log('Remove from black list success.');
-            },
-            error: function () {
-                console.log('Remove from black list error.')
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
+            $('#title').empty();
+            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>');
+            if(data.summaryimg!=''){
+                $('#title').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>')
             }
-        });
-    };
 
-    // 聊天室发送文本消息
-    var sendRoomText = function (msg, totooken) {
-        // 退出聊天室
-        var id = conn.getUniqueId();
-        var msg = new WebIM.message('txt', id);
-        var option = {
-            msg: msg,                       // 消息内容
-            to: totooken,               // 接收消息对象(本例为twy-room1聊天室)
-            roomType: true,
-            chatType: 'chatRoom',
-            success: function () {
-                console.log('send room text success');
-            },
-            fail: function () {
-                console.log('failed');
+        })
+
+    }
+    function shaixuan2(schoolid) {
+        $("#yy").removeClass();
+        $("#yy").addClass("vc_tta-tab vc_active")
+        $("#xx").removeClass();
+        $("#xx").addClass("vc_tta-tab")
+        $("#zz").removeClass();
+        $("#zz").addClass("vc_tta-tab")
+        $('#content').empty();
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=6-18岁&schoolid="+schoolid, "", function (data) {
+
+            // console.log("newsdata", data);
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
+                $('#content').append('<a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:void(0);" onclick="sixtoeighteen('+ rowdata.id +')"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+              //  $('#content').append('<a style="display: inline-block;margin-right: 10px" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+
+                sixtoeighteen(data[0].id);
             }
-        };
-        msg.set(option);
-        msg.setGroup('groupchat');
-        conn.send(msg.body);
-    };
-    // 加入聊天室
-    var joinRoom = function () {
-        // 加入聊天室
-        conn.joinChatRoom({
-            roomId: "114715680632209992"
-        });
-    };
-    // 退出聊天室
-    var quitRoom = function () {
-        // 退出聊天室
-        conn.quitChatRoom({
-            roomId: "114715680632209992"
-        });
-    };
-    // 列出所有聊天室，支持分页查询
-    var listRooms = function () {
-        var option = {
-            apiUrl: 'https://a1.easemob.com',
-            pagenum: 1,                                 // 页数
-            pagesize: 20,                               // 每页个数
-            success: function (list) {
-                console.log(list);
-            },
-            error: function () {
-                console.log('List chat room error');
+        })
+    }
+    function sixtoeighteen(id) {
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
+
+            $('#title').empty();
+            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>');
+            if(data.summaryimg!=''){
+                alert()
+                $('#title').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
             }
-        };
-        conn.getChatRooms(option);
+
+
+        })
+    }
+    function shaixuan3(schoolid) {
+        $("#zz").removeClass();
+        $("#zz").addClass("vc_tta-tab vc_active")
+        $("#xx").removeClass();
+        $("#xx").addClass("vc_tta-tab")
+        $("#yy").removeClass();
+        $("#yy").addClass("vc_tta-tab")
+        $('#content').empty();
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=18岁以上&schoolid="+schoolid, "", function (data) {
+
+            // console.log("newsdata", data);
+            for (var i = 0; i < data.length; i++) {
+                rowdata = data[i];
+                /*$('#tesecourselist ul').append('<div><a class="riqi" style="font-family: 微软雅黑; color: #333;" href="./muban.html?newsid=' + rowdata.id + '">' + rowdata.title + '</a></div><div style="width: 500px;height: 1px;background: -webkit-gradient(linear, 0% 60%, 80% 100%, from(#e3e3e3), to(#F7F7F7));"></div>')*/
+                $('#content').append('<a style="display: inline-block;margin-right: 10px;text-align: center" href="javascript:void(0);" onclick="sixtoeighteen('+ rowdata.id +')"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+               // $('#content').append('<a style="display: inline-block;margin-right: 10px;text-align: center" href="./tesekecheng.html?id='+rowdata.id+'"><img src="'+rowdata.icon+'" alt=""><li><span>'+rowdata.name+'</span></li></a>');
+
+                eighteenup(data[0].id);
+            }
+        })
     }
 
-    // 群组发送文本消息
-    var sendGroupText = function () {
-        var id = conn.getUniqueId();
-        var msg = new WebIM.message('txt', id);
-        var option = {
-            msg: 'scarecrfow',                       // 消息内容
-            to: '1480567165764',                     // 接收消息对象(本例为Test聊天室)
-            roomType: false,
-            chatType: 'chatRoom',
-            success: function () {
-                console.log('send room text success');
-            },
-            fail: function () {
-                console.log('failed');
+    function eighteenup(id) {
+        $.get("http://101.201.140.178:8080/api/tesecourse/tesecourse?id="+id, "", function (data) {
+            $('#title').empty();
+            $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>');
+            if(data.summaryimg!=''){
+                alert()
+                $('#title').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
             }
-        };
-        msg.set(option);
-        msg.setGroup('groupchat');
-        conn.send(msg.body);
-    };
-    // 建立一个群组
-    var createGroup = function () {
-        var option = {
-            subject: 'groupName',                       // 群名称
-            description: 'create a group test',         // 群简介
-            members: ['wjy6', 'asdfghj'],               // 以数组的形式存储需要加群的好友ID
-            optionsPublic: true,                        // 允许任何人加入
-            optionsModerate: false,                     // 加入需审批
-            optionsMembersOnly: false,                  // 不允许任何人主动加入
-            optionsAllowInvites: false                  // 允许群人员邀请
-        };
-        conn.createGroup(option);
-    }
-    // 获取群组信息（应用场景：判断用户是否为该群管理员）
-    var queryGroupInfo = function () {
-        conn.queryRoomInfo({
-            roomId: '1480747027186',
-            // settings 表示入群的权限，具体值待定
-            // members[0]里面包含群主信息，其结构为{affiliation: "owner", jid: appKey + "_" + username + "@easemob.com"}
-            // jid中的username就是群主ID
-            // fields的结构为：
-            /*
-             {
-             affiliations: "2",                  // 意义待查
-             description: "12311231313",         // 群简介
-             maxusers: "200",                    // 群最大成员容量
-             name: "123",                        // 群名称
-             occupants: "2",                     // 意义待查
-             owner: "easemob-demo#chatdemoui_mengyuanyuan"               // 群主jid
-             }
-             */
-            success: function (settings, members, fields) {
-                console.log('settings: ', settings);
-                console.log('members: ', members);
-                console.log('fields: ', fields);
-            },
-            error: function () {
-                console.log('Error!');
-            }
-        });
-    };
-    // 成员主动离开群
-    var leaveGroup = function () {
-        var option = {
-            to: 'asdfghj',
-            roomId: '1480747027186',
-            success: function () {
-                console.log('You leave room succeed!');
-            },
-            error: function () {
-                console.log('Leave room faild');
-            }
-        };
-        conn.leaveGroupBySelf(option);
-    };
-    // 将成员踢出群(同将群成员拉入群黑名单)
-    var addToGroupBlackList = function () {
-        var option = {
-            affiliation: "owner",                       // 写死
-            roomId: "1480756943693",                    // 群组ID
-            success: function () {
-                console.log('add to black list succeed');
-            },
-            to: 'asdfghj'                               // 需要删除的成员ID
-        };
-        conn.addToGroupBlackList(option);
-    };
-    // 列出所有群组
-    var listGroups = function () {
-        var option = {
-            success: function (rooms) {
-                console.log(rooms);
-            },
-            error: function () {
-                console.log('List chat rooms error');
-            }
-        };
-        conn.listRooms(option);
-    };
-    // 修改群信息
-    var changeGroupInfo = function () {
-        var option = {
-            roomId: '1480756943693',
-            subject: 'ChangeTest',
-            description: 'Change group information test',
-            success: function () {
-                console.log("Change Group Names Success!");
-            }
-        };
-        conn.changeGroupSubject(option);
-    };
-    // 获取群组黑名单
-    var getGroupBlackList = function () {
-        var option = {
-            roomId: '1480758709661',
-            success: function (list) {
-                console.log('Get group black list: ', list);
-            },
-            error: function () {
-                console.log('Get group black list error.');
-            }
-        };
-        conn.getGroupBlacklist(option);
-    };
-    // 解散一个群组
-    var destroyGroup = function () {
-        var option = {
-            reason: 'Test Destroy Group',
-            roomId: '1480840256052',
-            success: function () {
-                console.log('Destroy group success!');
-            }
-        };
-        conn.destroyGroup(option);
-    };
-    // 加好友入群
-    var addGroupMembers = function () {
-        var option = {
-            list: ['asdfghj', 'wjy6'],
-            roomId: '1480841456167'
-        };
-        conn.addGroupMembers(option);
-    };
-    // 将好友从黑名单移除
-    var removeFromGroupBlackList = function () {
-        var option = {
-            roomId: '1480841456167',
-            to: 'wjy6',
-            success: function () {
-                console.log('Remove from black list success!');
-            }
-        };
-        conn.removeGroupMemberFromBlacklist(option);
-    };
 
-    // 查询群组成员，此方法亦可查询聊天室成员
-    // 查询出来的member的结构为{affiliation: 'member', jid: "easemob-demo#chatdemoui_wjy6@easemob.com"}
-    // 注意，这里的jid格式，成员的用户名是chatdemoui_之后，@easemob.com之前的字符串，如本例的wjy6是用户名
-    var queryRoomMember = function () {
-        var member = '';
-        conn.queryRoomMember({
-            roomId: '114715680632209992',
-            success: function (members) {
-                for (var o in members) {
-                    member = members[o];
-                    console.log(member);
-                }
-            }
-        });
-    };
-
-    /*
-     * WebRTC
-     */
-    // 视频呼叫对方
-    var call = function () {
-        rtcCall.caller = 'mengyuanyuan';
-        rtcCall.makeVideoCall('asdfghj');
-    };
-    // 关掉/拒绝视频
-    var endCall = function () {
-        rtcCall.endCall();
+        })
     }
-    // 接受对方呼叫
-    var acceptCall = function () {
-        rtcCall.acceptCall();
-    }
-</script>
-<script>
-    /**
-     * Created by clock on 16-11-30.
-     */
-    window.onload = function () {
-//            document.getElementById('register').onclick = register;
-//            document.getElementById('privateText').onclick = sendPrivateText;
-//            document.getElementById('privateCmd').onclick = sendPrivateCmd;
-//            document.getElementById('privateImg').onclick = sendPrivateImg;
-//            document.getElementById('getBlackList').onclick = getBlackList;
-//            document.getElementById('addToBlackList').onclick = addToBlackList;
-//            document.getElementById('removeFromBlackList').onclick = removeBlackList;
-//
-//            document.getElementById('roomText').onclick = sendRoomText;
-//            document.getElementById('roomJoin').onclick = joinRoom;
-//            document.getElementById('roomQuit').onclick = quitRoom;
-//            document.getElementById('listChatRooms').onclick = listRooms;
-//
-//            document.getElementById('groupText').onclick = sendGroupText;
-//            document.getElementById('groupMember').onclick = queryRoomMember;
-//            document.getElementById('groupCreate').onclick = createGroup;
-//            document.getElementById('queryGroupInfo').onclick = queryGroupInfo;
-//            document.getElementById('leaveGroup').onclick = leaveGroup;
-//            document.getElementById('addToGroupBlackList').onclick = addToGroupBlackList;
-//            document.getElementById('listGroups').onclick = listGroups;
-//            document.getElementById('changeGroupInfo').onclick = changeGroupInfo;
-//            document.getElementById('getGroupBlackList').onclick = getGroupBlackList;
-//            document.getElementById('destroyGroup').onclick = destroyGroup;
-//            document.getElementById('addGroupMembers').onclick = addGroupMembers;
-//            document.getElementById('removeGroupMemberFromBlackList').onclick = removeFromGroupBlackList;
-//
-//            document.getElementById('getRoasters').onclick = getRoasters;
-//            document.getElementById('addFriends').onclick = addFriends;
-//            document.getElementById('removeRoster').onclick = removeFriends;
-//
-//            document.getElementById('rtCall').onclick = call;
-//            document.getElementById('rtEndCall').onclick = endCall;
-//            document.getElementById('rtAcceptCall').onclick = acceptCall;
-//            register();
-        login();
-    };
-</script>
-<script>
-    // 贴图发送（放到消息模块里）
-    document.addEventListener('paste', function (e) {
-        if (e.clipboardData && e.clipboardData.types) {
-            if (e.clipboardData.items.length > 0) {
-                if (/^image\/\w+$/.test(e.clipboardData.items[0].type)) {
-                    var blob = e.clipboardData.items[0].getAsFile();
-                    var url = window.URL.createObjectURL(blob);
-                    var id = conn.getUniqueId();//生成本地消息id
 
-                    var msg = new WebIM.message('img', id);
-                    msg.set({
-                        apiUrl: WebIM.config.apiURL,
-                        file: {data: blob, url: url},
-                        to: 'asdfghj',
-                        roomType: false,
-                        chatType: 'singleChat',
-                        onFileUploadError: function (error) {
-                            console.log("Error");
-                        },
-                        onFileUploadComplete: function (data) {
-                            console.log("Complete");
-                        },
-                        success: function (id) {
-                            console.log("Success");
-                        }
-                    });
-                    conn.send(msg.body);
-                }
-            }
-        }
-    });
 </script>
 </html>
