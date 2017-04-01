@@ -17,7 +17,6 @@
     <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=KXQEcPBg2mIm3dNaTYwdpYxL&s=1"></script>-->
 
     <style>
-        body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
         ul, li {
             list-style: none;
         }
@@ -28,7 +27,7 @@
     <div class="preloader"></div>
 </div>
 <div class="main-container">
-    <header class="header header-black">
+    <header class="header header-black fixed">
         <div class="header-wrapper">
             <div class="container">
                 <div class="col-sm-2 col-xs-12 navigation-header">
@@ -1161,10 +1160,7 @@
         }
     });
 
-    function findall(){
-        alert()
-    }
-
+  
 
     //特色课程详情
 //  $.ajax({
@@ -1273,7 +1269,6 @@
     function showbytag(schoolid) {
        // http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=6-18%E5%B2%81&schoolid=1
         $.get("http://101.201.140.178:8080/api/tesecourse/tesecourseschoollist?tag=6-18岁&schoolid="+schoolid, "", function (data) {
-            alert(data.length)
             $('#content').empty();
             // console.log("newsdata", data);
             for (var i = 0; i < data.length; i++) {
@@ -1286,7 +1281,6 @@
         })
     }
     function shaixuan1(schoolid) {
-        alert(schoolid)
         $("#xx").removeClass();
         $("#xx").addClass("vc_tta-tab vc_active")
         $("#yy").removeClass();
@@ -1348,7 +1342,6 @@
             $('#title').empty();
             $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>');
             if(data.summaryimg!=''){
-                alert()
                 $('#title').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
             }
 
@@ -1382,7 +1375,6 @@
             $('#title').empty();
             $('#title').append('<p style="font-family:微软雅黑;font-size:20px;font-weight:700;">'+data.title+'</p>').append('<p>'+ data.summary +'</p>');
             if(data.summaryimg!=''){
-                alert()
                 $('#title').append('<div><img style="width: 594px;height: 257px; float: left;" src="'+ data.summaryimg +'"></div>');
             }
 

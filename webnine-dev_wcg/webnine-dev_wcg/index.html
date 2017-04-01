@@ -11,6 +11,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
+
     <![endif]-->
     <style>
         body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
@@ -241,7 +242,7 @@
         </div>
     </section>
 
-    <header class="header header-black">
+    <header class="header header-black fixed">
         <div class="header-wrapper">
             <div class="container">
                 <div class="col-sm-2 col-xs-12 navigation-header">
@@ -1542,6 +1543,7 @@ tohref=function (schoolid) {
    // 首页视频列表
         function _getindexvideo() {
             _get("http://101.201.140.178:8080/api/video/chengguolist?type=1","", function (data) {
+                console.log("视频列表",data);
                 $('#indexvideo').empty();
                 for (var i = 0; i < data.length; i++) {
                     rowdata = data[i];
@@ -1559,6 +1561,7 @@ tohref=function (schoolid) {
 function _getscrollvideo() {
     _get("http://101.201.140.178:8080/api/video/chengguolist?type=1","", function (data) {
         $('#scrollvideo').empty();
+           console.log("gd视频列表",data);
         for (var i = 0; i < data.length; i++) {
             rowdata = data[i];
             $('#scrollvideo').append('<lc onclick="tovideo(rowdata.url)" style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;"><img src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png" style="display: block;float: left;height:80px;margin-top:-0px;"><p style="float: left;padding-left: 30px;color:#333;">'+rowdata.time+'</p><p style="float:left;margin-left:-80px;margin-top:30px;color:#333;">'+rowdata.name+'</p></lc>');
@@ -2579,10 +2582,10 @@ function headnews() {
             rowdata = data[i];
             if(rowdata.type==1) {
                 if(rowdata.content.length>10){
-                    var newContent = rowdata.content.substring(0,11);
-                    $('#headnews').append('<div><p style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 20px;">'+rowdata.title+'</span></p><p><span style="font-family: 微软雅黑;">'+newContent+'......'+'</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a  style="font-family: 微软雅黑; color: #777777;" href="muban.html?newsid='+rowdata.id+'">了解详情 &gt;</a></span></p></div>')
+                    var newContent = rowdata.content.substring(0,50);
+                    $('#headnews').append('<div><p style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 20px;">'+rowdata.title+'</span></p><p><span style="font-family: 微软雅黑;">'+newContent+'......'+'</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a  style="font-family: 微软雅黑; font-size: 18px; color: #777777;" href="muban.html?newsid='+rowdata.id+'">了解详情 &gt;</a></span></p></div>')
                 }else{
-                    $('#headnews').append('<div><p style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 20px;">'+rowdata.title+'</span></p><p><span style="font-family: 微软雅黑;">'+rowdata.content+'</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a  style="font-family: 微软雅黑; color: #777777;" href="muban.html?newsid='+rowdata.id+'">了解详情 &gt;</a></span></p></div>')
+                    $('#headnews').append('<div><p style="text-align: center;"><span style="font-family: 微软雅黑; font-size: 20px;">'+rowdata.title+'</span></p><p><span style="font-family: 微软雅黑;">'+rowdata.content+'</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑;"><a  style="font-family: 微软雅黑;font-size: 15px; color: #777777;" href="muban.html?newsid='+rowdata.id+'">了解详情 &gt;</a></span></p></div>')
                 }
 
 
@@ -2659,5 +2662,7 @@ function headnewspics() {
         $('#mvideo').attr('src',videourl);
         $('#mvideo')[0].play();
     };
+
 </script>
+
 </html>
