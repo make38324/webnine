@@ -1565,22 +1565,13 @@ function _getscrollvideo() {
         for (var i = 0; i < data.length; i++) {
             rowdata = data[i];
             var videourl= rowdata.url;
-            $('#scrollvideo').append('<lc class="item" data-url=' + videourl + ' style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;"><img'+' src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png" style="display: block;float: left;height:80px;margin-top:-0px;"><p style="float: left;padding-left: 30px;color:#333;">'+rowdata.time+'</p><p style="float:left;margin-left:-80px;margin-top:30px;color:#333;">'+rowdata.name+'</p></lc>');
+            $('#scrollvideo').append('<lc onclick="tovideo('+videourl+')" style="cursor:pointer;width: 500px;height: 80px;background-color: #F2F2F2;float: left;margin-bottom:2px;"><img'+' src="http://101.201.140.178/wordpress/wp-content/uploads/2016/11/IMG_2008-1.png" style="display: block;float: left;height:80px;margin-top:-0px;"><p style="float: left;padding-left: 30px;color:#333;">'+rowdata.time+'</p><p style="float:left;margin-left:-80px;margin-top:30px;color:#333;">'+rowdata.name+'</p></lc>');
 
         }
     }, function (error) {
 
     })
 }
-console.log('------------')
-console.log($('#scrollview'))
-$('#scrollvideo').on('click','.item',function(e) {
-    var index = $(this).index();
-    var videourl = $(this).attr('data-url');
-    console.log(index);
-     $('#mvideo').attr('src',videourl);
-     $('#mvideo')[0].play();
-})
 
 </script>
 <script type="text/javascript">
@@ -2668,14 +2659,11 @@ function headnewspics() {
 
 
 
-    // function  tovideo(videourl) {
-    //  //alert('dd');
-    //     $('#mvideo').attr('src',videourl);
-    //     $('#mvideo')[0].play();
-    // };
-
-    
-
+    function  tovideo(videourl) {
+     //alert('dd');
+        $('#mvideo').attr('src',videourl);
+        $('#mvideo')[0].play();
+    };
 
 </script>
 
